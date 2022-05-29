@@ -13,12 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes([
     'register'=>false
 ]);
+//front routes
+Route::name('front.')->group(function () {
+    Route::get('/',[\App\Http\Controllers\UserController::class,'bosh_sahifa'])->name('bosh_sahifa');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+});
+
+
+
+//admin routes
+Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+});
