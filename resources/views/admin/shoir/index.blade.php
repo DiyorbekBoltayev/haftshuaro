@@ -4,13 +4,13 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-9"><h1 class="card-title"> Rasmlar </h1></div>
+                    <div class="col-9"><h1 class="card-title"> Shoirlar </h1></div>
                     <div class="col-md-1">
-                        <a class="btn btn-primary" href="{{route('admin.photos.create')}}">
+                        <a class="btn btn-primary" href="{{route('admin.shoir.create')}}">
                             <span class="btn-label">
                                 <i class="fa fa-plus"></i>
                             </span>
-                           Rasm qo'shish
+                            Shoir qo'shish
                         </a>
                     </div>
                 </div>
@@ -20,32 +20,25 @@
                         <thead>
                         <tr>
                             <th class="" scope="col">#</th>
-                            <th class="" scope="col"> Mavzu </th>
-                            <th class="" scope="col"> Rasm1 </th>
-                            <th class="" scope="col"> Autor1 </th>
-                            <th class="" scope="col"> Rasm2 </th>
-                            <th class="" scope="col"> Autor2 </th>
-
+                            <th class="" scope="col"> Rasm </th>
+                            <th class="" scope="col"> Ism </th>
+                            <th class="" scope="col"> Malumot </th>
                             <th class="w-25" scope="col">Amallar</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($fotos as $ind=>$foto)
+                        @foreach($poets as $ind=>$poet)
                             <tr>
-                                <td class="col-1">{{($fotos->currentpage()-1)*($fotos->perpage())+$ind+1}}</td>
-                                <td>{{$foto->header_uz}}</td>
+                                <td class="col-1">{{($poets->currentpage()-1)*($poets->perpage())+$ind+1}}</td>
                                 <td>
-                                    <img style="width: 100px; height: 100px;" src="/photo1/{{$foto->photo1}}" alt="Bu rasm">
+                                    <img style="width: 100px; height: 100px;" src="/photo/{{$poet->photo}}" alt="Bu rasm">
                                 </td>
-                                <td>{{$foto->outor1_uz}}</td>
-                                <td>
-                                    <img style="width: 100px; height: 100px;" src="/photo2/{{$foto->photo2}}" alt="Bu rasm">
-                                </td>
-                                <td>{{$foto->outor2_uz}}</td>
+                                <td>{{$poet->name}}</td>
+                                <td>{{$poet->title_uz}}</td>
 
                                 <td class="col-2">
-                                    <form action="{{ route('admin.photos.destroy',$foto->id) }}" method="POST">
-                                        <a class="btn btn-warning btn-sm" href="{{ route('admin.photos.edit',$foto->id) }}">
+                                    <form action="{{ route('admin.shoir.destroy',$poet->id) }}" method="POST">
+                                        <a class="btn btn-warning btn-sm" href="{{ route('admin.shoir.edit',$poet->id) }}">
                                     <span class="btn-label">
                                         <i class="fa fa-pen"></i>
                                     </span>
@@ -67,11 +60,11 @@
                     <div class="container">
                         <div class="row justify-content-center">
 
-                        @if ($fotos->links())
-                            <div class="mt-4 p-4 box has-text-centered">
-                                {{ $fotos->links() }}
-                            </div>
-                        @endif
+                            @if ($poets->links())
+                                <div class="mt-4 p-4 box has-text-centered">
+                                    {{ $poets->links() }}
+                                </div>
+                            @endif
 
                         </div>
                     </div>

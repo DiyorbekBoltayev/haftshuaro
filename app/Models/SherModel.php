@@ -12,7 +12,7 @@ class SherModel extends Model
         return $this->belongsTo(ShoirModel::class,'shoir_id');
     }
     protected $fillable = [
-        'title_uz','title_uz','title_uz',
+        'title_uz','title_en','title_ru',
         'matn_uz','matn_en','matn_ru',
         'shoir_id',
 

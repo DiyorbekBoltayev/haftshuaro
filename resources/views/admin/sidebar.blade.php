@@ -15,10 +15,18 @@
                         <p>Fotogaleriya</p>
                     </a>
                 </li>
+
+                <li class="nav-item {{  request()->routeIs('admin.shoir.index') ? 'active' : '' }}">
+                    <a href="{{route('admin.shoir.index')}}">
+                        <i class="fas fa-cog"></i>
+                        <p>Shoirlar</p>
+                    </a>
+                </li>
+
                 <li class="nav-item {{  request()->routeIs('admin.sher.index') ? 'active' : '' }}">
                     <a href="{{route('admin.sher.index')}}">
                         <i class="fas fa-bars"></i>
-                        <p>Ijodkorlar</p>
+                        <p>Sherlar</p>
                     </a>
                 </li>
 
