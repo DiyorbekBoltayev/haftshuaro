@@ -29,7 +29,12 @@
                         <p>Sherlar</p>
                     </a>
                 </li>
-
+                <li class="nav-item {{  request()->routeIs('admin.kitob.index') ? 'active' : '' }}">
+                    <a href="{{route('admin.kitob.index')}}">
+                        <i class="fas fa-bars"></i>
+                        <p>Kitoblar</p>
+                    </a>
+                </li>
 
             </ul>
         </div>

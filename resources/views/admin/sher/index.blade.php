@@ -21,7 +21,7 @@
                         <tr>
                             <th class="" scope="col">#</th>
                             <th class="" scope="col"> Mavzu</th>
-                            <th class="" scope="col"> Matin</th>
+                            <th class="" scope="col"> Matn</th>
                             <th class="" scope="col"> Autor</th>
                             <th class="w-25" scope="col">Amallar</th>
                         </tr>

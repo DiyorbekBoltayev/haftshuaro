@@ -1,7 +1,6 @@
 @extends('user.master')
 @section('title','Fotogalereya')
 @section('content')
-    </section>
 <section class="header1 cid-t78K6E0k5H mbr-parallax-background" id="header1-e">
 
 
