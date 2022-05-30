@@ -17,6 +17,8 @@ use App\Http\Controllers\UserController;
 Auth::routes([
     'register'=>false
 ]);
+
+
 //front routes
 Route::name('front.')->group(function () {
     Route::get('/',[UserController::class,'bosh_sahifa'])->name('bosh_sahifa');
@@ -38,15 +40,13 @@ Route::name('front.')->group(function () {
     Route::get('/durdona_toplamlar',[UserController::class,'durdona_toplamlar'])->name('durdona_toplamlar');
     Route::get('/eng_sara',[UserController::class,'eng_sara'])->name('eng_sara');
 
-
-
 });
-
 
 
 //admin routes
 Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::resource('users',\App\Http\Controllers\AdminController::class);
 
 
 });
