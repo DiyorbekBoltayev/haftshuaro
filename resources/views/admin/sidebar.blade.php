@@ -3,7 +3,7 @@
         <div class="sidebar-content">
             <ul class="nav nav-primary">
                 <li class="nav-item {{  request()->routeIs('admin.users.index') ? 'active' : '' }}">
-                    <a href="">
+                    <a href="{{route('admin.users.index')}}">
                         <i class="fas fa-user"></i>
                         <p>Foydalanuvchilar</p>
                     </a>
