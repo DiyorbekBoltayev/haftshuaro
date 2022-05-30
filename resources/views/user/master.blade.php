@@ -33,7 +33,7 @@
             <div class="navbar-brand">
 
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7"
-                                                     href="index.html#header1-1">Haft shuaro</a></span>
+                                                     href="{{route('front.bosh_sahifa')}}">Haft shuaro</a></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +50,11 @@
                                                      data-toggle="dropdown-submenu" aria-expanded="false">
                             Bosh sahifa</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="index.html#header1-1" aria-expanded="false">Bosh
+                                                      href="{{route('front.bosh_sahifa')}}" aria-expanded="false">Bosh
                                 sahifa</a><a class="dropdown-item text-black text-primary display-4"
-                                             href="page1.html#header1-8">Sayt muallifi haqida</a><a
-                                class="dropdown-item text-black text-primary display-4" href="page2.html#header1-e"
+                                             href="{{route('front.muallif_haqida')}}">Sayt muallifi haqida</a><a
+                                class="dropdown-item text-black text-primary display-4"
+                                href="{{route('front.fotogalereya')}}"
                                 aria-expanded="false">Fotogalereya</a></div>
                     </li>
 
@@ -61,60 +62,56 @@
                                                      data-toggle="dropdown-submenu" aria-expanded="false">Adabiy
                             muhit</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="page3.html#header1-k" aria-expanded="false">Adabiy muhit</a><a
-                                class="dropdown-item text-black text-primary display-4" href="page4.html#header1-r">Adabiy
-                                muhit va adabiy ijod</a><a class="text-black dropdown-item text-primary display-4"
-                                                           href="page5.html#header1-y" aria-expanded="false">Biografik
+                                                      href="{{route('front.adabiy_muhit')}}" aria-expanded="false">Adabiy
+                                muhit</a><a
+                                class="dropdown-item text-black text-primary display-4"
+                                href="{{route('front.badiiy_ijod')}}">Adabiy
+                                muhit va badiiy ijod</a><a class="text-black dropdown-item text-primary display-4"
+                                                           href="{{route('front.biografik')}}" aria-expanded="false">Biografik
                                 ma'lumotlar</a><a class="text-black dropdown-item text-primary display-4"
-                                                  href="page6.html#header1-13" aria-expanded="false">"Haft shuaro"ning
+                                                  href="{{route('front.nusxalari')}}" aria-expanded="false">"Haft
+                                shuaro"ning
                                 nusxalari</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
                                                      data-toggle="dropdown-submenu" aria-expanded="false">G'azallar</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="page7.html#header1-1a" aria-expanded="false">G'azallar</a><a
-                                class="dropdown-item text-black text-primary display-4" href="page8.html#header1-1e">G'azallar
+                                                      href="{{route('front.gazallar')}}"
+                                                      aria-expanded="false">G'azallar</a><a
+                                class="dropdown-item text-black text-primary display-4"
+                                href="{{route('front.gazallar_tasnifi')}}">G'azallar
                                 tasnifi</a><a class="text-black dropdown-item text-primary display-4"
-                                              href="page9.html#header1-1j" aria-expanded="false">She'riy san'at</a>
+                                              href="{{route('front.sheriy_sanat')}}" aria-expanded="false">She'riy
+                                san'at</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
                                                      data-toggle="dropdown-submenu" aria-expanded="false">She'riy
                             janrlar</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="page10.html#header1-1o" aria-expanded="false">She'riy
+                                                      href="{{route('front.sheriy_janrlar')}}" aria-expanded="false">She'riy
                                 janrlar</a><a class="dropdown-item text-black text-primary display-4"
-                                              href="page11.html#header1-1s">Musammat</a><a
-                                class="text-black dropdown-item text-primary display-4" href="page12.html#header1-1w"
+                                              href="{{route('front.musammat')}}">Musammat</a><a
+                                class="text-black dropdown-item text-primary display-4" href="{{route('front.boshqa_janrlar')}}"
                                 aria-expanded="false">Boshqa janrlar</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
                                                      data-toggle="dropdown-submenu" aria-expanded="false">She'riyat</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="page13.html#header1-20"
+                                                      href="{{route('front.sheriyat')}}"
                                                       aria-expanded="false">She'riyat</a><a
-                                class="dropdown-item text-black text-primary display-4" href="page14.html#header1-24">Murodiy
-                                ijodi</a><a class="text-black dropdown-item text-primary display-4"
-                                            href="page14.html#header1-24" aria-expanded="false">Farrux ijodi</a><a
-                                class="text-black dropdown-item text-primary display-4" href="page14.html#header1-24"
-                                aria-expanded="false">Sultoniy ijodi</a><a
-                                class="text-black dropdown-item text-primary display-4" href="page14.html#header1-24"
-                                aria-expanded="false">Sodiq ijodi</a><a
-                                class="text-black dropdown-item text-primary display-4" href="page14.html#header1-24"
-                                aria-expanded="false">Sa'diy ijodi</a><a
-                                class="text-black dropdown-item text-primary display-4" href="page14.html#header1-24"
-                                aria-expanded="false">Oqil ijodi</a><a
-                                class="text-black dropdown-item text-primary display-4" href="page14.html#header1-24"
-                                aria-expanded="false">Bayoniy ijodi</a></div>
+                                class="dropdown-item text-black text-primary display-4" href="{{route('front.kimdir_ijodi','Murodiy')}}">Murodiy
+                                ijodi</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
                                                      data-toggle="dropdown-submenu" aria-expanded="false">Kutubxona</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="page15.html#header1-2g"
+                                                      href="{{route('front.kutubxona')}}"
                                                       aria-expanded="false">Kutubxona</a><a
-                                class="dropdown-item text-black text-primary display-4" href="page16.html#header1-2l">Durdona
+                                class="dropdown-item text-black text-primary display-4" href="{{route('front.durdona_toplamlar')}}">Durdona
                                 to'plmlar</a><a class="text-black dropdown-item text-primary display-4"
-                                                href="page17.html#header1-2r" aria-expanded="false">Eng sara asarlar</a>
+                                                href="{{route('front.eng_sara')}}" aria-expanded="false">Eng sara asarlar</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="#"
