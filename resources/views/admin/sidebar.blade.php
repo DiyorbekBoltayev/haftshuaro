@@ -11,7 +11,6 @@
 
                 <li class="nav-item {{  request()->routeIs('admin.barber.index') ? 'active' : '' }}">
                     <a href="#">
-{{--                    <a href="{{route('admin.barber.index')}}">--}}
                         <i class="fas fa-cog"></i>
                         <p>A</p>
                     </a>

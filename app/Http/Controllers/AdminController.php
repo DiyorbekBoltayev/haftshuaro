@@ -14,7 +14,10 @@ class AdminController extends Controller
      */
     public function index()
     {
-       //
+       $data = User::all();
+       return view('admin.users.index',[
+           'users'=>$data,
+       ]);
     }
 
     /**
