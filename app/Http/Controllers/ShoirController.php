@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SherModel;
+use App\Models\FotogaleriyaModel;
 use App\Models\ShoirModel;
 use Illuminate\Http\Request;
 
-class SherController extends Controller
+class ShoirController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,8 @@ class SherController extends Controller
      */
     public function index()
     {
-        $poems = SherModel::orderBY('created_at', 'DESC')->paginate(5);
-        $poets = ShoirModel::all();
-        return view('admin.sher.index', [
-            'poems' => $poems,
+        $poets = ShoirModel::orderBy('created_at', 'DESC')->paginate(5);
+        return view('admin.shoir.index', [
             'poets' => $poets,
         ]);
     }
@@ -30,10 +28,7 @@ class SherController extends Controller
      */
     public function create()
     {
-        $poets = ShoirModel::all();
-        return view('admin.sher.create', [
-            'poets' => $poets,
-        ]);
+        return view('admin.shoir.create');
     }
 
     /**
@@ -44,8 +39,23 @@ class SherController extends Controller
      */
     public function store(Request $request)
     {
-        SherModel::create($request->all());
-        return redirect()->route('admin.sher.index');
+        $data = new ShoirModel();
+
+        $data->name = $request->name;
+
+        $data->title_uz = $request->title_uz;
+        $data->title_en = $request->title_en;
+        $data->title_ru = $request->title_ru;
+
+        $image = $request->photo;
+        $imagename = time() . '.' . $image->getClientOriginalExtension();
+        $request->photo->move('photo', $imagename);
+        $data->photo = $imagename;
+
+        $data->save();
+        return redirect()->route('admin.shoir.index');
+
+
     }
 
     /**
@@ -67,11 +77,9 @@ class SherController extends Controller
      */
     public function edit($id)
     {
-        $poets = ShoirModel::all();
-        $poem= SherModel::find($id);
-        return view('admin.sher.edit', [
-            'poem'=>$poem,
-            'poets' => $poets,
+        $data = ShoirModel::find($id);
+        return view('admin.shoir.edit', [
+            'poet' => $data,
         ]);
     }
 
@@ -84,9 +92,23 @@ class SherController extends Controller
      */
     public function update(Request $request, $id)
     {
-        SherModel::create($request->all());
-        return redirect()->route('admin.sher.index');
+        $data = ShoirModel::find($id);
 
+        $data->name = $request->name;
+
+        $data->title_uz = $request->title_uz;
+        $data->title_en = $request->title_en;
+        $data->title_ru = $request->title_ru;
+
+        if ($request->photo != null) {
+            $image = $request->photo;
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            $request->photo->move('photo', $imagename);
+            $data->photo = $imagename;
+        }
+
+        $data->save();
+        return redirect()->route('admin.shoir.index');
     }
 
     /**
@@ -97,8 +119,8 @@ class SherController extends Controller
      */
     public function destroy($id)
     {
-        $data = SherModel::find($id);
+        $data = ShoirModel::find($id);
         $data->delete();
-        return redirect()->route('admin.sher.index');
+        return redirect()->route('admin.shoir.index');
     }
 }

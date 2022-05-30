@@ -21,7 +21,8 @@
                     @endif
 
 
-                    <form action="{{route('admin.photos.store')}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <form action="{{route('admin.photos.store')}}" method="POST" accept-charset="UTF-8"
+                          enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group">
@@ -32,7 +33,7 @@
                         <div class="form-group">
                             <label for="barbers"> Mavzusi En </label>
                             <input type="text" name="header_en" value="{{old('header_en')}}" class="form-control"
-                                   id="header_en" placeholder="Mavzu inglischa" required>
+                                   id="header_en" placeholder="Mavzu inglizcha" required>
                         </div>
                         <div class="form-group">
                             <label for="barbers"> Mavzusi Ru </label>
@@ -43,7 +44,7 @@
 
                         <div class="form-group">
                             <label for="description">Matni Uz</label>
-                            <textarea class="form-control" name="text_uz" id="title1_uz" rows="10" >
+                            <textarea class="form-control" name="text_uz" id="title1_uz" rows="10">
                                 {{old('text_uz')}}
                             </textarea>
                         </div>
@@ -55,16 +56,16 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Matni Ru</label>
-                            <textarea class="form-control" name="text_ru" id="title1_ru" rows="10" >
+                            <textarea class="form-control" name="text_ru" id="title1_ru" rows="10">
                                 {{old('text_ru')}}
                             </textarea>
                         </div>
 
 
-{{--        //Rasm1--}}
+                        {{--        //Rasm1--}}
                         <div class="form-floating mb-3">
                             <label class="text text-primary" for="floatingInput">Birinchi rasmni yuklang</label>
-                            <input type="file" name="photo1" class="form-control " id="floatingInput" required="" >
+                            <input type="file" name="photo1" class="form-control " id="floatingInput" required="">
                         </div>
 
 
@@ -76,7 +77,7 @@
                         <div class="form-group">
                             <label for="title1_uz"> Rasm muallifi En </label>
                             <input type="text" name="outor1_en" value="{{old('outor1_en')}}"
-                                   class="form-control" id="outor1_en" placeholder=" Rasm muallifi inglischa " required>
+                                   class="form-control" id="outor1_en" placeholder=" Rasm muallifi inglizcha " required>
                         </div>
                         <div class="form-group">
                             <label for="title1_uz"> Rasm muallifi Ru </label>
@@ -85,10 +86,10 @@
                         </div>
 
 
-{{--           //Rasm2--}}
+                        {{--           //Rasm2--}}
                         <div class="form-floating mb-3">
                             <label class="text text-primary" for="floatingInput">Ikkinchi rasmni yuklang</label>
-                            <input type="file" name="photo2" class="form-control " id="floatingInput" required="" >
+                            <input type="file" name="photo2" class="form-control " id="floatingInput" required="">
                         </div>
 
 
@@ -100,7 +101,7 @@
                         <div class="form-group">
                             <label for="title1_uz"> Rasm muallifi En </label>
                             <input type="text" name="outor2_en" value="{{old('outor2_en')}}"
-                                   class="form-control" id="outor2_en" placeholder=" Rasm muallifi inglischa " required>
+                                   class="form-control" id="outor2_en" placeholder=" Rasm muallifi inglizcha " required>
                         </div>
                         <div class="form-group">
                             <label for="title1_uz"> Rasm muallifi Ru </label>
