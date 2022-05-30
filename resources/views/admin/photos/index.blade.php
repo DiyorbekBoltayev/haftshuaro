@@ -43,33 +43,21 @@
                                 </td>
                                 <td>{{$foto->outor2_uz}}</td>
 
-{{--                                <td class="col-2">--}}
-{{--                                    <form action="{{route('admin.barber.destroy',$barber->id)}}" method="POST">--}}
-{{--                                        <a title="Ko'rish" class="btn btn-primary btn-sm active"--}}
-{{--                                           href="{{route('admin.barber.show',$barber->id)}}">--}}
-{{--                                    <span class="btn-label">--}}
-{{--                                        <i class="fa fa-eye"></i>--}}
-{{--                                    </span>--}}
+                                <td class="col-2">
+                                    <form action="{{ route('admin.photos.destroy',$foto->id) }}" method="POST">
+                                        <a class="btn btn-warning btn-sm" href="{{ route('admin.photos.edit',$foto->id) }}">
+                                    <span class="btn-label">
+                                        <i class="fa fa-pen"></i>
+                                    </span>
 
-{{--                                        </a>--}}
-{{--                                        <a title="Tahrirlash" class="btn btn-warning btn-sm active"--}}
-{{--                                           href="{{route('admin.barber.edit',$barber->id)}}">--}}
-{{--                                    <span class="btn-label">--}}
-{{--                                        <i class="fa fa-pen"></i>--}}
-
-{{--                                    </span>--}}
-
-{{--                                        </a>--}}
-{{--                                        <a href="{{url('barber',$barber->id)}}">--}}
-{{--                                            @csrf--}}
-{{--                                            @method('DELETE')--}}
-{{--                                            <button title="O'chirish" type="submit"--}}
-{{--                                                    class="btn btn-danger active btn-sm"><span class="btn-label">--}}
-{{--                                        <i class="fa fa-trash"></i>--}}
-{{--                                    </span></button>--}}
-{{--                                        </a>--}}
-{{--                                    </form>--}}
-{{--                                </td>--}}
+                                        </a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm"><span class="btn-label">
+                                        <i class="fa fa-trash"></i>
+                                    </span></button>
+                                    </form>
+                                </td>
                             </tr>
                         @endforeach
 
