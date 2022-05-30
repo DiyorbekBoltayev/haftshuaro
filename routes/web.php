@@ -30,6 +30,7 @@ Route::name('front.')->group(function () {
 Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('users',\App\Http\Controllers\AdminController::class);
+    Route::resource('photos',\App\Http\Controllers\FotoController::class);
 
 
 });

@@ -10,9 +10,9 @@
                 </li>
 
                 <li class="nav-item {{  request()->routeIs('admin.barber.index') ? 'active' : '' }}">
-                    <a href="#">
+                    <a href="{{route('admin.photos.index')}}">
                         <i class="fas fa-cog"></i>
-                        <p>A</p>
+                        <p>Fotogaleriya</p>
                     </a>
                 </li>
 

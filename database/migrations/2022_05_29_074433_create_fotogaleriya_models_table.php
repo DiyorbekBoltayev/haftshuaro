@@ -18,20 +18,16 @@ return new class extends Migration
             $table->string('header_uz');
             $table->string('header_en');
             $table->string('header_ru');
-            $table->string('text_uz');
-            $table->string('text_en');
-            $table->string('text_ru');
+            $table->text('text_uz');
+            $table->text('text_en');
+            $table->text('text_ru');
             $table->string('photo1');
-            $table->string('title1_uz');
-            $table->string('title1_en');
-            $table->string('title1_ru');
+
             $table->string('outor1_uz');
             $table->string('outor1_en');
             $table->string('outor1_ru');
             $table->string('photo2');
-            $table->string('title2_uz');
-            $table->string('title2_en');
-            $table->string('title2_ru');
+
             $table->string('outor2_uz');
             $table->string('outor2_en');
             $table->string('outor2_ru');
