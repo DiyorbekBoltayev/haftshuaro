@@ -48,6 +48,7 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('users',\App\Http\Controllers\AdminController::class);
     Route::resource('photos',\App\Http\Controllers\FotoController::class);
+    Route::resource('sher',\App\Http\Controllers\SherController::class);
 
 
 });
