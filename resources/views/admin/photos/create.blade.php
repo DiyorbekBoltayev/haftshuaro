@@ -61,7 +61,7 @@
                         </div>
 
 
-{{--             //Rasm1--}}
+{{--        //Rasm1--}}
                         <div class="form-floating mb-3">
                             <label class="text text-primary" for="floatingInput">Birinchi rasmni yuklang</label>
                             <input type="file" name="photo1" class="form-control " id="floatingInput" required="" >

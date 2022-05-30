@@ -4,7 +4,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-10"><h1 class="card-title">Sartaroshni tahrirlash</h1></div>
+                    <div class="col-10"><h1 class="card-title"> Rasm tahrirlash </h1></div>
                 </div>
                 <hr>
                 <div class="card-body">
@@ -21,39 +21,102 @@
                     @endif
 
 
-                    <form action="{{route('admin.barber.update',$barbers->id)}}" method="POST" accept-charset="UTF-8">
+                    <form action="{{route('admin.photos.update',$foto->id)}}" method="POST" accept-charset="UTF-8">
                         @method('PUT')
                         @csrf
+
                         <div class="form-group">
-                            <label for="header_ru">Sartarosh nomi</label>
-                            <input type="text" name="barber_name" value="{{$barbers->barber_name}}" class="form-control"
-                                   id="header_ru" placeholder="Barber Name">
+                            <label for="barbers"> Mavzusi Uzbek</label>
+                            <input type="text" name="header_uz" value="{{ $foto->header_uz }}" class="form-control"
+                                   id="header_uz" placeholder="Mavzu uzbekcha" required>
                         </div>
                         <div class="form-group">
-                            <label for="header_ru">Telefon raqami </label>
-                            <input type="tel" name="barber_phone_number" value="{{$barbers->barber_phone_number}}"
-                                   class="form-control" id="header_ru" placeholder="Barber Phone">
+                            <label for="barbers"> Mavzusi En </label>
+                            <input type="text" name="header_en" value="{{ $foto->header_en }}" class="form-control"
+                                   id="header_en" placeholder="Mavzu inglischa" required>
                         </div>
                         <div class="form-group">
-                            <label for="header_ru">Manzili</label>
-                            <input type="text" name="barber_home_adress" value="{{$barbers->barber_home_adress}}"
-                                   class="form-control" id="header_ru" placeholder="Hom Adress">
+                            <label for="barbers"> Mavzusi Ru </label>
+                            <input type="text" name="header_ru" value="{{ $foto->header_ru }}" class="form-control"
+                                   id="header_ru" placeholder="Mavzu ruscha" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="description">Matni Uz</label>
+                            <textarea class="form-control" name="text_uz" id="title1_uz" rows="10" >
+                                {{ $foto->text_uz }}
+                            </textarea>
                         </div>
                         <div class="form-group">
-                            <label for="header_ru">Passport Seriyasi</label>
-                            <input type="taxt" name="passport_number" value="{{$barbers->passport_number}}"
-                                   class="form-control" id="header_ru" placeholder="AA 0000000">
+                            <label for="description">Matni En</label>
+                            <textarea class="form-control" name="text_en" id="title1_en" rows="10">
+                                {{ $foto->text_en }}
+                            </textarea>
                         </div>
                         <div class="form-group">
-                            <label for="header_ru">Kelish vaqti</label>
-                            <input type="time" min='09:00' max='22:00' name="start_time"
-                                   value="{{$barbers->start_time}}" class="form-control" id="start_time" required>
+                            <label for="description">Matni Ru</label>
+                            <textarea class="form-control" name="text_ru" id="title1_ru" rows="10" >
+                                {{ $foto->text_ru }}
+                            </textarea>
+                        </div>
+
+
+             {{-- //Rasm1--}}
+                        <div class="form-floating mb-3">
+                            <label class="text text-primary" for="floatingInput">Birinchi rasm </label>
+                            <img style="width: 200px; height: 200px;" src="/photo1/{{$foto->photo1}}" alt="Bu rasm">
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <label class="text text-primary" for="floatingInput"> Yangi birinchi rasmni yuklang</label>
+                            <input type="file" name="photo1" class="form-control " id="floatingInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title1_uz"> Rasm muallifi Uz </label>
+                            <input type="text" name="outor1_uz" value="{{ $foto->outor1_uz }}"
+                                   class="form-control" id="outor1_uz" placeholder=" Rasm muallifi uzbekcha " required>
                         </div>
                         <div class="form-group">
-                            <label for="header_ru">Ketish vaqti</label>
-                            <input type="time" min='09:00' max='22:00' name="end_time" value="{{$barbers->end_time}}"
-                                   class="form-control" id="end_time" required>
+                            <label for="title1_uz"> Rasm muallifi En </label>
+                            <input type="text" name="outor1_en" value="{{ $foto->outor1_en }}"
+                                   class="form-control" id="outor1_en" placeholder=" Rasm muallifi inglischa " required>
                         </div>
+                        <div class="form-group">
+                            <label for="title1_uz"> Rasm muallifi Ru </label>
+                            <input type="text" name="outor1_ru" value="{{ $foto->outor1_ru }}"
+                                   class="form-control" id="outor1_ru" placeholder=" Rasm muallifi ruscha " required>
+                        </div>
+
+
+            {{--  //Rasm2--}}
+                        <div class="form-floating mb-3">
+                            <label class="text text-primary" for="floatingInput">Ikkinchi rasmn </label>
+                            <img style="width: 200px; height: 200px;" src="/photo2/{{$foto->photo2}}" alt="Bu rasm">
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <label class="text text-primary" for="floatingInput"> Yangi ikkinchi rasmni yuklang</label>
+                            <input type="file" name="photo2" class="form-control " id="floatingInput" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title1_uz"> Rasm muallifi Uz </label>
+                            <input type="text" name="outor2_uz" value="{{ $foto->outor2_uz }}"
+                                   class="form-control" id="outor2_uz" placeholder=" Rasm muallifi uzbekcha " required>
+                        </div>
+                        <div class="form-group">
+                            <label for="title1_uz"> Rasm muallifi En </label>
+                            <input type="text" name="outor2_en" value="{{ $foto->outor2_en }}"
+                                   class="form-control" id="outor2_en" placeholder=" Rasm muallifi inglischa " required>
+                        </div>
+                        <div class="form-group">
+                            <label for="title1_uz"> Rasm muallifi Ru </label>
+                            <input type="text" name="outor2_ru" value="{{ $foto->outor2_ru }}"
+                                   class="form-control" id="outor2_ru" placeholder=" Rasm muallifi ruscha " required>
+                        </div>
+
 
                         <button type="submit" id="alert" class="btn btn-primary" onclick="end()"> Saqlash</button>
                         <input type="reset" class="btn btn-danger" value="Tozalash">
