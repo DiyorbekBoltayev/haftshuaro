@@ -21,7 +21,7 @@
                     @endif
 
 
-                    <form action="{{route('admin.photos.update',$foto->id)}}" method="POST" accept-charset="UTF-8">
+                    <form action="{{route('admin.photos.update',$foto->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
 

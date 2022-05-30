@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FotogaleriyaModel;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -14,7 +15,11 @@ class UserController extends Controller
     }
     protected function fotogalereya()
     {
-        return view('user.bosh_sahifa.fotogalereya');
+        $data=FotogaleriyaModel::all();
+
+        return view('user.bosh_sahifa.fotogalereya',[
+            'data'=>$data
+        ]);
     }
     public function adabiy_muhit(){
         return view('user.adabiy_muhit.adabiy_muhit');
