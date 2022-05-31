@@ -17,7 +17,8 @@ use App\Http\Controllers\UserController;
 Auth::routes([
     'register'=>false
 ]);
-
+//set language
+Route::get('locale/{lang}',[\App\Http\Controllers\LocalizationController::class,'setLang']);
 
 //front routes
 Route::name('front.')->group(function () {
@@ -36,7 +37,7 @@ Route::name('front.')->group(function () {
     Route::get('/boshqa_janrlar',[UserController::class,'boshqa_janrlar'])->name('boshqa_janrlar');
     Route::get('/sheriyat',[UserController::class,'sheriyat'])->name('sheriyat');
     Route::get('/{kimdir}_ijodi',[UserController::class,'kimdir_ijodi'])->name('kimdir_ijodi');
-    Route::get('/kutubxona',[UserController::class,'kutubxona'])->name('kutubxona');
+    Route::get('/kutubxonam',[UserController::class,'kutubxonam'])->name('kutubxonam');
     Route::get('/durdona_toplamlar',[UserController::class,'durdona_toplamlar'])->name('durdona_toplamlar');
     Route::get('/eng_sara',[UserController::class,'eng_sara'])->name('eng_sara');
 

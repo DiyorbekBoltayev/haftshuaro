@@ -57,7 +57,7 @@ class UserController extends Controller
     public function kimdir_ijodi(){
         return view('user.sheriyat.kimdir_ijodi');
     }
-    public function kutubxona(){
+    public function kutubxonam(){
         return view('user.kutubxona.kutubxona');
     }
     public function durdona_toplamlar(){
