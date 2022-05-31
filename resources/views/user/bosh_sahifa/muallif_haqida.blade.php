@@ -1,5 +1,7 @@
 @extends('user.master')
-@section('title','Sayt mualliflari haqida')
+@section('title')
+    @lang('public.t_1_2')
+@endsection
 @section('content')
     <section class="header1 cid-t78HndRFR7 mbr-parallax-background" id="header1-8">
 
@@ -9,8 +11,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-7">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Sayt mulliflari
-                            haqida&nbsp;</strong></h1>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>@lang('public.t_1_2')</strong></h1>
 
 
                 </div>

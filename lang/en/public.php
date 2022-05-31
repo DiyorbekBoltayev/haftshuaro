@@ -24,5 +24,9 @@ return [
     "kutubxona"=>"Library",
     "kutubxona2"=>"Pearl collections",
     "kutubxona3"=>"The best works",
+
+    "t_1_1"=>"Studying the national and spiritual heritage of the Khorezm oasis of the XIX century through the study of the complex \"Haft Shuaro\"",
+    "t_1_2"=>"About site authors",
+    "t_1_3"=>"Photo gallery",
 ]
 ?>
