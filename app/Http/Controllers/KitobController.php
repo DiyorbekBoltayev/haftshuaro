@@ -138,6 +138,10 @@ class KitobController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data=KutbxonaModel::find($id);
+
+        $data->delete();
+
+        return redirect()->route('admin.kitob.index');
     }
 }

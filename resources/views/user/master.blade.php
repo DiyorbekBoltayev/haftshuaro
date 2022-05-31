@@ -114,13 +114,15 @@
                                                 href="{{route('front.eng_sara')}}" aria-expanded="false">Eng sara asarlar</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="#"
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="#"
                                                      aria-expanded="false" data-toggle="dropdown-submenu"><span
                                 class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>UZ</a>
-                        <div class="dropdown-menu"><a class="text-black dropdown-item display-4" href="#"
+                        <div class="dropdown-menu">
+                            <a class="text-black dropdown-item display-4" href="#"
                                                       aria-expanded="false"><span
-                                    class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>RU</a><a
-                                class="text-black dropdown-item display-4" href="#" aria-expanded="false"><span
+                                    class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>RU</a>
+                            <a class="text-black dropdown-item display-4" href="#" aria-expanded="false"><span
                                     class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>EN</a>
                         </div>
                     </li>
