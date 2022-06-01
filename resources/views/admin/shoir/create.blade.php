@@ -65,6 +65,13 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+
+    <script>
+        CKEDITOR.replace( 'title_uz' );
+        CKEDITOR.replace( 'title_ru' );
+        CKEDITOR.replace( 'title_en' );
+    </script>
 @endsection
 
 

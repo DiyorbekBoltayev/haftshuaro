@@ -44,7 +44,7 @@
 
                         <div class="form-group">
                             <label for="description">Matni Uz</label>
-                            <textarea class="form-control" name="matn_uz" id="matn_uz"
+                            <textarea class="form-control"  name="matn_uz" id="matn_uz"
                                       rows="10">{{old('matn_uz')}}</textarea>
                         </div>
                         <div class="form-group">
@@ -78,6 +78,12 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'matn_uz' );
+        CKEDITOR.replace( 'matn_ru' );
+        CKEDITOR.replace( 'matn_en' );
+    </script>
 @endsection
 
 

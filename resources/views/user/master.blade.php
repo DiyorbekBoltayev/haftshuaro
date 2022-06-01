@@ -89,9 +89,12 @@
                                                      data-toggle="dropdown-submenu" aria-expanded="false">@lang('public.sheriyat')</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
                                                       href="{{route('front.sheriyat')}}"
-                                                      aria-expanded="false">@lang('public.sheriyat')</a><a
-                                class="dropdown-item text-black text-primary display-4" href="{{route('front.kimdir_ijodi','Murodiy')}}">Murodiy
+                                                      aria-expanded="false">@lang('public.sheriyat')</a>
+                            @foreach($shoirlar as $sh)
+                            <a
+                                class="dropdown-item text-black text-primary display-4" href="{{route('front.kimdir_ijodi',$sh->id)}}">{{$sh->name}}
                                 @lang('public.sheriyat2')</a>
+                            @endforeach
                         </div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"

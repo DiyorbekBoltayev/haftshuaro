@@ -4,21 +4,27 @@ namespace App\Http\Controllers;
 
 use App\Models\FotogaleriyaModel;
 use App\Models\KutbxonaModel;
+use App\Models\SherModel;
+use App\Models\ShoirModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
     public function bosh_sahifa(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
 
         return view('user.bosh_sahifa.bosh_sahifa',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function muallif_haqida(){
         $lang=Session::get('locale');
-        return view('user.bosh_sahifa.muallif_haqida');
+        return view('user.bosh_sahifa.muallif_haqida',[
+            'lang'=>$lang
+        ]);
     }
     protected function fotogalereya()
     {
@@ -32,31 +38,45 @@ class UserController extends Controller
     }
     public function adabiy_muhit(){
         $lang=Session::get('locale');
-        return view('user.adabiy_muhit.adabiy_muhit');
+        return view('user.adabiy_muhit.adabiy_muhit',[
+            'lang'=>$lang
+        ]);
     }
     public function adabiy_ijod(){
         $lang=Session::get('locale');
-        return view('user.adabiy_muhit.adabiy_ijod');
+        return view('user.adabiy_muhit.adabiy_ijod',[
+            'lang'=>$lang
+        ]);
     }
     public function biografik(){
         $lang=Session::get('locale');
-        return view('user.adabiy_muhit.biografik');
+        return view('user.adabiy_muhit.biografik',[
+            'lang'=>$lang
+        ]);
     }
     public function nusxalari(){
         $lang=Session::get('locale');
-        return view('user.adabiy_muhit.nusxalari');
+        return view('user.adabiy_muhit.nusxalari',[
+            'lang'=>$lang
+        ]);
     }
     public function gazallar(){
         $lang=Session::get('locale');
-        return view('user.gazallar.gazallar');
+        return view('user.gazallar.gazallar',[
+            'lang'=>$lang
+        ]);
     }
     public function gazallar_tasnifi(){
         $lang=Session::get('locale');
-        return view('user.gazallar.gazallar_tasnifi');
+        return view('user.gazallar.gazallar_tasnifi',[
+            'lang'=>$lang
+        ]);
     }
     public function sheriy_sanat(){
         $lang=Session::get('locale');
-        return view('user.gazallar.sheriy_sanat');
+        return view('user.gazallar.sheriy_sanat',[
+            'lang'=>$lang
+        ]);
     }
     public function sheriy_janrlar(){
         $lang=Session::get('locale');
@@ -79,11 +99,21 @@ class UserController extends Controller
     }
     public function sheriyat(){
         $lang=Session::get('locale');
-        return view('user.sheriyat.sheriyat');
+        return view('user.sheriyat.sheriyat',[
+            'lang'=>$lang
+        ]);
     }
-    public function kimdir_ijodi(){
+    public function kimdir_ijodi($id){
+        $shoir=ShoirModel::find($id);
+        $shoirlar=ShoirModel::all();
+        $sherlar=SherModel::all()->where("shoir_id",$shoir->id);
         $lang=Session::get('locale');
-        return view('user.sheriyat.kimdir_ijodi');
+        return view('user.sheriyat.kimdir_ijodi',[
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar,
+            'shoir'=>$shoir,
+            'sherlar'=>$sherlar
+        ]);
     }
     public function kutubxonam(){
         $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
