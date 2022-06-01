@@ -17,6 +17,7 @@ use App\Http\Controllers\UserController;
 Auth::routes([
     'register'=>false
 ]);
+
 //set language
 Route::get('locale/{lang}',[\App\Http\Controllers\LocalizationController::class,'setLang']);
 
