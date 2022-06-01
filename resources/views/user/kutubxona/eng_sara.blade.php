@@ -101,7 +101,6 @@
                     @endif
                 @endforeach
 
-
                 <div class="container">
                     <div class="row justify-content-center">
 
@@ -113,7 +112,7 @@
 
                     </div>
                 </div>
-
+                <span style="color: white">tt</span>
 
             </div>
         </div>
