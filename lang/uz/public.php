@@ -29,6 +29,8 @@ return [
     "t_1_1"=>"“Haft shuaro” majmuasini o'rganish orqali XIX asr Xorazm vohasining milliy-ma'naviy merosini tadqiq qilish ",
     "t_1_2"=>"Sayt mulliflari haqida",
     "t_1_3"=>"Fotogalereya",
+
+    "t_2_1"=>"XX asr boshidagi Xorazm madaniy- adabiy muhitining asosiy xususiyatlari",
 //davomi borrrrr
 
 
