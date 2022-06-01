@@ -21,86 +21,112 @@ class UserController extends Controller
         ]);
     }
     public function muallif_haqida(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.bosh_sahifa.muallif_haqida',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     protected function fotogalereya()
     {
+        $shoirlar=ShoirModel::all();
         $data=FotogaleriyaModel::all();
         $lang=Session::get('locale');
 
         return view('user.bosh_sahifa.fotogalereya',[
             'data'=>$data,
             'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function adabiy_muhit(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.adabiy_muhit.adabiy_muhit',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function adabiy_ijod(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.adabiy_muhit.adabiy_ijod',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function biografik(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.adabiy_muhit.biografik',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function nusxalari(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.adabiy_muhit.nusxalari',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function gazallar(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.gazallar.gazallar',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function gazallar_tasnifi(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.gazallar.gazallar_tasnifi',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function sheriy_sanat(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.gazallar.sheriy_sanat',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function sheriy_janrlar(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.sheriy_janrlar.sheriy_janrlar',[
             'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function musammat(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.sheriy_janrlar.musammat',[
             'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function boshqa_janrlar(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.sheriy_janrlar.boshqa_janrlar',[
             'lang'=>$lang,
+            'shoirlar'=>$shoirlar
 
         ]);
     }
     public function sheriyat(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.sheriyat.sheriyat',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function kimdir_ijodi($id){
@@ -116,28 +142,34 @@ class UserController extends Controller
         ]);
     }
     public function kutubxonam(){
+        $shoirlar=ShoirModel::all();
         $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
         $lang=Session::get('locale');
         return view('user.kutubxona.kutubxona',[
             'data'=>$data,
             'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function durdona_toplamlar(){
+        $shoirlar=ShoirModel::all();
         $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
         $lang=Session::get('locale');
         return view('user.kutubxona.durdona_toplamlar',[
             'data'=>$data,
             'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
 
     }
     public function eng_sara(){
+        $shoirlar=ShoirModel::all();
         $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
         $lang=Session::get('locale');
         return view('user.kutubxona.eng_sara',[
             'data'=>$data,
             'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
 }
