@@ -31,6 +31,7 @@ return [
     "t_1_3"=>"Fotogalereya",
 
     "t_2_1"=>"XX asr boshidagi Xorazm madaniy- adabiy muhitining asosiy xususiyatlari",
+    "t_2_2"=>"Adabiy muhit va badiiy ijod qirralari",
 //davomi borrrrr
 
 

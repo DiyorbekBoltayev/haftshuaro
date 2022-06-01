@@ -38,7 +38,11 @@ class UserController extends Controller
         ]);
     }
     public function adabiy_ijod(){
-        return view('user.adabiy_muhit.adabiy_ijod');
+        $lang=Session::get('locale');
+
+        return view('user.adabiy_muhit.adabiy_ijod',[
+            'lang'=>$lang
+        ]);
     }
     public function biografik(){
         return view('user.adabiy_muhit.biografik');

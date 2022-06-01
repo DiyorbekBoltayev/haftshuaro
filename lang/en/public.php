@@ -30,6 +30,7 @@ return [
     "t_1_3"=>"Photo gallery",
 
     "t_2_1"=>"The main features of the cultural and literary environment of Khorezm in the early twentieth century",
+    "t_2_2"=>"Literary environment and aspects of artistic creation",
 
 ]
 ?>
