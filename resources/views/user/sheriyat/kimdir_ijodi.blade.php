@@ -15,10 +15,10 @@
                             @if($lang=="uz")
                             ijodi
                             @endif
-                            @if($lang=="uz")
+                            @if($lang=="en")
                                 creature
                             @endif
-                            @if($lang=="uz")
+                            @if($lang=="ru")
                                 творчество
                             @endif
                         </strong></h1>
@@ -78,19 +78,19 @@
 
                                 @endif
                             </strong></h5>
-                        <div><strong>
+                        <div> <span class="html-legend"><strong class="text">
                                 @if($lang=="uz")
-                                    {{$sherr->matn_uz}}
+                                    {!!  $sherr->matn_uz!!}
                                 @endif
                                 @if($lang=="ru")
-                                    {{$sherr->matn_ru}}
+                                    {!! $sherr->matn_ru !!}
 
                                 @endif
                                 @if($lang=="en")
-                                    {{$sherr->matn_en}}
+                                    {!! $sherr->matn_en !!}
 
                                 @endif
-                            </strong></div>
+                            </strong></span></div>
                     </blockquote>
                 </div>
             </div>

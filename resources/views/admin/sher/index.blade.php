@@ -33,7 +33,7 @@
                                     <tr>
                                         <td class="col-1">{{($poems->currentpage()-1)*($poems->perpage())+$ind+1}}</td>
                                         <td>{{$poem->title_uz}}</td>
-                                        <td>{{$poem->matn_uz}}</td>
+                                        <td>Ko'rish uchun edit tugmasini bosing</td>
                                         <td>{{$poet->name}}</td>
 
 

@@ -44,7 +44,7 @@ class SherController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+
         SherModel::create($request->all());
         return redirect()->route('admin.sher.index');
     }
@@ -84,8 +84,8 @@ class SherController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        SherModel::create($request->all());
+    {  $poem=SherModel::find($id);
+        $poem->update($request->all());
         return redirect()->route('admin.sher.index');
 
     }

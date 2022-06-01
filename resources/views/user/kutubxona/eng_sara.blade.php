@@ -62,17 +62,17 @@
                                     </h6>
                                     <p class="mbr-text mbr-fonts-style mt-3 display-7">
                                         @if( $lang == "uz" )
-                                            {{$dat->desc_uz}}
+                                            {!! $dat->desc_uz !!}
                                         @endif
                                         @if( $lang == "en" )
-                                            {{$dat->desc_en}}
+                                            {!! $dat->desc_en !!}
                                         @endif
                                         @if( $lang == "ru" )
-                                            {{$dat->desc_ru}}
+                                            {!! $dat->desc_ru !!}
                                         @endif
                                     </p>
                                 </div>
-                                <div class="mbr-section-btn item-footer mt-2"><a href=""
+                                <div class="mbr-section-btn item-footer mt-2"><a href="{{route('front.yukla',$dat->id)}}"
                                                                                  class="btn item-btn btn-primary display-7">
                                         <span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>
                                         @if( $lang == "uz" )

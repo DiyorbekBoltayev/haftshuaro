@@ -30,9 +30,9 @@
                         @foreach($data as $ind=>$poet)
                             <tr>
                                 <td class="col-1">{{($data->currentpage()-1)*($data->perpage())+$ind+1}}</td>
-                                <td>{{$poet->name_uz}}</td>
-                                <td>{{$poet->desc_uz}}</td>
-                                <td>{{$poet->outor_uz}}</td>
+                                <td>{!!$poet->name_uz  !!}</td>
+                                <td>{!! $poet->desc_uz !!}</td>
+                                <td>{!! $poet->outor_uz !!}</td>
 
                                 <td class="col-2">
                                     <form action="{{ route('admin.kitob.destroy',$poet->id) }}" method="POST">
