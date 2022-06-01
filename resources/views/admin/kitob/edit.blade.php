@@ -100,6 +100,13 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+
+    <script>
+        CKEDITOR.replace( 'desc_uz' );
+        CKEDITOR.replace( 'desc_ru' );
+        CKEDITOR.replace( 'desc_en' );
+    </script>
 @endsection
 
 

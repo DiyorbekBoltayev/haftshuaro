@@ -31,7 +31,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg">
-                    <div class="text-wrapper">
+                        @if($lang=="uz")
+                              <div class="text-wrapper">
                         <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5">
                             <strong>Image with Description</strong></h3>
                         <p class="mbr-text mbr-fonts-style display-7">
@@ -40,6 +41,29 @@
                             description below your image, or on the side. If you want to hide some of the text fields,
                             open the Block parameters, and uncheck relevant options.</p>
                     </div>
+                         @endif
+                        @if($lang=="ru")
+                            <div class="text-wrapper">
+                                <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5">
+                                    <strong>Image with Description</strong></h3>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Use Mobirise website building software to create multiple sites for commercial and
+                                    non-profit projects. Click on the image in this block to replace it. You can add a
+                                    description below your image, or on the side. If you want to hide some of the text fields,
+                                    open the Block parameters, and uncheck relevant options.</p>
+                            </div>
+                        @endif
+                        @if($lang=="en")
+                            <div class="text-wrapper">
+                                <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5">
+                                    <strong>Image with Description</strong></h3>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Use Mobirise website building software to create multiple sites for commercial and
+                                    non-profit projects. Click on the image in this block to replace it. You can add a
+                                    description below your image, or on the side. If you want to hide some of the text fields,
+                                    open the Block parameters, and uncheck relevant options.</p>
+                            </div>
+                        @endif
                 </div>
             </div>
         </div>

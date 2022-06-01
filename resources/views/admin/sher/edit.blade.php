@@ -79,5 +79,11 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'matn_uz' );
+        CKEDITOR.replace( 'matn_ru' );
+        CKEDITOR.replace( 'matn_en' );
+    </script>
 @endsection
 

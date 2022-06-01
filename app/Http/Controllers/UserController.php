@@ -4,16 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\FotogaleriyaModel;
 use App\Models\KutbxonaModel;
+use App\Models\SherModel;
+use App\Models\ShoirModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
     public function bosh_sahifa(){
+        $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
 
         return view('user.bosh_sahifa.bosh_sahifa',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar
         ]);
     }
     public function muallif_haqida(){
@@ -99,10 +103,16 @@ class UserController extends Controller
             'lang'=>$lang
         ]);
     }
-    public function kimdir_ijodi(){
+    public function kimdir_ijodi($id){
+        $shoir=ShoirModel::find($id);
+        $shoirlar=ShoirModel::all();
+        $sherlar=SherModel::all()->where("shoir_id",$shoir->id);
         $lang=Session::get('locale');
         return view('user.sheriyat.kimdir_ijodi',[
-            'lang'=>$lang
+            'lang'=>$lang,
+            'shoirlar'=>$shoirlar,
+            'shoir'=>$shoir,
+            'sherlar'=>$sherlar
         ]);
     }
     public function kutubxonam(){

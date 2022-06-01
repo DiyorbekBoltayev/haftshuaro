@@ -1,4 +1,7 @@
 @extends('user.master')
+@section('title')
+    @lang('public.t_1_3')
+@endsection
 @section('title','Biografik ma\'lumotlar')
 @section('content')
 

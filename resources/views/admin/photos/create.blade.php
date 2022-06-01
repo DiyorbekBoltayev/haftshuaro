@@ -118,6 +118,12 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'title1_uz' );
+        CKEDITOR.replace( 'title1_ru' );
+        CKEDITOR.replace( 'title1_en' );
+    </script>
 @endsection
 
 

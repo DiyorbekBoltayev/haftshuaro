@@ -12,7 +12,7 @@ class ShoirModel extends Model
         return $this->hasMany(SherModel::class);
     }
     protected $fillable = [
-      'name_uz','name_en','name_ru',
+      'name',
       'title-uz','title-en','title-ru',
       'photo'
     ];

@@ -1,6 +1,6 @@
 @extends('user.master')
 @section('title')
-    @lang('public.t_1_1')
+   Haft shuaro
 @endsection
 @section('content')
     <section class="header1 cid-t77BG6a9x3 mbr-fullscreen mbr-parallax-background" id="header1-1">
@@ -41,7 +41,6 @@
                                     <br>
                                 </p>
                                 @endif
-
                                 @if($lang=="ru")
                                         <p class="mbr-text mbr-fonts-style display-5">Этот сайт исследует комплекс Хафт Шуаро.
                                             изучить национальное и духовное наследие Хорезмского оазиса XIX века и (узбекский, русский,
