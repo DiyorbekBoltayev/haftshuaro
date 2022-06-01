@@ -146,18 +146,19 @@
 
 
                             </p>
-                            <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="{{route('front.gazallar_tasnifi')}}">
-                                <span class="mobi-mbri mobi-mbri-align-left mbr-iconfont mbr-iconfont-btn"></span>
-                                @if( $lang == "uz" )
-                                    Batafsil
-                                @endif
-                                @if( $lang == "en" )
-                                    Read more
-                                @endif
-                                @if( $lang == "ru" )
-                                    Читать далее
+                            <div class="mbr-section-btn"><a class="btn btn-primary display-4"
+                                                            href="{{route('front.gazallar_tasnifi')}}">
+                                    <span class="mobi-mbri mobi-mbri-align-left mbr-iconfont mbr-iconfont-btn"></span>
+                                    @if( $lang == "uz" )
+                                        Batafsil
                                     @endif
-                                    </a>
+                                    @if( $lang == "en" )
+                                        Read more
+                                    @endif
+                                    @if( $lang == "ru" )
+                                        Читать далее
+                                    @endif
+                                </a>
                             </div>
                         </div>
                     </div>

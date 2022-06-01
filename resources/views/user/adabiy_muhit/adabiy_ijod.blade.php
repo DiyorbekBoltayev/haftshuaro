@@ -35,7 +35,9 @@
                         <div class="text-box">
                             <h5 class="mbr-title mbr-fonts-style display-7"><strong>1.1. @lang('public.t_2_2')</strong></h5>
                             @if($lang=="uz")
-                            <p class="mbr-text mbr-fonts-style display-7">Ma`lumki, Xorazm adabiy muhiti oʻzbek mumtoz
+                            <p class="mbr-text mbr-fonts-style display-7">
+
+                                Ma`lumki, Xorazm adabiy muhiti oʻzbek mumtoz
                                 adabiyotining yuksak darajada ravnaq topgan va ma`naviyatimiz takomilida oʻchmas iz
                                 qoldirgan markazlaridan biridir. Umumoʻzbek adabiyoti taraqqiyotining har bir bosqichida
                                 bu muhit vakillarining oʻziga xos oʻrni, betakror ijodiy qiyofasi va nufuzi bor. Uzoq
@@ -61,7 +63,8 @@
                                 O`sha jamiyatda koʻp xotin olish gunoh hisoblangan emas”[1].
                                 <br>
                                 <br>
-                                <br></p>
+                                <br>
+                            </p>
                             @endif
                             @if($lang=="ru")
                             <p class="mbr-text mbr-fonts-style display-7">Известно, что литературная среда Хорезма является узбекской классикой.
