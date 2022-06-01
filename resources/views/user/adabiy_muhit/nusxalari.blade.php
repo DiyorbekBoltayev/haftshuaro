@@ -1,5 +1,7 @@
 @extends('user.master')
-@section('title','Haft shuaroning nusxalari')
+@section('title')
+    @lang('public.t_2_4')
+@endsection
 @section('content')
 
     <section class="header1 cid-t79K6vt9WI mbr-parallax-background" id="header1-13">
@@ -10,8 +12,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-7">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>“Haft shuaro”ning nusxalari va
-                            tuzilishi</strong></h1>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2">
+                        <strong>
+                            @lang('public.t_2_4')
+                        </strong>
+                    </h1>
 
 
                 </div>
@@ -33,9 +38,12 @@
                     </div>
                     <div class="col-12 col-lg">
                         <div class="text-box">
-                            <h5 class="mbr-title mbr-fonts-style display-7"><strong>1.3. “Haft shuaro”ning yaratilishi,
-                                    nusxalari va tuzilishi</strong></h5>
-                            <p class="mbr-text mbr-fonts-style display-7">“Haft shuaro”ning maydonga kelishi, yuqorida
+                            <h5 class="mbr-title mbr-fonts-style display-7"><strong>
+                                    @lang('public.t_2_4')
+                                </strong></h5>
+                            <p class="mbr-text mbr-fonts-style display-7">
+
+                                “Haft shuaro”ning maydonga kelishi, yuqorida
                                 ta`kidlanganidek, XIX asrning II yarmidan shaxsan Feruz tashabbusi bilan keng avj olgan
                                 kitobat va badiiy asarlarni targʻib qilish, umuman, kitobxonlik miqyosining kengayishi
                                 kabi omillar bilan bogʻliqdir. Darhaqiqat, kitobxonlikni oʻsha davr sharoitida ma`rifat
@@ -59,7 +67,9 @@
                                 asarlarni oʻzgacha shakllari – nasliy mansublik asosidagi majmua va Feruz gʻazallariga
                                 payrav shakllari vujudga keldi.<br>
                                 <br>[1] Muhammad Rizo mirob Erniyozbek oʻgʻli Ogahiy. Asarlar. I jild. Devon. Nashrga
-                                tayyorlovchi Gʻ.Karimov. T.: Adabiyot va san`at, 1971- B. 44–45.<br></p>
+                                tayyorlovchi Gʻ.Karimov. T.: Adabiyot va san`at, 1971- B. 44–45.<br>
+
+                            </p>
 
 
                         </div>

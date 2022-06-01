@@ -1,6 +1,6 @@
 @extends('user.master')
 @section('title')
-    @lang('public.t_1_3')
+    @lang('public.t_2_3')
 @endsection
 @section('title','Biografik ma\'lumotlar')
 @section('content')
@@ -13,10 +13,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-7">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Manbalardagi biografik
-                            ma`lumotlarning adabiy qimmati&nbsp;</strong></h1>
-
-
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2">
+                        <strong>
+                            @lang('public.t_2_3')
+                        </strong>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -36,10 +37,14 @@
                     </div>
                     <div class="col-12 col-lg">
                         <div class="text-box">
-                            <h5 class="mbr-title mbr-fonts-style display-7"><strong>1.2. Manbalardagi biografik
-                                    ma`lumotlarning adabiy qimmati
-                                </strong></h5>
-                            <p class="mbr-text mbr-fonts-style display-7">Ma`lumki, tazkira va majmualarda ijodkor
+                            <h5 class="mbr-title mbr-fonts-style display-7">
+                                <strong>
+                                    @lang('public.t_2_3')
+                                </strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style display-7">
+
+                                Ma`lumki, tazkira va majmualarda ijodkor
                                 shaxsi haqidagi biografik ma`lumotlarning muayyan oʻrni boʻlib, ular u yoki bu ijodkor
                                 xususidagi umumiy tasavvurni kengaytirishga xizmat qiladi. Shu jihatdan “Haft shuaro”ga
                                 kirgan shoirlar haqidagi ma`lumotlar ham ma`lum adabiy qimmatga ega. Tazkiralarda
@@ -56,7 +61,10 @@
                                 fakt va ma`lumotlar yaxlitlik kasb etib, ijodkorlar haqida davomli va batafsil
                                 fikrlashga imkon beradi. Bu hol hayot va ijod yoʻli koʻpchilikka noma`lum boʻlgan hamda
                                 ilk marta oʻrganilayotgan shoirlar haqidagi monografik tadqiqot uchun, ayniqsa,
-                                zarurdir.<br></p>
+                                zarurdir.
+                                <br>
+
+                            </p>
 
 
                         </div>

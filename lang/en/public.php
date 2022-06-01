@@ -31,6 +31,8 @@ return [
 
     "t_2_1"=>"The main features of the cultural and literary environment of Khorezm in the early twentieth century",
     "t_2_2"=>"Literary environment and aspects of artistic creation",
+    't_2_3'=>"Literary value of biographical information in sources",
+    't_2_4'=>'Copies and structure of "Haft Shuaro"',
 
 ]
 ?>
