@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\FotogaleriyaModel;
+use App\Models\KutbxonaModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -61,10 +62,8 @@ class UserController extends Controller
                                  Камилов Т., Абидова С. Национальные нравственные ценности и их воспитательное значение.
                                 ФА УзР, «Веер», 2000. С.20;
                                 Артиков Н. Духовность: национальные и общечеловеческие ценности. - Т; «Узбекистан», 1997.Б.48.
-                                 [2] Гофуров Г`. Национальные традиции // Халк сузи, 1993. 11 февраля, д. 2
+                                 [2] Гофуров Г`. Национальные традиции // Халк сузи, 1993. 11 февраля, д. 2  ";
 
-
-                                ";
         $text3_en="Each nation has its own history
                                 development and values formed over the centuries. Values ​​of the past
                                 is an integral part. After all, the values ​​are the identity of the people,
@@ -153,12 +152,28 @@ class UserController extends Controller
         return view('user.sheriyat.kimdir_ijodi');
     }
     public function kutubxonam(){
-        return view('user.kutubxona.kutubxona');
+        $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
+        $lang=Session::get('locale');
+        return view('user.kutubxona.kutubxona',[
+            'data'=>$data,
+            'lang'=>$lang,
+        ]);
     }
     public function durdona_toplamlar(){
-        return view('user.kutubxona.durdona_toplamlar');
+        $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
+        $lang=Session::get('locale');
+        return view('user.kutubxona.durdona_toplamlar',[
+            'data'=>$data,
+            'lang'=>$lang,
+        ]);
+
     }
     public function eng_sara(){
-        return view('user.kutubxona.eng_sara');
+        $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
+        $lang=Session::get('locale');
+        return view('user.kutubxona.eng_sara',[
+            'data'=>$data,
+            'lang'=>$lang,
+        ]);
     }
 }

@@ -15,7 +15,7 @@ class SherController extends Controller
      */
     public function index()
     {
-        $poems = SherModel::orderBY('created_at', 'DESC')->paginate(5);
+        $poems = SherModel::orderBY('created_at', 'DESC')->paginate(10);
         $poets = ShoirModel::all();
         return view('admin.sher.index', [
             'poems' => $poems,

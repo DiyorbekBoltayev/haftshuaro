@@ -5,122 +5,120 @@
     <section class="header1 cid-t7d5hmXwWi mbr-parallax-background" id="header1-2r">
 
 
-
-    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(250, 250, 250);"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-7">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Eng sara </strong><strong>asarlar</strong></h1>
-
-
-
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section class="content2 cid-t7d3pAKs0s" id="content2-2h">
-
+        <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(250, 250, 250);"></div>
 
         <div class="container">
-
-            <div class="row mt-4">
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('front/assets/images/sh1-284x160.jpg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">Kitob nomi</h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Muallif: Muallif ismi</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Ma`lumki, Xorazm adabiy muhiti oʻzbek mumtoz adabiyotining yuksak darajada ravnaq topgan va ma`naviyatimiz takomilida oʻchmas iz qoldirgan markazlaridan biridir. Umumoʻzbek adabiyoti taraqqiyotining har bir ...</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn item-btn btn-primary display-7" ><span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>Yuklab olish</a></div>
-                    </div>
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">
+                        <strong>
+                            @if( $lang == "uz" )
+                                Eng sara asarlar
+                            @endif
+                            @if( $lang == "en" )
+                                The best works
+                            @endif
+                            @if( $lang == "ru" )
+                                Лучшие произведения
+                            @endif
+                        </strong>
+                    </h1>
                 </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('front/assets/images/z2.jpg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">Kitob nomi</h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Muallif: Muallif ismi</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Ma`lumki, tazkira va majmualarda ijodkor shaxsi haqidagi biografik ma`lumotlarning muayyan oʻrni boʻlib, ular u yoki bu ijodkor xususidagi umumiy tasavvurni kengaytirishga xizmat qiladi...&nbsp;<br>
-                            </p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn btn-primary item-btn display-7" ><span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>Yuklab olish</a></div>
-                    </div>
-                </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('front/assets/images/z3.jpg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">Kitob nomi</h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Muallif: Muallif ismi</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">“Haft shuaro”ning maydonga kelishi, yuqorida ta`kidlanganidek, XIX asrning II yarmidan shaxsan Feruz tashabbusi bilan keng avj olgan kitobat va badiiy asarlarni targʻib qilish, umuman, kitobxonlik miqyosining kengayishi...</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn btn-primary item-btn display-7"><span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>Yuklab olish</a></div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
     <section class="content2 cid-t7d3pAKs0s" id="content2-2h">
-
-
         <div class="container">
-
             <div class="row mt-4">
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('front/assets/images/sh1-284x160.jpg')}}" alt="" title="">
+                <!--                --><?php //$d = 0;  ?>
+                @foreach( $data as $dat )
+                    @if($dat->status == 2 )
+                        {{--                        <?php  $d++;  ?>--}}
+                        <div class="item features-image сol-12 col-md-6 col-lg-4">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="/kutubxona/{{$dat->photo}}" alt="Bu rasm">
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title mbr-fonts-style display-5">
+                                        @if( $lang == "uz" )
+                                            {{$dat->name_uz}}
+                                        @endif
+                                        @if( $lang == "en" )
+                                            {{$dat->name_en}}
+                                        @endif
+                                        @if( $lang == "ru" )
+                                            {{$dat->name_ru}}
+                                        @endif
+
+                                    </h5>
+                                    <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
+                                        <strong>
+                                            @if( $lang == "uz" )
+                                                {{$dat->autor_uz}}
+                                            @endif
+                                            @if( $lang == "en" )
+                                                {{$dat->autor_en}}
+                                            @endif
+                                            @if( $lang == "ru" )
+                                                {{$dat->autor_ru}}
+                                            @endif
+                                        </strong>
+                                    </h6>
+                                    <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                                        @if( $lang == "uz" )
+                                            {{$dat->desc_uz}}
+                                        @endif
+                                        @if( $lang == "en" )
+                                            {{$dat->desc_en}}
+                                        @endif
+                                        @if( $lang == "ru" )
+                                            {{$dat->desc_ru}}
+                                        @endif
+                                    </p>
+                                </div>
+                                <div class="mbr-section-btn item-footer mt-2"><a href=""
+                                                                                 class="btn item-btn btn-primary display-7">
+                                        <span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>
+                                        @if( $lang == "uz" )
+                                            Yuklab olish
+                                        @endif
+                                        @if( $lang == "en" )
+                                            Download
+                                        @endif
+                                        @if( $lang == "ru" )
+                                            Скачать
+                                        @endif
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">Kitob nomi</h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Muallif: Muallif ismi</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Ma`lumki, Xorazm adabiy muhiti oʻzbek mumtoz adabiyotining yuksak darajada ravnaq topgan va ma`naviyatimiz takomilida oʻchmas iz qoldirgan markazlaridan biridir. Umumoʻzbek adabiyoti taraqqiyotining har bir ...</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn item-btn btn-primary display-7" ><span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>Yuklab olish</a></div>
+
+                        {{--                        @if($d==3)--}}
+                        {{--                            @break--}}
+                        {{--                        @endif--}}
+                    @endif
+                @endforeach
+
+
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        @if ($data->links())
+                            <div class="mt-4 p-4 box has-text-centered">
+                                {{ $data->links() }}
+                            </div>
+                        @endif
+
                     </div>
                 </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('front/assets/images/z2.jpg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">Kitob nomi</h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Muallif: Muallif ismi</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Ma`lumki, tazkira va majmualarda ijodkor shaxsi haqidagi biografik ma`lumotlarning muayyan oʻrni boʻlib, ular u yoki bu ijodkor xususidagi umumiy tasavvurni kengaytirishga xizmat qiladi...&nbsp;<br>
-                            </p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn btn-primary item-btn display-7" ><span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>Yuklab olish</a></div>
-                    </div>
-                </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('front/assets/images/z3.jpg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">Kitob nomi</h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Muallif: Muallif ismi</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">“Haft shuaro”ning maydonga kelishi, yuqorida ta`kidlanganidek, XIX asrning II yarmidan shaxsan Feruz tashabbusi bilan keng avj olgan kitobat va badiiy asarlarni targʻib qilish, umuman, kitobxonlik miqyosining kengayishi...</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn btn-primary item-btn display-7"><span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>Yuklab olish</a></div>
-                    </div>
-                </div>
+
 
             </div>
         </div>
     </section>
+
 
 
 @endsection
