@@ -1,5 +1,7 @@
 @extends('user.master')
-@section('title','She\'riy san\'at')
+@section('title')
+    @lang('public.gazallar3')
+@endsection
 @section('content')
 
     <section class="header1 cid-t7cC5YZxTG mbr-parallax-background" id="header1-1j">
@@ -10,8 +12,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-7">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Gʻazallarda she`riy
-                            san`atlarning </strong><br><strong>qoʻllanishi&nbsp;</strong></h1>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>
+                            @if( $lang == "uz" )
+                                Gʻazallarda she`riy san`atlarning qoʻllanishi
+                            @endif
+                            @if( $lang == "en" )
+                                THE USE OF POETIC ART IN GHAZALS
+                            @endif
+                            @if( $lang == "ru" )
+                                ИСПОЛЬЗОВАНИЕ ПОЭТИЧЕСКИХ ИСКУССТВ В ГАЗЕЛЯХ
+                            @endif
+                        </strong>
+                    </h1>
 
 
                 </div>
@@ -33,31 +45,115 @@
                     </div>
                     <div class="col-12 col-lg">
                         <div class="text-box">
-                            <h5 class="mbr-title mbr-fonts-style display-7"><strong>2.2. Gʻazallarda she`riy
-                                    san`atlarning qoʻllanishi</strong></h5>
-                            <p class="mbr-text mbr-fonts-style display-7">“Haft shuaro” majmuasidagi gʻazallar badiiy
-                                jihatdan yetuk, sodda va ravondir. Majmuadagi gʻazallarning badiiy oʻziga xosligi,
-                                avvalo, ularning shakliy jihatlarida, bayt va misralarni she`r mazmuniga muvofiq
-                                qoʻllash usullarida koʻrinadi va an`anaviy gʻazal tuzilishiga amal qilinadi. Shayx Ahmad
-                                ibn Xudoydod Taroziy gʻazal tarkibi xususida toʻxtalar ekan: “gʻazalning aksari yigirma
-                                bayt boʻlur va aqalli (kichigi – I.X.) besh bayt. Andin oʻksuk boʻlmas. Magar qofiya
-                                tabilmasa, toʻrt bayt qilurlar. Ul ham zarurat hukmidin joizdir”, – deb yozgan edi[1].
-                                Majmuada 5 baytli gʻazallar juda kam. Gʻazallarning uchdan ikki qismidan koʻprogʻi 7 va
-                                9 baytli, qolganlari 10-11 baytli boʻlib, ramal va hazaj bahrlarida yozilgan. Ularning
-                                barchasida taxallus qoʻllanilgan, kompozitsiyasiga ham alohida diqqat qaratilgan:
-                                yakpora va tadrijli gʻazallarga keng oʻrin berilgan, bu hol muayyan she`rda faqat bir
-                                mavzuni chuqurroq yoritishga harakat qilinganiga ishoradir. Bu jihatdan ishq mavzusida
-                                yakporalik ustunlik qiladi.
-                                <br>Gʻazallar badiiyatining bir qirrasi turli she`riy san`at va badiiy vositalardan
-                                foydalanishda yorqin aks etgan. Buni bevosita har bir shoir ijodida kuzatish mumkin.
-                                Jumladan, Murodiy gʻazallariga murojaat qilamiz:
-                                <br>Aylaram la`li zuloli orzusin subhu shom,
-                                <br>Qilmagʻil mahzun mani agʻyori badkor oldida (B-3).
-                                <br>
-                                <br>[1] Shayx Ahmad ibn Xudoydod Taroziy. Funun ul-balog`a // Oʻzbek tili va
-                                adabiyoti.Toshkent., 2002.- №3 –B. 75.<br>
-                                <br></p>
+                            <h5 class="mbr-title mbr-fonts-style display-7"><strong>
+                                    @if( $lang == "uz" )
+                                        Gʻazallarda she`riy san`atlarning qoʻllanishi
+                                    @endif
+                                    @if( $lang == "en" )
+                                        The use of poetic arts in ghazals
+                                    @endif
+                                    @if( $lang == "ru" )
+                                        Использование поэтических искусств в газелях
+                                    @endif
+                                </strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                @if( $lang == "uz" )
+                                    “Haft shuaro” majmuasidagi gʻazallar badiiy
+                                    jihatdan yetuk, sodda va ravondir. Majmuadagi gʻazallarning badiiy oʻziga xosligi,
+                                    avvalo, ularning shakliy jihatlarida, bayt va misralarni she`r mazmuniga muvofiq
+                                    qoʻllash usullarida koʻrinadi va an`anaviy gʻazal tuzilishiga amal qilinadi. Shayx
+                                    Ahmad
+                                    ibn Xudoydod Taroziy gʻazal tarkibi xususida toʻxtalar ekan: “gʻazalning aksari
+                                    yigirma
+                                    bayt boʻlur va aqalli (kichigi – I.X.) besh bayt. Andin oʻksuk boʻlmas. Magar qofiya
+                                    tabilmasa, toʻrt bayt qilurlar. Ul ham zarurat hukmidin joizdir”, – deb yozgan
+                                    edi[1].
+                                    Majmuada 5 baytli gʻazallar juda kam. Gʻazallarning uchdan ikki qismidan koʻprogʻi 7
+                                    va
+                                    9 baytli, qolganlari 10-11 baytli boʻlib, ramal va hazaj bahrlarida yozilgan.
+                                    Ularning
+                                    barchasida taxallus qoʻllanilgan, kompozitsiyasiga ham alohida diqqat qaratilgan:
+                                    yakpora va tadrijli gʻazallarga keng oʻrin berilgan, bu hol muayyan she`rda faqat
+                                    bir
+                                    mavzuni chuqurroq yoritishga harakat qilinganiga ishoradir. Bu jihatdan ishq
+                                    mavzusida
+                                    yakporalik ustunlik qiladi.
+                                    <br>Gʻazallar badiiyatining bir qirrasi turli she`riy san`at va badiiy vositalardan
+                                    foydalanishda yorqin aks etgan. Buni bevosita har bir shoir ijodida kuzatish mumkin.
+                                    Jumladan, Murodiy gʻazallariga murojaat qilamiz:
+                                    <br>Aylaram la`li zuloli orzusin subhu shom,
+                                    <br>Qilmagʻil mahzun mani agʻyori badkor oldida (B-3).
+                                   <hr>
+                                    <br>[1] Shayx Ahmad ibn Xudoydod Taroziy. Funun ul-balog`a // Oʻzbek tili va
+                                    adabiyoti.Toshkent., 2002.- №3 –B. 75.<br>
+                                    <br>
+                                @endif
+                                @if( $lang == "en" )
+                                    Газели в комплексе Хафт Шуаро артистичны.
+                                    является зрелым, простым и беглым. Художественные особенности газелей в комплексе,
+                                    прежде всего, в своих формальных аспектах байты и стихи соответствуют содержанию
+                                    поэмы.
+                                    проявляется в способах применения и следует традиционной газельной структуре. Шейх
+                                    Ахмад
+                                    Ибн Худайдад ат-Тарази так прокомментировал состав газели: «Большинству газелей
+                                    двадцать
+                                    байтов и минимум (меньший - I.X.) из пяти байтов. И дефицита не будет. Кроме рифмы
+                                    если нет, они составляют четыре байта. Дозволено и по правилу необходимости»[1].
+                                    В комплексе очень мало 5-байтных газелей. Более двух третей газелей 7 и
+                                    9 байт, остальные 10-11 байт и пишутся на Рамале и Хазадже. Их
+                                    Все они имеют прозвища, и особое внимание уделяется их составу:
+                                    одиночным и постепенным газелям отводится широкое место, что бывает только в том или
+                                    ином стихотворении
+                                    является попыткой пролить больше света на эту тему. В этом отношении речь идет о
+                                    любви
+                                    преобладает одиночество.
+                                    <br> Одним из аспектов искусства газелей является использование различных
+                                    поэтических искусств и художественных средств.
+                                    отражается в использовании. Это можно непосредственно наблюдать в творчестве каждого
+                                    поэта.
+                                    В частности, мы имеем в виду газели Муроди:
+                                    <br> Айларам ла'ли зулоли орзусин субху шам,
+                                    <br> Не грусти перед плохим человеком (Б-3).
+                                    <hr>
+                                    <br> [1] Шейх Ахмад ибн Худойдад Тарази. Фунун ул-балог`а // Узбекский язык и
+                                    литературы.Ташкент., 2002.- №3 –Б. 75. <br>
+                                    <br>
+                                @endif
+                                @if( $lang == "ru" )
+                                    Газели в комплексе Хафт Шуаро артистичны.
+                                    является зрелым, простым и беглым. Художественные особенности газелей в комплексе,
+                                    прежде всего, в своих формальных аспектах байты и стихи соответствуют содержанию
+                                    поэмы.
+                                    проявляется в способах применения и следует традиционной газельной структуре. Шейх
+                                    Ахмад
+                                    Ибн Худайдад ат-Тарази так прокомментировал состав газели: «Большинству газелей
+                                    двадцать
+                                    байтов и минимум (меньший - I.X.) из пяти байтов. И дефицита не будет. Кроме рифмы
+                                    если нет, они составляют четыре байта. Дозволено и по правилу необходимости»[1].
+                                    В комплексе очень мало 5-байтных газелей. Более двух третей газелей 7 и
+                                    9 байт, остальные 10-11 байт и пишутся на Рамале и Хазадже. Их
+                                    Все они имеют прозвища, и особое внимание уделяется их составу:
+                                    одиночным и постепенным газелям отводится широкое место, что бывает только в том или
+                                    ином стихотворении
+                                    является попыткой пролить больше света на эту тему. В этом отношении речь идет о
+                                    любви
+                                    преобладает одиночество.
+                                    <br> Одним из аспектов искусства газелей является использование различных
+                                    поэтических искусств и художественных средств.
+                                    отражается в использовании. Это можно непосредственно наблюдать в творчестве каждого
+                                    поэта.
+                                    В частности, мы имеем в виду газели Муроди:
+                                    <br> Айларам ла'ли зулоли орзусин субху шам,
+                                    <br> Не грусти перед плохим человеком (Б-3).
+                                    <hr>
+                                    <br> [1] Шейх Ахмад ибн Худойдад Тарази. Фунун ул-балог`а // Узбекский язык и
+                                    литературы.Ташкент., 2002.- №3 –Б. 75. <br>
+                                    <br>
+                                @endif
 
+
+                            </p>
 
                         </div>
                     </div>

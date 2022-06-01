@@ -1,5 +1,7 @@
 @extends('user.master')
-@section('title','She\'riy janrlar')
+@section('title')
+    @lang('public.sh_janr')
+@endsection
 @section('content')
 
     <section class="header1 cid-t7cENTozNI mbr-parallax-background" id="header1-1o">
@@ -12,15 +14,7 @@
                 <div class="col-12 col-lg-7">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2">
                         <strong>
-                            @if( $lang == "uz" )
-                                Musammat va boshqa janrlarning majmuadagi mavqei
-                            @endif
-                            @if( $lang == "en" )
-                                The position of Musammat and other genres in the complex
-                            @endif
-                            @if( $lang == "ru" )
-                                Положение Мусаммата и других жанров в комплексе
-                            @endif
+                            @lang('public.sh_janr')
                         </strong>
                     </h1>
                 </div>

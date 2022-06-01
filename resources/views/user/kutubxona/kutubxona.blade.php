@@ -1,5 +1,7 @@
 @extends('user.master')
-@section('title','Kutubxona')
+@section('title')
+    @lang('public.kutubxona')
+@endsection
 @section('content')
     <section class="header1 cid-t7d3kQtcNT mbr-parallax-background" id="header1-2g">
 
@@ -11,15 +13,7 @@
                 <div class="col-12 col-lg-7">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">
                         <strong>
-                            @if( $lang == "uz" )
-                                Kutubxona
-                            @endif
-                            @if( $lang == "en" )
-                                Library
-                            @endif
-                            @if( $lang == "ru" )
-                                Библиотека
-                            @endif
+                            @lang('public.kutubxona')
                         </strong>
                     </h1>
 

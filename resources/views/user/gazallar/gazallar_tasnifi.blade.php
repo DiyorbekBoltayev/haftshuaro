@@ -1,5 +1,7 @@
 @extends('user.master')
-@section('title','G\'azallar tasnifi')
+@section('title')
+    @lang('public.gazallar2')
+@endsection
 @section('content')
     <section class="header1 cid-t7cwTpXtb3 mbr-parallax-background" id="header1-1e">
 
@@ -9,8 +11,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-7">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Gʻazallar tasnifi,</strong><br><strong>
-                            gʻoya va mavzular </strong><br><strong>talqini&nbsp;&nbsp;</strong></h1>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2">
+                        <strong>
+                            @if( $lang == "uz" )
+                                Gʻazallar tasnifi, gʻoya va mavzular talqini
+                            @endif
+                            @if( $lang == "en" )
+                                Classification of ghazals, interpretation of ideas and themes
+                            @endif
+                            @if( $lang == "ru" )
+                                Классификация газелей, интерпретация идей и тем
+                            @endif
+                        </strong>
+                    </h1>
 
 
                 </div>
@@ -32,34 +45,131 @@
                     </div>
                     <div class="col-12 col-lg">
                         <div class="text-box">
-                            <h5 class="mbr-title mbr-fonts-style display-7"><strong>Gʻazallar tasnifi, gʻoya va mavzular
-                                    talqini</strong></h5>
-                            <p class="mbr-text mbr-fonts-style display-7">“Haft shuaro”ga kirgan she`rlar asosan XIX
-                                asrning oxirgi choragi va XX asrning boshlarida yaratilgan. Shu tufayli ularda oʻsha
-                                davr adabiy muhiti va adabiy an`analariga xos yetakchi xususiyatlarning aks etishi
-                                tabiiydir. Ma`lumki, bu davr ijtimoiy-tarixiy sharoitida qator oʻzgarishlar, jumladan,
-                                milliy uygʻonishning boshlanishi, ma`rifat gʻoyalarining keng tarqalishi adabiyotda ham
-                                aks sado bera boshlagan edi. Lekin bu jarayonni toʻla anglash oson kechmadi: “Hatto bir
-                                vaqtlar bu davr nomsiz, otsiz edi. Adabiyot tarixi taraqqiyotida bu davr alohida bosqich
-                                sifatida ajralmas, alohida davr deb ham qaralmas edi. Soʻngroq bu davr nooʻrin ravishda
-                                mustamlaka davri adabiyoti (XIX asrning II yarmi va XX asrning boshlari) burjua jadid
-                                adabiyoti nomi bilan yuritila boshlandi”[1].
-                                <br>
-                                <br>Manbalarning guvohlik berishicha, aslida XX asrning 20- yillarigacha boʻlgan davrda
-                                jadid shoirlari bilan birga, diniy adabiyot va saroy adabiyoti vakillari ham faoliyat
-                                koʻrsatdilar. Feruz saroyidagi shahzoda shoirlarning “Haft shuaro”dagi she`rlari oʻsha
-                                davrdagi ijodiy jarayon yoʻnalishini yaqqol aks ettiradi. Ularda adabiy an`analar
-                                ustuvor boʻlsa ham, qator she`rlarda jamiyatda yetishib kelayotgan oʻzgarishlarni his
-                                qilishga, ma`rifatga, oʻzlikni anglashga intilish yorqin ifodalangan edi (Bayoniy, Oqil
-                                she`rlarida).
-                                <br>
-                                <br>[1] Milliy uygʻonish va oʻzbek filologiyasi masalalari.-T.: Universitet, 1993.-B.4-6
-                                <br>
-                                <br>
-                                <br>
-                                <br></p>
+                            <h5 class="mbr-title mbr-fonts-style display-7">
+                                <strong>
+                                    @if( $lang == "uz" )
+                                        Gʻazallar tasnifi, gʻoya va mavzular talqini
+                                    @endif
+                                    @if( $lang == "en" )
+                                        Classification of ghazals, interpretation of ideas and themes
+                                    @endif
+                                    @if( $lang == "ru" )
+                                         Классификация газелей, интерпретация идей и тем
+                                    @endif
+                                </strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style display-7">
+
+                                @if( $lang == "uz" )
+                                    “Haft shuaro”ga kirgan she`rlar asosan XIX
+                                    asrning oxirgi choragi va XX asrning boshlarida yaratilgan. Shu tufayli ularda oʻsha
+                                    davr adabiy muhiti va adabiy an`analariga xos yetakchi xususiyatlarning aks etishi
+                                    tabiiydir. Ma`lumki, bu davr ijtimoiy-tarixiy sharoitida qator oʻzgarishlar,
+                                    jumladan,
+                                    milliy uygʻonishning boshlanishi, ma`rifat gʻoyalarining keng tarqalishi adabiyotda
+                                    ham
+                                    aks sado bera boshlagan edi. Lekin bu jarayonni toʻla anglash oson kechmadi: “Hatto
+                                    bir
+                                    vaqtlar bu davr nomsiz, otsiz edi. Adabiyot tarixi taraqqiyotida bu davr alohida
+                                    bosqich
+                                    sifatida ajralmas, alohida davr deb ham qaralmas edi. Soʻngroq bu davr nooʻrin
+                                    ravishda
+                                    mustamlaka davri adabiyoti (XIX asrning II yarmi va XX asrning boshlari) burjua
+                                    jadid
+                                    adabiyoti nomi bilan yuritila boshlandi”[1].
+                                    <br>
+                                    <br>Manbalarning guvohlik berishicha, aslida XX asrning 20- yillarigacha boʻlgan
+                                    davrda
+                                    jadid shoirlari bilan birga, diniy adabiyot va saroy adabiyoti vakillari ham
+                                    faoliyat
+                                    koʻrsatdilar. Feruz saroyidagi shahzoda shoirlarning “Haft shuaro”dagi she`rlari
+                                    oʻsha
+                                    davrdagi ijodiy jarayon yoʻnalishini yaqqol aks ettiradi. Ularda adabiy an`analar
+                                    ustuvor boʻlsa ham, qator she`rlarda jamiyatda yetishib kelayotgan oʻzgarishlarni
+                                    his
+                                    qilishga, ma`rifatga, oʻzlikni anglashga intilish yorqin ifodalangan edi (Bayoniy,
+                                    Oqil
+                                    she`rlarida).
+                                    <hr>
+                                    <br>[1] Milliy uygʻonish va oʻzbek filologiyasi masalalari.-T.: Universitet, 1993.-B.4-6
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                @endif
+                                @if( $lang == "en" )
+                                    The poems included in the Haft Shuaro are mainly from the 19th century
+                                    created in the last quarter of the century and the beginning of the twentieth
+                                    century. That's why they have it
+                                    reflection of the leading features of the literary environment and literary
+                                    traditions of the period
+                                    is natural. It is known that a number of changes in the socio-historical conditions
+                                    of this period, including
+                                    the beginning of the national awakening, the spread of enlightenment ideas in
+                                    literature
+                                    had begun to resonate. But it was not easy to fully understand the process: “Even
+                                    one
+                                    times this period was nameless, horseless. This period is a special stage in the
+                                    development of literary history
+                                    was inseparable as a separate period. Later, this period was inappropriate
+                                    the literature of the colonial period (second half of the nineteenth century and the
+                                    beginning of the twentieth century) is bourgeois jadid
+                                    began to be called literature ”[1].
+                                    <br>
+                                    <br> Sources testify that it was in the 1920s
+                                    Along with Jadid poets, representatives of religious literature and palace
+                                    literature also work
+                                    showed. These are the poems of the prince in Feruz's palace in Haft Shuaro
+                                    clearly reflects the direction of the creative process of the period. They have
+                                    literary traditions
+                                    Although a priority, in a number of poems he felt the changes taking place in
+                                    society
+                                    The desire to do, to enlighten, to understand oneself was vividly expressed (Bayani,
+                                    Aqil
+                                    in his poems).
+                                    <hr>
+                                    <br> [1] Issues of National Awakening and Uzbek Philology.-T .: Universitet,
+                                    1993.-P.4-6
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                @endif
+                                @if( $lang == "ru" )
+                                    Стихи, включенные в Haft Shuaro, в основном относятся к XIX веку.
+                                    созданные в последней четверти века и начале ХХ века. Вот почему они имеют это
+                                    отражение ведущих черт литературной среды и литературных традиций того периода
+                                    естественно. Известно, что ряд изменений общественно-исторических условий этого
+                                    периода, в том числе
+                                    начало национального пробуждения, распространение просветительских идей в литературе
+                                    начал резонировать. Но до конца понять процесс было непросто: «Даже один
+                                    времена этот период был безымянным, безлошадным. Этот период представляет собой
+                                    особый этап в развитии истории литературы.
+                                    была неотделима как отдельный период. Позже этот период был неподходящим
+                                    колониальная литература (вторая половина девятнадцатого века и начало двадцатого
+                                    века) буржуазная джадид
+                                    стали называть литературой»[1].
+                                    <br>
+                                    <br> Источники свидетельствуют, что это было в 1920-е гг.
+                                    Наряду с джадидскими поэтами работают представители религиозной и дворцовой
+                                    литературы.
+                                    показал. Это стихи принца во дворце Феруза в Хафт Шуаро.
+                                    ярко отражает направление творческого процесса того периода. У них есть литературные
+                                    традиции.
+                                    Хотя приоритетом, в ряде стихов он почувствовал изменения, происходящие в обществе.
+                                    Ярко выражено стремление сделать, просветить, понять себя (Баяни, Акил
+                                    в его стихах).
+                                    <hr>
+                                    <br> [1] Вопросы национального пробуждения и узбекской филологии.-Т.: Университет,
+                                    1993.-С.4-6
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                @endif
 
 
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,7 @@
 @extends('user.master')
-@section('title','Boshqa janrlar')
+@section('title')
+    @lang('public.sh_janr3')
+@endsection
 @section('content')
 
     <section class="header1 cid-t7cImnJfP4 mbr-parallax-background" id="header1-1w">
@@ -11,7 +13,10 @@
             <div class="row">
                 <div class="col-12 col-lg-7">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2">
-                        <strong>Majmuadagi </strong><br><strong>boshqa janrlar xususiyatlari&nbsp;</strong></h1>
+                        <strong>
+                            @lang('public.sh_janr3')
+                        </strong>
+                    </h1>
 
 
                 </div>
