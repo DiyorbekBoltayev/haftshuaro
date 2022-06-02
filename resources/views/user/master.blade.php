@@ -160,6 +160,7 @@
         font-size: 18px !important;
         font-style: normal;
         line-height: 1.6;
+        text-align: justify;
     }
 </style>
 
