@@ -108,17 +108,30 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link link text-black dropdown-toggle display-4" href="#"
-                                                     aria-expanded="false" data-toggle="dropdown-submenu"><span
-                                class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>@lang('public.local')</a>
+                                                     aria-expanded="false" data-toggle="dropdown-submenu">
+                            @if($lang=="uz")
+                            <img src="uzb.png" style="width: 25px; height: 15px; display: inline-block ; margin-right: 2px;" alt="">
+                            @endif
+                            @if($lang=="ru")
+                                <img src="rus.jpg" style="width: 25px; height: 15px; display: inline-block ; margin-right: 2px;" alt="">
+                                @endif
+                                @if($lang=="en")
+                                    <img src="eng.jpg" style="width: 25px; height: 15px; display: inline-block ; margin-right: 2px;" alt="">
+                                @endif
+                                    @lang('public.local')</a>
                         <div class="dropdown-menu">
                             <a class="text-black dropdown-item display-4" href="locale/uz"
-                                                      aria-expanded="false"><span
-                                    class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>UZ</a>
+                                                      aria-expanded="false">
+
+                                <img src="uzb.png" style="width: 35px; height: 21px; display: inline-block" alt="">
+                                UZ</a>
                             <a class="text-black dropdown-item display-4" href="locale/ru"
-                               aria-expanded="false"><span
-                                    class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>RU</a>
-                            <a class="text-black dropdown-item display-4" href="locale/en" aria-expanded="false"><span
-                                    class="mobi-mbri mobi-mbri-globe-2 mbr-iconfont mbr-iconfont-btn"></span>EN</a>
+                               aria-expanded="false">
+                                <img src="rus.jpg" style="width: 35px; height: 21px; display: inline-block" alt="">
+                                RU</a>
+                            <a class="text-black dropdown-item display-4" href="locale/en" aria-expanded="false">
+                                <img src="eng.jpg" style="width: 35px; height: 21px; display: inline-block" alt="">
+                                EN</a>
                         </div>
                     </li>
                 </ul>
