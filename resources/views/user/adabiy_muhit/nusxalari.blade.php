@@ -43,6 +43,16 @@
                                 </strong></h5>
                             <p class="mbr-text mbr-fonts-style display-7">
 
+                                @if( $lang == "uz" )
+                                    Batafsil
+                                @endif
+                                @if( $lang == "en" )
+                                    Read more
+                                @endif
+                                @if( $lang == "ru" )
+                                    Читать далее
+                                @endif
+
                                 “Haft shuaro”ning maydonga kelishi, yuqorida
                                 ta`kidlanganidek, XIX asrning II yarmidan shaxsan Feruz tashabbusi bilan keng avj olgan
                                 kitobat va badiiy asarlarni targʻib qilish, umuman, kitobxonlik miqyosining kengayishi
@@ -84,9 +94,19 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-12">
+                    <p class="mbr-text mbr-fonts-style display-7">
 
+                    @if( $lang == "uz" )
+                        Batafsil
+                    @endif
+                    @if( $lang == "en" )
+                        Read more
+                    @endif
+                    @if( $lang == "ru" )
+                        Читать далее
+                    @endif
 
-                    <p class="mbr-text mbr-fonts-style display-7">Bular jamlangan manbalar – “Haft shuaro” majmuasi va
+                    Bular jamlangan manbalar – “Haft shuaro” majmuasi va
                         Tabibiyning “Majmuai si shuaroi payravi Feruzshohiy” va “Muxammasoti majmuat ush- shuaroi
                         Feruzshohiy” tazkiralari Feruz tashabbusi bilan yaratildi. Ularning birinchisi 1906-yilda,
                         ikkinchisi 1908-yilda, uchinchisi 1909-yilda tuzildi. Kuzatishlarimizcha, qisqa vaqtda vujudga
@@ -288,7 +308,9 @@
                         yakunida ketma-ketlik buziladi. Ya`ni “soʻnggi aytgʻon gʻazallari” deya yana gʻazallarni
                         keltiradi. Majmuadagi janrlarni quyidagicha tasniflash mumkin:
                         <br>
-                        <br>[1] Jumayev.N. Feruz // Xalq soʻzi.Toshkent., 1992.29-yanvar</p>
+                        <br>[1] Jumayev.N. Feruz // Xalq soʻzi.Toshkent., 1992.29-yanvar
+
+                    </p>
                 </div>
             </div>
         </div>

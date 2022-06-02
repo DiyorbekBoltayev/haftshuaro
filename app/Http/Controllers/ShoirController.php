@@ -39,6 +39,7 @@ class ShoirController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request);
         $data = new ShoirModel();
 
         $data->name = $request->name;
@@ -46,7 +47,6 @@ class ShoirController extends Controller
         $data->title_uz = $request->title_uz;
         $data->title_en = $request->title_en;
         $data->title_ru = $request->title_ru;
-
         $image = $request->photo;
         $imagename = time() . '.' . $image->getClientOriginalExtension();
         $request->photo->move('photo', $imagename);
