@@ -30,6 +30,7 @@
                         </tr>
                         </thead>
                         <tbody>
+
                         @foreach($fotos as $ind=>$foto)
                             <tr>
                                 <td class="col-1">{{($fotos->currentpage()-1)*($fotos->perpage())+$ind+1}}</td>
@@ -60,7 +61,6 @@
                                 </td>
                             </tr>
                         @endforeach
-
                         </tbody>
                     </table>
 

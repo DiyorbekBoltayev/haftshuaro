@@ -11,14 +11,14 @@
 
                 <li class="nav-item {{  request()->routeIs('admin.photos.index') ? 'active' : '' }}">
                     <a href="{{route('admin.photos.index')}}">
-                        <i class="fas fa-cog"></i>
+                        <i class="fas fa-image"></i>
                         <p>Fotogaleriya</p>
                     </a>
                 </li>
 
                 <li class="nav-item {{  request()->routeIs('admin.shoir.index') ? 'active' : '' }}">
                     <a href="{{route('admin.shoir.index')}}">
-                        <i class="fas fa-cog"></i>
+                        <i class="fas fa-pen"></i>
                         <p>Shoirlar</p>
                     </a>
                 </li>
@@ -31,7 +31,7 @@
                 </li>
                 <li class="nav-item {{  request()->routeIs('admin.kitob.index') ? 'active' : '' }}">
                     <a href="{{route('admin.kitob.index')}}">
-                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-book-open"></i>
                         <p>Kitoblar</p>
                     </a>
                 </li>

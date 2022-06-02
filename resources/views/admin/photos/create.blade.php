@@ -44,19 +44,19 @@
 
                         <div class="form-group">
                             <label for="description">Matni Uz</label>
-                            <textarea class="form-control" name="text_uz" id="title1_uz" rows="10">
+                            <textarea class="form-control" name="text_uz" required id="title1_uz" rows="10">
                                 {{old('text_uz')}}
                             </textarea>
                         </div>
                         <div class="form-group">
                             <label for="description">Matni En</label>
-                            <textarea class="form-control" name="text_en" id="title1_en" rows="10">
+                            <textarea class="form-control" name="text_en" required id="title1_en" rows="10">
                                 {{old('text_en')}}
                             </textarea>
                         </div>
                         <div class="form-group">
                             <label for="description">Matni Ru</label>
-                            <textarea class="form-control" name="text_ru" id="title1_ru" rows="10">
+                            <textarea class="form-control" name="text_ru" required id="title1_ru" rows="10">
                                 {{old('text_ru')}}
                             </textarea>
                         </div>

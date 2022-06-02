@@ -32,19 +32,19 @@
                         </div>
                         <div class="form-group">
                             <label for="description"> Malumoti Uz </label>
-                            <textarea class="form-control" name="title_uz" id="title_uz" rows="6" >
+                            <textarea class="form-control" name="title_uz" required id="title_uz" rows="6" >
                                 {{old('title_uz')}}
                             </textarea>
                         </div>
                         <div class="form-group">
                             <label for="description"> Malumoti En </label>
-                            <textarea class="form-control" name="title_en" id="title_en" rows="10" >
+                            <textarea class="form-control" name="title_en" required id="title_en" rows="10" >
                                 {{old('title_en')}}
                             </textarea>
                         </div>
                         <div class="form-group">
                             <label for="description"> Malumoti Ru </label>
-                            <textarea class="form-control" name="title_ru" id="title1_ru" rows="10" >
+                            <textarea class="form-control" required name="title_ru" id="title1_ru" rows="10" >
                                 {{old('title_ru')}}
                             </textarea>
                         </div>

@@ -44,24 +44,24 @@
 
                         <div class="form-group">
                             <label for="description">Matni Uz</label>
-                            <textarea class="form-control"  name="matn_uz" id="matn_uz"
+                            <textarea class="form-control" required  name="matn_uz" id="matn_uz"
                                       rows="10">{{old('matn_uz')}}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="description">Matni En</label>
-                            <textarea class="form-control" name="matn_en" id="matn_en"
+                            <textarea class="form-control" required name="matn_en" id="matn_en"
                                       rows="10">{{old('matn_en')}}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="description">Matni Ru</label>
-                            <textarea class="form-control" name="matn_ru" id="matn_ru"
+                            <textarea class="form-control" required name="matn_ru" id="matn_ru"
                                       rows="10">{{old('matn_ru')}}</textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="header_ru"> Shoirni tanlang</label>
-                            <select class="form-control" name="shoir_id" id="building">
-                                <option value="0">Shoirni tanlang</option>
+                            <select class="form-control" required name="shoir_id" id="building">
+                                <option value="">Shoirni tanlang</option>
                                 @foreach($poets as $poet)
                                     <option value="{{$poet->id}}">{{$poet->name}}</option>
                                 @endforeach

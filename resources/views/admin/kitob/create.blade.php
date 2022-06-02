@@ -42,17 +42,17 @@
                         </div>
                         <div class="form-group">
                             <label for="desc_uz">Qisqacha izoh UZ</label>
-                            <textarea class="form-control" name="desc_uz" id="desc_uz" rows="4" >{{old('desc_uz')}}</textarea>
+                            <textarea class="form-control" name="desc_uz" id="desc_uz" required rows="4" >{{old('desc_uz')}}</textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="desc_en">Qisqacha izoh EN</label>
-                            <textarea class="form-control" name="desc_en" id="desc_en" rows="4" >{{old('desc_en')}}</textarea>
+                            <textarea class="form-control" name="desc_en" id="desc_en" required rows="4" >{{old('desc_en')}}</textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="desc_ru">Qisqacha izoh RU</label>
-                            <textarea class="form-control" name="desc_ru" id="desc_ru" rows="4" >{{old('desc_ru')}}</textarea>
+                            <textarea class="form-control" name="desc_ru" id="desc_ru" required rows="4" >{{old('desc_ru')}}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="outor_uz"> Muallif UZ</label>
