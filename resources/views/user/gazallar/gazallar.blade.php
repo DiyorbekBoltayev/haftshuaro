@@ -51,101 +51,16 @@
                             </h6>
                             <p class="mbr-text mbr-fonts-style mb-4 display-4">
                                 @if( $lang == "uz" )
-                                    “Haft shuaro”ga kirgan she`rlar asosan
-                                    XIX asrning oxirgi choragi va XX asrning boshlarida yaratilgan. Shu tufayli ularda
-                                    oʻsha
-                                    davr adabiy muhiti va adabiy an`analariga xos yetakchi xususiyatlarning aks etishi
-                                    tabiiydir. Ma`lumki, bu davr ijtimoiy-tarixiy sharoitida qator oʻzgarishlar,
-                                    jumladan,
-                                    milliy uygʻonishning boshlanishi, ma`rifat gʻoyalarining keng tarqalishi adabiyotda
-                                    ham
-                                    aks sado bera boshlagan edi. Lekin bu jarayonni toʻla anglash oson kechmadi: “Hatto
-                                    bir
-                                    vaqtlar bu davr nomsiz, otsiz edi.
-                                    <br>
-                                    <br>Adabiyot tarixi taraqqiyotida bu davr alohida bosqich sifatida ajralmas, alohida
-                                    davr deb ham qaralmas edi. Soʻngroq bu davr nooʻrin ravishda mustamlaka davri
-                                    adabiyoti
-                                    (XIX asrning II yarmi va XX asrning boshlari) burjua jadid adabiyoti nomi bilan
-                                    yuritila
-                                    boshlandi”[1].
-                                    <br>
-                                    <br>Manbalarning guvohlik berishicha, aslida XX asrning 20- yillarigacha boʻlgan
-                                    davrda
-                                    jadid shoirlari bilan birga, diniy adabiyot va saroy adabiyoti vakillari ham
-                                    faoliyat
-                                    koʻrsatdilar. Feruz saroyidagi shahzoda shoirlarning “Haft shuaro”dagi she`rlari
-                                    oʻsha
-                                    davrdagi ijodiy jarayon yoʻnalishini yaqqol aks ettiradi. Ularda adabiy an`analar
-                                    ustuvor boʻlsa ham, qator she`rlarda jamiyatda yetishib kelayotgan oʻzgarishlarni
-                                    his
-                                    qilishga, ma`rifatga, oʻzlikni anglashga intilish yorqin ifodalangan edi (Bayoniy,
-                                    Oqil
-                                    she`rlarida).
+                                <p>&ldquo;Haft shuaro&rdquo; majmuasidagi gʻazallar badiiy jihatdan yetuk, sodda va ravondir. Majmuadagi gʻazallarning badiiy oʻziga xosligi, avvalo, ularning shakliy jihatlarida, bayt va misralarni she`r mazmuniga muvofiq qoʻllash usullarida koʻrinadi va an`anaviy gʻazal tuzilishiga amal qilinadi. Shayx Ahmad ibn Xudoydod Taroziy gʻazal tarkibi xususida toʻxtalar ekan: &ldquo;gʻazalning aksari yigirma bayt boʻlur va aqalli (kichigi &ndash; I.X.) besh bayt. Andin oʻksuk boʻlmas. Magar qofiya tabilmasa, toʻrt bayt qilurlar. Ul ham zarurat hukmidin joizdir&rdquo;, &ndash; deb yozgan edi<a href="#_ftn1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a>. Majmuada 5 baytli gʻazallar juda kam. Gʻazallarning uchdan ikki qismidan koʻprogʻi 7 va 9 baytli, qolganlari 10-11 baytli boʻlib, ramal va hazaj bahrlarida yozilgan. Ularning barchasida taxallus qoʻllanilgan, kompozitsiyasiga ham alohida diqqat qaratilgan: yakpora va tadrijli gʻazallarga keng oʻrin berilgan, bu hol muayyan she`rda faqat bir mavzuni chuqurroq yoritishga harakat qilinganiga ishoradir. Bu jihatdan ishq mavzusida yakporalik ustunlik qiladi.</p><p><!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Shayx Ahmad ibn Xudoydod Taroziy. Funun ul-balog`a // Oʻzbek tili va adabiyoti.Toshkent., 2002.- №3 &ndash;B. 75.</p>
                                 @endif
                                 @if( $lang == "en" )
-                                    Most of the poems included in the Haft Shuaro
-                                    Created in the last quarter of the XIX century and the beginning of the XX century.
-                                    That's why they have it
-                                    reflection of the leading features of the literary environment and literary
-                                    traditions of the period
-                                    is natural. It is known that a number of changes in the socio-historical conditions
-                                    of this period, including
-                                    the beginning of the national awakening, the spread of enlightenment ideas in
-                                    literature
-                                    had begun to resonate. But it was not easy to fully understand the process: “Even
-                                    one
-                                    times this period was nameless, horseless.
-                                    <br>
-                                    <br> This period is an integral part of the development of the history of literature
-                                    it was not even considered a period. Later, this period was incorrectly referred to
-                                    as colonial literature
-                                    (II half of the XIX century and the beginning of the XX century) is called bourgeois
-                                    Jadid literature
-                                    began ”[1].
-                                    <br>
-                                    <br> Sources testify that it was in the 1920s
-                                    Along with Jadid poets, representatives of religious literature and palace
-                                    literature also work
-                                    showed. These are the poems of the prince in Feruz's palace in Haft Shuaro
-                                    clearly reflects the direction of the creative process of the period. They have
-                                    literary traditions
-                                    Although a priority, in a number of poems he felt the changes taking place in
-                                    society
-                                    The desire to do, to enlighten, to understand oneself was vividly expressed (Bayani,
-                                    Aqil
-                                    in his poems).
-                                @endif
+                                <p>The poems included in the Haft Shuaro were written mainly in the last quarter of the 19th century and the beginning of the 20th century. As a result, they naturally reflect the leading features of the literary environment and literary traditions of the time. It is known that a number of changes in the socio-historical conditions of this period, including the beginning of the national awakening, the spread of enlightenment ideas began to resonate in the literature. However, it was not easy to fully understand the process: &ldquo;Once upon a time, this period was nameless. In the development of the history of literature, this period was inseparable as a separate stage, and could not be considered as a separate period. Later, this period was incorrectly referred to as the bourgeois Jadid literature of the colonial period (second half of the 19th century and the beginning of the 20th century)&rdquo;<a href="#_ftn1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a>.</p><p><!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Milliy uygʻonish va oʻzbek filologiyasi masalalari.-T.: Universitet, 1993.-B.4-6</p>                            @endif
                                 @if( $lang == "ru" )
-                                    Большинство стихотворений, включенных в Haft Shuaro
-                                    Создан в последней четверти XIX века и начале XX века. Вот почему они имеют это
-                                    отражение ведущих черт литературной среды и литературных традиций того периода
-                                    естественно. Известно, что ряд изменений общественно-исторических условий этого
-                                    периода, в том числе
-                                    начало национального пробуждения, распространение просветительских идей в литературе
-                                    начал резонировать. Но до конца понять процесс было непросто: «Даже один
-                                    времена этот период был безымянным, безлошадным.
-                                    <br>
-                                    <br> Этот период является неотъемлемой частью развития истории литературы.
-                                    это даже не считалось периодом. Позднее этот период ошибочно именовали колониальной
-                                    литературой.
-                                    (II половина XIX века и начало XX века) называется буржуазной джадидской
-                                    литературой.
-                                    началось»[1].
-                                    <br>
-                                    <br> Источники свидетельствуют, что это было в 1920-е гг.
-                                    Наряду с джадидскими поэтами работают представители религиозной и дворцовой
-                                    литературы.
-                                    показал. Это стихи принца во дворце Феруза в Хафт Шуаро.
-                                    ярко отражает направление творческого процесса того периода. У них есть литературные
-                                    традиции.
-                                    Хотя приоритетом, в ряде стихов он почувствовал изменения, происходящие в обществе.
-                                    Ярко выражено стремление сделать, просветить, понять себя (Баяни, Акил
-                                    в его стихах).
-                                @endif
+                                <p>Стихи, вошедшие в &laquo;Хафт шуаро&raquo;, написаны в основном в последней четверти 19 века и начале 20 века. В результате они органично отражают ведущие черты литературной среды и литературных традиций того времени. Известно, что ряд изменений общественно-исторических условий этого периода, в том числе начало национального пробуждения, распространение просветительских идей, стали находить отклик в литературе. Однако до конца понять процесс было непросто: Давным-давно этот период был безымянным. В развитии истории литературы этот период был неотделим как отдельный этап и не мог рассматриваться как отдельный период. Позднее этот период ошибочно именовали буржуазной джадидской литературой колониального периода (вторая половина 19 &mdash; начало 20 вв.)<a href="#_ftn1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a>.</p><p><!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Вопросы национального возрождения и узбекской филологии.-Т.: Университет, 1993.-С.4-6</p>
+                            @endif
 
 
-                            </p>
+
                             <div class="mbr-section-btn"><a class="btn btn-primary display-4"
                                                             href="{{route('front.gazallar_tasnifi')}}">
                                     <span class="mobi-mbri mobi-mbri-align-left mbr-iconfont mbr-iconfont-btn"></span>
@@ -189,86 +104,19 @@
                         </h6>
                         <p class="mbr-text mbr-fonts-style display-7">
                             @if( $lang == "uz" )
-                                “Haft shuaro” majmuasidagi gʻazallar badiiy
-                                jihatdan yetuk, sodda va ravondir. Majmuadagi gʻazallarning badiiy oʻziga xosligi,
-                                avvalo,
-                                ularning shakliy jihatlarida, bayt va misralarni she`r mazmuniga muvofiq qoʻllash
-                                usullarida
-                                koʻrinadi va an`anaviy gʻazal tuzilishiga amal qilinadi. Shayx Ahmad ibn Xudoydod
-                                Taroziy
-                                gʻazal tarkibi xususida toʻxtalar ekan: “gʻazalning aksari yigirma bayt boʻlur va aqalli
-                                (kichigi – I.X.) besh bayt. Andin oʻksuk boʻlmas. Magar qofiya tabilmasa, toʻrt bayt
-                                qilurlar. Ul ham zarurat hukmidin joizdir”, – deb yozgan edi[1]. Majmuada 5 baytli
-                                gʻazallar
-                                juda kam. Gʻazallarning uchdan ikki qismidan koʻprogʻi 7 va 9 baytli, qolganlari 10-11
-                                baytli boʻlib, ramal va hazaj bahrlarida yozilgan. Ularning barchasida taxallus
-                                qoʻllanilgan, kompozitsiyasiga ham alohida diqqat qaratilgan: yakpora va tadrijli
-                                gʻazallarga keng oʻrin berilgan, bu hol muayyan she`rda faqat bir mavzuni chuqurroq
-                                yoritishga harakat qilinganiga ishoradir. Bu jihatdan ishq mavzusida yakporalik ustunlik
-                                qiladi.
-                                <br>Gʻazallar badiiyatining bir qirrasi turli she`riy san`at va badiiy vositalardan
-                                foydalanishda yorqin aks etgan. Buni bevosita har bir shoir ijodida kuzatish mumkin.
-                                Jumladan, Murodiy gʻazallariga murojaat qilamiz:
-                                <br>Aylaram la`li zuloli orzusin subhu shom,
-                                <br>Qilmagʻil mahzun mani agʻyori badkor oldida (B-3).
+                            <p>&ldquo;Haft shuaro&rdquo; majmuasidagi gʻazallar badiiy jihatdan yetuk, sodda va ravondir. Majmuadagi gʻazallarning badiiy oʻziga xosligi, avvalo, ularning shakliy jihatlarida, bayt va misralarni she`r mazmuniga muvofiq qoʻllash usullarida koʻrinadi va an`anaviy gʻazal tuzilishiga amal qilinadi. Shayx Ahmad ibn Xudoydod Taroziy gʻazal tarkibi xususida toʻxtalar ekan: &ldquo;gʻazalning aksari yigirma bayt boʻlur va aqalli (kichigi &ndash; I.X.) besh bayt. Andin oʻksuk boʻlmas. Magar qofiya tabilmasa, toʻrt bayt qilurlar. Ul ham zarurat hukmidin joizdir&rdquo;, &ndash; deb yozgan edi<a href="#_ftn1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a>. Majmuada 5 baytli gʻazallar juda kam. Gʻazallarning uchdan ikki qismidan koʻprogʻi 7 va 9 baytli, qolganlari 10-11 baytli boʻlib, ramal va hazaj bahrlarida yozilgan. Ularning barchasida taxallus qoʻllanilgan, kompozitsiyasiga ham alohida diqqat qaratilgan: yakpora va tadrijli gʻazallarga keng oʻrin berilgan, bu hol muayyan she`rda faqat bir mavzuni chuqurroq yoritishga harakat qilinganiga ishoradir. Bu jihatdan ishq mavzusida yakporalik ustunlik qiladi.</p><p><!--[if !supportFootnotes]--></p><p>&nbsp;</p><p><!--[endif]--></p><p><a href="#_ftnref1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Shayx Ahmad ibn Xudoydod Taroziy. Funun ul-balog`a // Oʻzbek tili va adabiyoti.Toshkent., 2002.- №3 &ndash;B. 75.</p>
                             @endif
                             @if( $lang == "en" )
-                                The gazelles in the Haft Shuaro complex are artistic
-                                is mature, simple and fluent. The artistic peculiarity of the gazelles in the complex
-                                is, first of all,
-                                in their formal aspects, in the ways of using bytes and verses in accordance with the
-                                content of the poem
-                                appears and follows the traditional ghazal structure. Sheikh Ahmad ibn Khudoydad Tarazi
-                                Commenting on the composition of the gazelle, he said: “Most of the gazelles will be
-                                twenty bytes long
-                                (smallest - I.X.) five bytes. And there will be no shortage. Unless rhyme is found, four
-                                bytes
-                                they do. It is also permissible under the rule of necessity. ”[1] 5-byte gazelles in the
-                                complex
-                                very rare. More than two-thirds of the gazelles are 7 and 9 bytes long, and the rest are
-                                10-11 bytes
-                                It is written in bytes and is written in Ramal and Hazaj seas. Nicknames in all of them
-                                Special attention is paid to the composition: single and gradual
-                                gazelles are given a wide space, which only deepens one theme in a particular poem
-                                is an attempt to illuminate. In this respect, the monopoly on the subject of love
-                                prevails
-                                does.
-                                <br> One aspect of the art of gazelles is the use of various poetic arts and artistic
-                                means
-                                reflected in use. This can be directly observed in the work of every poet.
-                                In particular, we refer to Murodi's gazelles:
-                                <br> Aylaram la`li zuloli orzusin subhu sham,
-                                <br> Don't be sad in front of a bad man (B-3).
-                            @endif
+                            <p>The gazelles in the Haft Shuaro complex are artistically mature, simple and fluent. The artistic originality of the ghazals in the collection is reflected, first of all, in their formal aspects, in the ways in which the bytes and verses are used in accordance with the content of the poem, and the traditional ghazal structure is followed. Shaykh Ahmad ibn Khudaydad al-Tarazi commented on the composition of the ghazal: And there will be no shortage. If they can&#39;t find a rhyme, they make four bytes. He is also permissible under the rule of necessity&rdquo;<a href="#_ftn1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a>. There are very few 5-byte ghazals in the complex. More than two-thirds of the ghazals are 7 and 9 bytes long, and the rest are 10-11 bytes long, written in Ramallah and Hajj. All of them use nicknames, and special attention is paid to their composition: single and gradual poems are widely used, which indicates that in a particular poem there is an attempt to shed more light on one topic. In this respect, monopoly prevails in the subject of love.</p><p><!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Shayx Ahmad ibn Xudoydod Taroziy. Funun ul-balog`a // Oʻzbek tili va adabiyoti.Toshkent., 2002.- №3 &ndash;B. 75.</p>
+
+                        @endif
                             @if( $lang == "ru" )
-                                Газели в комплексе Хафт Шуаро артистичны.
-                                является зрелым, простым и беглым. Художественное своеобразие газелей в комплексе
-                                заключается, прежде всего, в
-                                в их формальных аспектах, в способах использования байтов и стихов в соответствии с
-                                содержанием стихотворения
-                                появляется и следует традиционной структуре газелей. Шейх Ахмад ибн Худойдад Тарази
-                                Комментируя состав газели, он сказал: «Большинство газелей будут иметь длину двадцать
-                                байт.
-                                (наименьший - I.X.) пять байт. И дефицита не будет. Если рифма не найдена, четыре байта
-                                они делают. Дозволено и по правилу необходимости»[1]. 5-байтовые газели в комплексе
-                                очень редко. Больше двух третей газелей имеют длину 7 и 9 байт, а остальные 10-11 байт
-                                Он написан в байтах и ​​написан в морях Рамала и Хазаджа. Прозвища во всех них
-                                Особое внимание уделяется композиции: единичной и постепенной.
-                                газелям отводится широкое место, которое лишь углубляет одну тему в том или ином
-                                стихотворении
-                                это попытка осветить. В этом отношении преобладает монополия на тему любви.
-                                делает.
-                                <br> Одним из аспектов искусства газелей является использование различных поэтических
-                                искусств и художественных средств.
-                                отражается в использовании. Это можно непосредственно наблюдать в творчестве каждого
-                                поэта.
-                                В частности, мы имеем в виду газели Муроди:
-                                <br> Айларам ла'ли зулоли орзусин субху шам,
-                                <br> Не грусти перед плохим человеком (Б-3).
+                            <p>Газели в комплексе Хафт Шуаро художественно зрелые, простые и беглые. Художественное своеобразие газелей в сборнике проявляется, прежде всего, в их формальных аспектах, в способах использования байтов и стихов в соответствии с содержанием стихотворения, соблюдении традиционной газельной структуры. Шейх Ахмад ибн Худайдад ат-Тарази прокомментировал состав газели: И дефицита не будет. Если они не могут найти рифму, они составляют четыре байта. Он также дозволен по правилу необходимости&raquo;<a href="#_ftn1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a>. В комплексе очень мало 5-байтных газелей. Более двух третей газелей имеют длину 7 и 9 байт, а остальные - 10-11 байт, написанные в Рамаллахе и Хадже. Все они используют прозвища, и особое внимание уделяется их композиции: широко используются одиночные и постепенные стихотворения, что свидетельствует о том, что в том или ином стихотворении есть попытка пролить больше света на одну тему. В этом отношении в предмете любви преобладает монополия.</p><p><!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Шейх Ахмад ибн Худойдад Тарази. Фунун ул-балог`а // Узбекский язык и литература.Ташкент., 2002.- №3-С. 75.</p>
+
                             @endif
 
 
-                        </p>
+
 
                         <div class="mbr-section-btn"><a class="btn btn-primary display-4"
                                                         href="{{route('front.sheriy_sanat')}}">
