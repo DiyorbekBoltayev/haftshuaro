@@ -112,7 +112,10 @@
                                 <br>
                                 <br>Gʻ.Gʻofurov koʻrsatkichlari va boshqaruv turlari toʻgʻrisida mulohaza
                                 yuritilganda, qadriyatlarning turlaridan biri sifatida ma`naviy qadriyatlar ajratiladi
-                                koʻrlik[2].<br><br>[1] Qadriyatlar va ijtimoiy taraqqiyot (ilmiy ishlar toʻplami).
+                                koʻrlik[2].
+
+                                <hr >
+                                <br>[1] Qadriyatlar va ijtimoiy taraqqiyot (ilmiy ishlar toʻplami).
                                 –T; “Oʻzbekiston”, 1997. B.198;
                                 <br>Komilov T., Abidova S. Milliy axloqiy qadriyatlar va sifat tarbiyaviy ahamiyati.
                                 OʻzR FA, “Muxlis”, 2000. B.20;
@@ -137,7 +140,9 @@
                                 <br>
                                 <br> Комментарий Г. Гафурова о ценностях и их типах
                                 выделение духовных ценностей как одного из видов ценностей
-                                [2].<br> <br> [1] Ценности и общественное развитие (Сборник научных трудов).
+                                [2].
+                                 <hr>
+                                <br> [1] Ценности и общественное развитие (Сборник научных трудов).
                                 –Т; «Узбекистан», 1997. С.198;
                                 <br> Камилов Т., Абидова С. Национальные нравственные ценности и их воспитательное значение.
                                 ФА УзР, «Веер», 2000. С.20;
@@ -162,7 +167,10 @@
                                 <br>
                                 <br> G. Gafurov's commentary on values ​​and their types
                                 distinguishing spiritual values ​​as one of the types of values
-                                [2]. <br> <br> [1] Values ​​and Social Development (Collection of Scientific Works).
+                                [2].
+
+                                 <hr>
+                                <br> [1] Values ​​and Social Development (Collection of Scientific Works).
                                 –T; “Uzbekistan”, 1997. P.198;
                                 <br> Kamilov T., Abidova S. National moral values ​​and their educational significance.
                                 UzR FA, “Fan”, 2000. B.20;

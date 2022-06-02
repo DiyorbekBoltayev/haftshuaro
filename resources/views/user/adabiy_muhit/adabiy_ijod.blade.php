@@ -33,7 +33,11 @@
                     </div>
                     <div class="col-12 col-lg">
                         <div class="text-box">
-                            <h5 class="mbr-title mbr-fonts-style display-7"><strong>1.1. @lang('public.t_2_2')</strong></h5>
+                            <h5 class="mbr-title mbr-fonts-style display-7">
+                                <strong>
+                                    @lang('public.t_2_2')
+                                </strong>
+                            </h5>
                             @if($lang=="uz")
                             <p class="mbr-text mbr-fonts-style display-7">
 
@@ -60,7 +64,7 @@
                                 bosmaxona sotib olib, Xorazmda birinchi kitob bostirgan odam. Shu odamni yuz yildan
                                 keyin qora kursiga oʻtqazib, sovet qonuni bilan sud qilishdan nima murod hosil boʻladi?
                                 Koʻp xotin olish yolgʻiz Feruzning aybi emas, balki butun feodal jamiyatning illatidir.
-                                O`sha jamiyatda koʻp xotin olish gunoh hisoblangan emas”[1].
+                                O`sha jamiyatda koʻp xotin olish gunoh hisoblangan emas”.
                                 <br>
                                 <br>
                                 <br>
@@ -90,7 +94,7 @@
                                 Он купил типографию и издал первую книгу в Хорезме. Этот человек сто лет
                                 Какой смысл шантажировать и судить по советским законам?
                                 В полигамии виноват не только Феруз, а вина всего феодального общества.
-                                В том обществе многоженство не было грехом».[1]
+                                В том обществе многоженство не было грехом».
                                 <br>
                                 <br>
                                 <br></p>
@@ -119,7 +123,7 @@
                                 He bought a printing house and published the first book in Khorezm. This man for a hundred years
                                 What is the point of being blackmailed and tried under Soviet law?
                                 Polygamy is not Feruz's fault alone, but the fault of the whole feudal society.
-                                In that society, polygamy was not a sin. ”[1]
+                                In that society, polygamy was not a sin. ”
                                 <br>
                                 <br>
                                 <br></p>
@@ -139,7 +143,9 @@
                 <div class="col-md-12 col-lg-12">
 
 
-                    <p class="mbr-text mbr-fonts-style display-7"><br>
+{{--                    <p class="mbr-text mbr-fonts-style display-7"><br>--}}
+
+
                         @if($lang=="uz")
                             <br>Feruz nomi bilan bogʻliq XX asr boshidagi (birinchi choragidagi) adabiy muhit qator oʻziga
                             xosliklarga ega. Unda, bir tomondan, koʻp asrlik adabiy an`analar davom ettirilib, ustuvorlik
@@ -448,7 +454,9 @@
                             qator shoirlar toʻgʻrisidagi tasavvurlarni kengaytirish va boyitishga, pirovardida, adabiy
                             muhitni yaxlit holda chuqurroq oʻrganish va yangi ilmiy tafakkur asosida haqqoniy baholashga
                             imkon beradi.
-                            <br><br><br>[1] Qahhor A. Yoshlar bilan suhbat. –T.: Yosh gvardiya, 1968. B.102-103.
+                            <br>
+                            <hr>
+                            [1] Qahhor A. Yoshlar bilan suhbat. –T.: Yosh gvardiya, 1968. B.102-103.
                             <br>
                             <br>[2] Собрание Восточных рукописей АН РУз. Т ИИ. Ташкент. 1954. -С. 11.
                             <br>
@@ -811,7 +819,10 @@
                             расширить и обогатить представления ряда поэтов и, наконец, литературных
                             изучать окружающую среду в целом и объективно оценивать ее на основе нового научного мышления
                             позволяет.
-                            <br> <br> <br> [1] Каххор А. Интервью с молодежью. –Т.: Молодая гвардия, 1968. С.102-103.
+                            <br> <br>
+                            <hr>
+
+                            [1] Каххор А. Интервью с молодежью. –Т.: Молодая гвардия, 1968. С.102-103.
                             <br>
                             <br> [2] Собрание Восточных Рукописей АН РУз. Т II. Ташкент. 1954. -С. 11.
                             <br>
@@ -1175,7 +1186,10 @@
                             to expand and enrich the notion of a number of poets, and finally, literary
                             to study the environment as a whole and to evaluate it objectively on the basis of new scientific thinking
                             allows.
-                            <br> <br> <br> [1] Qahhor A. Interview with young people. –T .: Young Guard, 1968. P.102-103.
+                            <br> <br>
+                            <hr>
+
+                            [1] Qahhor A. Interview with young people. –T .: Young Guard, 1968. P.102-103.
                             <br>
                             <br> [2] Sobranie Vostochnyx rukopisey AN RUz. T II. Tashkent. 1954. -S. 11.
                             <br>
@@ -1232,13 +1246,7 @@
                         @endif
 
 
-
-
-
-
-
-
-                       </p>
+{{--                       </p>--}}
                 </div>
             </div>
         </div>

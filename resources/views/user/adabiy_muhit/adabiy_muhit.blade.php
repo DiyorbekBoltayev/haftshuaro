@@ -24,106 +24,42 @@
     </section>
 
     <section class="features6 cid-t78NnUe9SK" id="features7-l">
-        <!---->
-
 
         <div class="container">
             <div class="card-wrapper">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="image-wrapper">
+
                             <img src="{{asset('front/assets/images/ab1.jpeg')}}" alt="foto">
                         </div>
                     </div>
                     <div class="col-12 col-lg">
-                        <div class="text-box">
-                            @if($lang=="uz")
-                                <p class="mbr-text mbr-fonts-style display-7">Har bir xalqning oʻziga xos tarixiy
-                                    taraqqiyoti va asrlar davomida shakllangan qadriyatlari mavjud. Qadriyatlar
-                                    oʻtmishning
-                                    ajralmas qismini tashkil etadi. Zero, qadriyatlarda xalqning oʻziga xosligi,
-                                    urf-odatlari, ma`naviyati mujassamlanadi.
-                                    <br>“Qadriyat deyilganda, inson va insoniyat uchun ahamiyatli boʻlgan millat, elat
-                                    va
-                                    ijtimoiy guruhlarning manfaatlari va maqsadlariga xizmat qiladigan va ular tomonidan
-                                    baholanib, qadrlanadigan tabiat va jamiyat ne`matlari, hodisalari majmuini
-                                    tushunmogʻimiz lozim”[1].
-                                    <br>Ma`lumki, qadriyatlar umuminsoniy va milliy qadriyatlarga boʻlinadi.
-                                    <br>Gʻ.Gʻofurov tomonidan qadriyatlar va ularning turlari toʻgʻrisida mulohaza
-                                    yuritilganda, qadriyatlarning turlaridan biri sifatida ma`naviy qadriyatlar ajratib
-                                    koʻrsatiladi[2].
-                                    <br>Ma`naviy qadriyatlar shaxs va uning tarbiyasi, kamolotiga yetaklovchi asosiy
-                                    omillardan biridir. Bunday qadriyatlarning aksariyati qoʻlyozma va toshbosma shaklda
-                                    bizgacha yetib kelgan. Prezident Sh.Mirziyoev ta`kidlaganidek, “...oʻzbek mumtoz va
-                                    zamonaviy adabiyotini xalqaro miqyosda oʻrganish va targʻib qilish, bugungi kunda
-                                    dunyo
-                                    adabiy makonida yuz berayotgan eng muhim jarayonlar bilan uzviy bogʻliq holda tahlil
-                                    etib, zarur ilmiy-amaliy xulosalar chiqarish, katta ahamiyatga ega”[3].<br></p>
-                            @endif
-                            @if($lang=="ru")
-                                <p class="mbr-text mbr-fonts-style display-7">У каждого народа своя история
-                                    развитие и ценности, формировавшиеся веками. Ценности прошлого
-                                    является неотъемлемой частью. Ведь ценности - это личность народа,
-                                    традиции и духовность.
-                                    <br> «Ценность относится к нации, людям и людям, которые важны для человека и
-                                    человечества.
-                                    служение и служение интересам и целям социальных групп
-                                    совокупность событий и явлений природы и общества, которые ценятся и ценятся
-                                    нам нужно понять» [1].
-                                    <br> Известно, что ценности делятся на общечеловеческие и национальные ценности.
-                                    <br> Комментарий Г. Гафурова о ценностях и их типах
-                                    выделение духовных ценностей как одного из видов ценностей
-                                    показано в [2].
-                                    <br> Духовные ценности – основа человека и его воспитания, ведущие к зрелости
-                                    является одним из факторов. Многие из этих ценностей находятся в рукописном и
-                                    литографическом виде.
-                                    добрался до нас. Как отметил Президент Ш.Мирзиёев, «...узбекская классика и
-                                    Международное изучение и продвижение современной литературы в современном мире
-                                    анализ в тесной связи с важнейшими процессами, происходящими в литературном
-                                    пространстве
-                                    Важно сделать необходимые научные и практические выводы»[3].<br></p>
-                            @endif
-                            @if($lang=="en")
-                                <p class="mbr-text mbr-fonts-style display-7">Each nation has its own history
-                                    development and values ​​formed over the centuries. Values ​​of the past
-                                    is an integral part. After all, the values ​​are the identity of the people,
-                                    traditions and spirituality.
-                                    <br> “Value refers to a nation, people, and people that are important to man and
-                                    humanity
-                                    serving and serving the interests and goals of social groups
-                                    a set of events and phenomena of nature and society that are valued and appreciated
-                                    we need to understand ”[1].
-                                    <br> It is known that values ​​are divided into universal and national values.
-                                    <br> G. Gafurov's commentary on values ​​and their types
-                                    distinguishing spiritual values ​​as one of the types of values
-                                    is shown in [2].
-                                    <br> Spiritual values ​​are the basis of a person and his upbringing, leading to
-                                    maturity
-                                    is one of the factors. Many of these values ​​are in manuscript and lithographic
-                                    form
-                                    reached us. As President Sh. Mirziyoyev noted, “... Uzbek is a classic and
-                                    International study and promotion of contemporary literature in the world today
-                                    analysis in close connection with the most important processes taking place in the
-                                    literary space
-                                    It is important to draw the necessary scientific and practical conclusions. ”[3].
-                                    <br></p>
-                            @endif
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content5 cid-t78Oez7kFx" id="content5-m">
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-12">
-
-                    @if($lang=="uz")
-                        <p class="mbr-text mbr-fonts-style display-7">[1] Qadriyatlar va ijtimoiy taraqqiyot (ilmiy
+                        @if($lang=="uz")
+                            <p>Har bir xalqning oʻziga xos tarixiy
+                                taraqqiyoti va asrlar davomida shakllangan qadriyatlari mavjud. Qadriyatlar
+                                oʻtmishning
+                                ajralmas qismini tashkil etadi. Zero, qadriyatlarda xalqning oʻziga xosligi,
+                                urf-odatlari, ma`naviyati mujassamlanadi.
+                                <br>“Qadriyat deyilganda, inson va insoniyat uchun ahamiyatli boʻlgan millat, elat
+                                va
+                                ijtimoiy guruhlarning manfaatlari va maqsadlariga xizmat qiladigan va ular tomonidan
+                                baholanib, qadrlanadigan tabiat va jamiyat ne`matlari, hodisalari majmuini
+                                tushunmogʻimiz lozim”[1].
+                                <br>Ma`lumki, qadriyatlar umuminsoniy va milliy qadriyatlarga boʻlinadi.
+                                <br>Gʻ.Gʻofurov tomonidan qadriyatlar va ularning turlari toʻgʻrisida mulohaza
+                                yuritilganda, qadriyatlarning turlaridan biri sifatida ma`naviy qadriyatlar ajratib
+                                koʻrsatiladi[2].
+                                <br>Ma`naviy qadriyatlar shaxs va uning tarbiyasi, kamolotiga yetaklovchi asosiy
+                                omillardan biridir. Bunday qadriyatlarning aksariyati qoʻlyozma va toshbosma shaklda
+                                bizgacha yetib kelgan. Prezident Sh.Mirziyoev ta`kidlaganidek, “...oʻzbek mumtoz va
+                                zamonaviy adabiyotini xalqaro miqyosda oʻrganish va targʻib qilish, bugungi kunda
+                                dunyo
+                                adabiy makonida yuz berayotgan eng muhim jarayonlar bilan uzviy bogʻliq holda tahlil
+                                etib, zarur ilmiy-amaliy xulosalar chiqarish, katta ahamiyatga ega”[3].<br>
+                            <hr>
+                            [1] Qadriyatlar va ijtimoiy taraqqiyot (ilmiy
                             ishlar
                             toʻplami). –T; “Oʻzbekiston”, 1997. B.198; Komilov T., Abidova S. Milliy axloqiy qadriyatlar
                             va
@@ -131,29 +67,90 @@
                             <br>Ortiqov N. Ma`naviyat: milliy va umuminsoniy qadriyatlar. - T; “Oʻzbekiston”,1997.B.48.
                             <br>[2] Gʻofurov Gʻ. Milliy an`analar//Xalq so`zi, 1993 yil. 11 fevral, B. 2
                             <br>[3] Mirziyoev.Sh.Niyati ulugʻ xalqning ishi ham ulugʻ, hayoti yorugʻ va kelajagi farovon
-                            boʻladi.-T; “Oʻzbekiston”, 2019.339-b</p>
-                    @endif
-                    @if($lang=="ru")
-                        <p class="mbr-text mbr-fonts-style display-7">[1] Ценности и общественное развитие (научная
-                            работа
-                            коллекция). –Т; «Узбекистан», 1997. С.198; Камилов Т., Абидова С. Национальные нравственные
-                            ценности и
-                            их воспитательное значение. ФА УзР, «Веер», 2000. С.20;
-                            <br> Артиков Н.В. Духовность: национальные и общечеловеческие ценности. - Т; «Узбекистан»,
-                            1997.Б.48.
-                            <br> [2] Гофуров Г`. Национальные традиции // Халк сузи, 1993. 11 февраля, д. 2
-                            <br> [3] Мирзиёев.Ш.
-                            будет.-Т; «Узбекистан», 2019.339-с.</p>
-                    @endif
-                    @if($lang=="en")
-                        <p class="mbr-text mbr-fonts-style display-7">[1] Values and social development (scientific work
+                            boʻladi.-T; “Oʻzbekiston”, 2019.339-b
+                            </p>
+                        @endif
+
+                        @if($lang=="ru")
+                            <p>
+                                У каждого народа своя история
+                                развитие и ценности, формировавшиеся веками. Ценности прошлого
+                                является неотъемлемой частью. Ведь ценности - это личность народа,
+                                традиции и духовность.
+                                <br> «Ценность относится к нации, людям и людям, которые важны для человека и
+                                человечества.
+                                служение и служение интересам и целям социальных групп
+                                совокупность событий и явлений природы и общества, которые ценятся и ценятся
+                                нам нужно понять» [1].
+                                <br> Известно, что ценности делятся на общечеловеческие и национальные ценности.
+                                <br> Комментарий Г. Гафурова о ценностях и их типах
+                                выделение духовных ценностей как одного из видов ценностей
+                                показано в [2].
+                                <br> Духовные ценности – основа человека и его воспитания, ведущие к зрелости
+                                является одним из факторов. Многие из этих ценностей находятся в рукописном и
+                                литографическом виде.
+                                добрался до нас. Как отметил Президент Ш.Мирзиёев, «...узбекская классика и
+                                Международное изучение и продвижение современной литературы в современном мире
+                                анализ в тесной связи с важнейшими процессами, происходящими в литературном
+                                пространстве
+                                Важно сделать необходимые научные и практические выводы»[3].<br>
+                            </p>
+                            <hr>
+                            <p>
+                                [1] Ценности и общественное развитие (научная
+                                работа
+                                коллекция). –Т; «Узбекистан», 1997. С.198; Камилов Т., Абидова С. Национальные
+                                нравственные
+                                ценности и
+                                их воспитательное значение. ФА УзР, «Веер», 2000. С.20;
+                                <br> Артиков Н.В. Духовность: национальные и общечеловеческие ценности. - Т;
+                                «Узбекистан»,
+                                1997.Б.48.
+                                <br> [2] Гофуров Г`. Национальные традиции // Халк сузи, 1993. 11 февраля, д. 2
+                                <br> [3] Мирзиёев.Ш.
+                                будет.-Т; «Узбекистан», 2019.339-с.
+                            </p>
+                        @endif
+
+                        @if($lang=="en")
+                            <p>
+                                Each nation has its own history
+                                development and values ​​formed over the centuries. Values ​​of the past
+                                is an integral part. After all, the values ​​are the identity of the people,
+                                traditions and spirituality.
+                                <br> “Value refers to a nation, people, and people that are important to man and
+                                humanity
+                                serving and serving the interests and goals of social groups
+                                a set of events and phenomena of nature and society that are valued and appreciated
+                                we need to understand ”[1].
+                                <br> It is known that values ​​are divided into universal and national values.
+                                <br> G. Gafurov's commentary on values ​​and their types
+                                distinguishing spiritual values ​​as one of the types of values
+                                is shown in [2].
+                                <br> Spiritual values ​​are the basis of a person and his upbringing, leading to
+                                maturity
+                                is one of the factors. Many of these values ​​are in manuscript and lithographic
+                                form
+                                reached us. As President Sh. Mirziyoyev noted, “... Uzbek is a classic and
+                                International study and promotion of contemporary literature in the world today
+                                analysis in close connection with the most important processes taking place in the
+                                literary space
+                                It is important to draw the necessary scientific and practical conclusions. ”[3].
+                                <br>
+                            <hr>
+
+                            [1] Values and social development (scientific work
                             collection). –T; “Uzbekistan”, 1997. P.198; Kamilov T., Abidova S. National moral values and
                             their educational significance. UzR FA, “Fan”, 2000. B.20;
                             <br> Artikov N. Spirituality: national and universal values. - T; “Uzbekistan”, 1997.B.48.
                             <br> [2] Gʻofurov G`. National traditions // Xalq so'zi, 1993. February 11, B. 2
                             <br> [3] Mirziyoev.Sh.
-                            will be.-T; “Uzbekistan”, 2019.339-p</p>
-                    @endif
+                            will be.-T; “Uzbekistan”, 2019.339-p
+                            </p>
+
+                        @endif
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,7 +168,8 @@
 
                         <div class="bottom-line">
                             @if($lang=="uz")
-                                <p class="mbr-text mbr-fonts-style display-7">Darhaqiqat, tarixiy taraqqiyot jarayonida
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Darhaqiqat, tarixiy taraqqiyot jarayonida
                                     ajdodlarimiz tomonidan yaratilgan milliy-ma`naviy qadriyatlarni oʻrganish, ularni
                                     joriy
                                     imloga oʻgirish va keng kitobxonlar ommasiga taqdim etish eng muhim masalalardan
@@ -456,7 +454,8 @@
                                     <br></p>
                             @endif
                             @if($lang=="en")
-                                <p class="mbr-text mbr-fonts-style display-7">Indeed, in the process of historical
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Indeed, in the process of historical
                                     development
                                     The study of national and spiritual values ​​created by our ancestors, their
                                     introduction
@@ -620,7 +619,9 @@
                 <div class="col-md-12 col-lg-12">
 
                     @if($lang=="uz")
-                        <p class="mbr-text mbr-fonts-style display-7">[1] Bobojon Tarroh – Xodim. Xorazm
+                        <p class="mbr-text mbr-fonts-style display-7">
+
+                            [1] Bobojon Tarroh – Xodim. Xorazm
                             navozandalari.-T.:
                             Adabiyot va san`at, 1994- B.7-8.
                             <br>
@@ -650,7 +651,9 @@
                             9494; Laffasiy H. Tazkirai shuaro. Urganch: Xorazm, 1992- 119-B.</p>
                     @endif
                     @if($lang=="ru")
-                        <p class="mbr-text mbr-fonts-style display-7">[1] Бободжон Таррох — Сотрудник. Хорезмские
+                        <p class="mbr-text mbr-fonts-style display-7">
+
+                            [1] Бободжон Таррох — Сотрудник. Хорезмские
                             музыканты.-Т.:
                             Литература и искусство, 1994- С.7-8.
                             <br>
@@ -682,7 +685,9 @@
                             9494; Лаффасий Х. Тазкирай шуаро. Ургенч: Хорезм, 1992- 119-Б.</p>
                     @endif
                     @if($lang=="en")
-                        <p class="mbr-text mbr-fonts-style display-7">[1] Bobojon Tarroh - Employee. Khorezm
+                        <p class="mbr-text mbr-fonts-style display-7">
+
+                            [1] Bobojon Tarroh - Employee. Khorezm
                             musicians.-T .:
                             Literature and Art, 1994- P.7-8.
                             <br>
