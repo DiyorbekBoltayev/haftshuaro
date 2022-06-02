@@ -34,7 +34,7 @@
                                     <img style="width: 100px; height: 100px;" src="/photo/{{$poet->photo}}" alt="Bu rasm">
                                 </td>
                                 <td>{{$poet->name}}</td>
-                                <td>{{$poet->title_uz}}</td>
+                                <td>{!! $poet->title_uz !!}</td>
 
                                 <td class="col-2">
                                     <form action="{{ route('admin.shoir.destroy',$poet->id) }}" method="POST">

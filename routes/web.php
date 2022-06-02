@@ -41,6 +41,7 @@ Route::name('front.')->group(function () {
     Route::get('/kutubxonam',[UserController::class,'kutubxonam'])->name('kutubxonam');
     Route::get('/durdona_toplamlar',[UserController::class,'durdona_toplamlar'])->name('durdona_toplamlar');
     Route::get('/eng_sara',[UserController::class,'eng_sara'])->name('eng_sara');
+    Route::get('/download/{id}',[UserController::class,'getDownload'])->name('yukla');
 
 });
 

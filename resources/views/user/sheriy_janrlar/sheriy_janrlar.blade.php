@@ -35,63 +35,58 @@
                                     Musammat shakllari: an`ana va ijodiy xoslik
                                 @endif
                                 @if( $lang == "en" )
-                                        Positive forms: tradition and creativity
+                                    Positive forms: tradition and creativity
                                 @endif
                                 @if( $lang == "ru" )
-                                        Позитивные формы: традиция и творчество
+                                    Позитивные формы: традиция и творчество
                                 @endif
                             </strong>
                         </h6>
                         <p class="mbr-text mbr-fonts-style display-7">
-                            @if( $lang == "uz" )
-                                “Haft shuaro” majmuasida gʻazaldan keyin boshqa
-                                janrlardagi she`rlar ham salmoqli oʻrin egallaydi. Bular orasida musammat shakllari mavjud
-                                boʻlib, ular 3510 misradan iborat murabba`, muxammas, musaddas, musabba`, musammanlardir.
-                                Bular odatda ikki usul bilan yaratiladi.
-                            @endif
-                            @if( $lang == "en" )
-                                Another after the gazelle in the Haft Shuaro complex
-                                Poems in different genres also play an important role. These include forms of musammat
-                                They are murabba, muhammas, musaddas, musabba, musamman, consisting of 3510 verses.
-                                These are usually created in two ways.
-                            @endif
-                            @if( $lang == "ru" )
-                                Другой после газели в комплексе Хафт Шуаро
-                                Стихи разных жанров также играют важную роль. К ним относятся формы мусаммат
-                                Это мурабба, мухаммас, мусаддас, мусабба, мусамман, состоящие из 3510 стихов.
-                                Обычно они создаются двумя способами.
-                            @endif
+                        @if( $lang == "uz" )
+                            <p>&ldquo;Haft shuaro&rdquo; majmuasida gʻazaldan keyin boshqa janrlardagi she`rlar ham
+                                salmoqli oʻrin egallaydi. Bular orasida musammat shakllari mavjud boʻlib, ular 3510
+                                misradan iborat murabba`, muxammas, musaddas, musabba`, musammanlardir. Bular odatda
+                                ikki usul bilan yaratiladi.</p><p>Adabiyotshunos A. Abdugʻafurov ta`kidlaganidek,
+                                &ldquo;Biri &ndash; mustaqil musammatlar, ya`ni ijodkor oʻz she`rlarini zikr etilgan
+                                shakllarda yozadi. Ikkinchi usul shuki, ijodkor boshqa bir shoir yoki oʻzi oldin bitgan
+                                gʻazali baytlariga oʻsha mazmun, ruh, vazn va yoʻnalishda yangi misralarni qoʻshish
+                                orqali muxammas, musaddas, musammanlar shakliga keltiradi<a href="#_ftn1">
+                                    <!--[if !supportFootnotes]-->[1]<!--[endif]--></a>&rdquo;.
+                                <!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1">
+                                    <!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Abdugʻafurov A. Alisher Navoiy
+                                musammatlari // Oʻzbek tili va adabiyoti.T., 1978. -№1- B.27.</p>
+                        @endif
+                        @if( $lang == "en" )
+                            <p>After the ghazal, poems of other genres also occupy a significant place in the Haft
+                                Shuaro complex. Among them are the forms of musammat, consisting of 3,510 verses:
+                                murabba, muhammas, musaddas, musabba, musamman. These are usually created in two
+                                ways.</p><p>As the literary critic A. Abdugafurov noted, &ldquo;One is independent
+                                musammats, that is, the creator writes his poems in the mentioned forms. The second
+                                method is to add new verses in the same content, spirit, weight, and direction to the
+                                poems of another poet or ghazal that he has already written, in the form of muhammas,
+                                musaddas, musammans.<a href="#_ftn1"><!--[if !supportFootnotes]-->[1]<!--[endif]--></a>&rdquo;.
+                                <!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1">
+                                    <!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Abdugʻafurov A. Alisher Navoiy
+                                musammatlari // Oʻzbek tili va adabiyoti.T., 1978. -№1- B.27.</p>
+                        @endif
+                        @if( $lang == "ru" )
+                            <p>После газели значительное место в комплексе Хафт Шуаро занимают и стихотворения других
+                                жанров. Среди них формы мусаммат, состоящие из 3510 стихов: мурабба, мухаммас, мусаддас,
+                                мусабба, мусамман. Обычно они создаются двумя способами.</p><p>Как отмечал литературовед
+                                А.Абдугафуров, &ldquo;Одним из них являются самостоятельные мусамматы, т.е. художник
+                                пишет свои стихи в указанных формах. Второй способ заключается в добавлении новых стихов
+                                того же содержания, духа, веса и направленности к уже написанным им стихам другого поэта
+                                или газели, в виде мухаммасов, мусаддов, мусамманов<a href="#_ftn1">
+                                    <!--[if !supportFootnotes]-->[1]<!--[endif]--></a>&rdquo;.
+                                <!--[if !supportFootnotes]--></p><p>&nbsp;</p><!--[endif]--><p><a href="#_ftnref1">
+                                    <!--[if !supportFootnotes]-->[1]<!--[endif]--></a> Абдугафуров А. Мусамматлари
+                                Алишера Навои // Узбекский язык и литература. Т., 1978. -№1- С.27.</p>
+                        @endif
 
-                            <br>
-                            <br>
 
-                                @if( $lang == "uz" )
-                                    Adabiyotshunos A. Abdugʻafurov ta`kidlaganidek, “Biri – mustaqil musammatlar, ya`ni
-                                    ijodkor oʻz she`rlarini zikr etilgan shakllarda yozadi. Ikkinchi usul shuki, ijodkor boshqa
-                                    bir shoir yoki oʻzi oldin bitgan gʻazali baytlariga oʻsha mazmun, ruh, vazn va yoʻnalishda
-                                    yangi misralarni qoʻshish orqali muxammas, musaddas, musammanlar shakliga keltiradi[1]”. Bu
-                                    jihatdan majmuada mustaqil musammatlarga nisbatan ikkinchi usulda yozilgan musammatlar koʻp
-                                    boʻlib, ular asosan boshqa shoirlar gʻazallari asosida bitilgan
-                                @endif
-                                @if( $lang == "en" )
-                                    As the literary critic A. Abdugafurov noted, “One is independent musammats,
-                                    the artist writes his poems in the above-mentioned forms. The second method is that the creator is different
-                                    in the same content, spirit, weight, and direction to a poet or a ghazal verse he has previously written
-                                    by adding new verses to the form of muhammas, musaddas, musammans [1] ”. This
-                                    In terms of complexity, there are more second-order problems in the complex than independent problems
-                                    They are mainly based on the poems of other poets
-                                @endif
-                                @if( $lang == "ru" )
-                                    Как отмечал литературовед А. Абдугафуров, «Один мусаммат самостоятельный,
-                                    художник пишет свои стихи в вышеупомянутых формах. Второй метод заключается в том, что создатель отличается
-                                    в том же содержании, духе, весе и направлении к поэту или газельному стиху, который он ранее написал
-                                    добавлением новых стихов в виде мухаммас, мусаддас, мусамманс[1]». Этот
-                                    По сложности в комплексе больше задач второго порядка, чем самостоятельных задач.
-                                    В основном они основаны на стихах других поэтов.
-                                @endif
-
-                        </p>
-                        <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="{{route('front.musammat')}}"><span
+                        <div class="mbr-section-btn"><a class="btn btn-primary display-4"
+                                                        href="{{route('front.musammat')}}"><span
                                     class="mobi-mbri mobi-mbri-align-left mbr-iconfont mbr-iconfont-btn"></span>
                                 @if( $lang == "uz" )
                                     Batafsil
@@ -145,71 +140,61 @@
                             </h6>
                             <p class="mbr-text mbr-fonts-style mb-4 display-4">
 
-                                @if( $lang == "uz" )
-                                    Majmuadan gʻazal va musammatdan tashqari,
-                                    yana bir necha janrlar oʻrin olgan. Hajm va janr xususiyatlariga koʻra, ularni
-                                    quyidagicha guruhlash mumkin:
-                                    <br>
-                                    <br>1) nisbatan koʻlamdor janrlar: qasida va tarji`band, mustazod;
-                                    <br>
-                                    <br>2) kichik lirik janrlar: ruboiy, qit`a, muammo, masnaviy, ta`rix.
-                                    <br>
-                                    <br>Toʻgʻri, bular miqdor va salmoq nuqtai nazaridan majmuada katta mavqega ega emas.
-                                    Lekin ular, nazarimizda, ikki jihatdan ahamiyatlidir: birinchidan, bu janrlar shahzoda
-                                    shoirlarning badiiy qiziqish doirasi kengligidan dalolat bersa, ikkinchidan, ularning
-                                    yaratilishi asriy adabiy an`ananing davomi sifatida shu davr adabiy muhitida
-                                    ijodkorlikning janriy rang-barangligi va gʻoyaviy-badiiy takomillashuvini koʻrsatishi
-                                    bilan diqqatga loyiqdir.
-                                @endif
-                                @if( $lang == "en" )
-                                    In addition to ghazals and musammats from the complex,
-                                    There are several other genres. According to the characteristics of size and genre, they
-                                    can be grouped as follows:
-                                    <br>
-                                    <br> 1) relatively large genres: qasida and tarjiband, mustazod;
-                                    <br>
-                                    <br> 2) small lyrical genres: rubai, continent, problem, masnavi, history.
-                                    <br>
-                                    <br> It is true that they do not play a significant role in the complex in terms of quantity and weight.
-                                    But they are, in our view, important in two respects: first, that these genres are princely
-                                    secondly, their testimony to the breadth of the poets' artistic interest
-                                    creation in the literary environment of this period as a continuation of the centuries-old literary tradition
-                                    Demonstration of genre diversity and ideological and artistic perfection of creativity
-                                    noteworthy with.
-                                @endif
-                                @if( $lang == "ru" )
-                                    Помимо газелей и мусамматов из комплекса,
-                                    Есть еще несколько жанров. По характеристикам размера и жанра они
-                                    можно сгруппировать следующим образом:
-                                    <br>
-                                    <br> 1) относительно крупные жанры: касыда и тарджибанд, мустазод;
-                                    <br>
-                                    <br> 2) малые лирические жанры: рубаи, континент, проблема, маснави, история.
-                                    <br>
-                                    <br> Правда, они не играют существенной роли в комплексе по количеству и весу.
-                                    Но они, на наш взгляд, важны в двух отношениях: во-первых, что эти жанры являются княжескими.
-                                    во-вторых, их свидетельство широты художественного интереса поэтов
-                                    творчество в литературной среде этого периода как продолжение многовековой литературной традиции
-                                    Демонстрация жанрового разнообразия и идейно-художественного совершенства творчества
-                                    примечательно с.
+                            @if( $lang == "uz" )
+                                <p>Majmuadan gʻazal va musammatdan tashqari, yana bir necha janrlar oʻrin olgan. Hajm va
+                                    janr xususiyatlariga koʻra, ularni quyidagicha guruhlash mumkin:</p><p>
+                                    <!--[if !supportLists]-->1)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->nisbatan koʻlamdor
+                                    janrlar: qasida va tarji`band, mustazod;</p><p><!--[if !supportLists]-->2)&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <!--[endif]-->kichik lirik janrlar: ruboiy, qit`a, muammo, masnaviy, ta`rix.</p><p>
+                                    Toʻgʻri, bular miqdor va salmoq nuqtai nazaridan majmuada katta mavqega ega emas.
+                                    Lekin ular, nazarimizda, ikki jihatdan ahamiyatlidir: birinchidan, bu janrlar
+                                    shahzoda shoirlarning badiiy qiziqish doirasi kengligidan dalolat bersa,
+                                    ikkinchidan, ularning yaratilishi asriy adabiy an`ananing davomi sifatida shu davr
+                                    adabiy muhitida ijodkorlikning janriy rang-barangligi va gʻoyaviy-badiiy
+                                    takomillashuvini koʻrsatishi bilan diqqatga loyiqdir.</p>
+                            @endif
+                            @if( $lang == "en" )
+                                <p>In addition to ghazals and musammats, the collection includes several other genres.
+                                    According to size and genre, they can be grouped as follows:</p><p>
+                                    <!--[if !supportLists]-->1)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->nisbatan koʻlamdor
+                                    janrlar: qasida va tarji`band, mustazod;</p><p><!--[if !supportLists]-->2)&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <!--[endif]-->kichik lirik janrlar: ruboiy, qit`a, muammo, masnaviy, ta`rix.</p><p>
+                                    It is true that they do not play a significant role in the complex in terms of
+                                    quantity and weight. However, they are important in two respects: firstly, these
+                                    genres testify to the wide range of artistic interests of princely poets, and
+                                    secondly, their creation as a continuation of the centuries-old literary tradition
+                                    reflects the diversity of genres and ideological and artistic perfection of
+                                    creativity in this period. deserves.</p><p>&nbsp;</p>
+                            @endif
+                            @if( $lang == "ru" )
+                                <p>Помимо газелей и мусамматов, в сборник вошли еще несколько жанров. В зависимости от
+                                    размера и жанра их можно сгруппировать следующим образом:</p><p>1) относительно
+                                    крупные жанры: касыда и тарджибанд, мустазод;</p><p>2) малые лирические жанры:
+                                    рубаи, китъа, муаммо, маснави, история.</p><p>Правда, существенной роли в комплексе
+                                    по количеству и весу они, правда, не играют. Однако они важны в двух отношениях:
+                                    во-первых, эти жанры свидетельствуют о широком круге художественных интересов
+                                    княжеских поэтов, во-вторых, их творчество как продолжение многовековой литературной
+                                    традиции отражает многообразие жанров и идейно-художественного совершенство
+                                    творчества в этот период заслуживает.</p><p>&nbsp;</p>
                                 @endif
 
 
-                            </p>
-                            <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="{{route('front.boshqa_janrlar')}}"><span
-                                        class="mobi-mbri mobi-mbri-align-left mbr-iconfont mbr-iconfont-btn"></span>
-                                    @if( $lang == "uz" )
-                                        Batafsil
-                                    @endif
-                                    @if( $lang == "en" )
-                                        Read more
-                                    @endif
-                                    @if( $lang == "ru" )
-                                        Читать далее
-                                    @endif
+                                </p>
+                                <div class="mbr-section-btn"><a class="btn btn-primary display-4"
+                                                                href="{{route('front.boshqa_janrlar')}}"><span
+                                            class="mobi-mbri mobi-mbri-align-left mbr-iconfont mbr-iconfont-btn"></span>
+                                        @if( $lang == "uz" )
+                                            Batafsil
+                                        @endif
+                                        @if( $lang == "en" )
+                                            Read more
+                                        @endif
+                                        @if( $lang == "ru" )
+                                            Читать далее
+                                        @endif
 
-                                </a>
-                            </div>
+                                    </a>
+                                </div>
                         </div>
                     </div>
                 </div>

@@ -142,7 +142,11 @@
 <script src="{{asset('front/assets/viewportchecker/jquery.viewportchecker.js')}}"></script>
 <script src="{{asset('front/assets/parallax/jarallax.min.js')}}"></script>
 <script src="{{asset('front/assets/theme/js/script.js')}}"></script>
-
+<style>
+    p{
+        font-size: 18px !important;
+    }
+</style>
 
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
             class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>

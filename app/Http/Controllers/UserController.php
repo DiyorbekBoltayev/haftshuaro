@@ -11,6 +11,13 @@ use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
+    public function getDownload($id){
+        //PDF file is stored under project/public/download/info.pdf
+
+        $file = KutbxonaModel::find($id);
+        $path=public_path("kutubxona/$file->file");
+        return response()->download($path);
+    }
     public function bosh_sahifa(){
         $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
@@ -122,11 +129,13 @@ class UserController extends Controller
         ]);
     }
     public function sheriyat(){
+        $sherlar=SherModel::all();
         $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.sheriyat.sheriyat',[
             'lang'=>$lang,
-            'shoirlar'=>$shoirlar
+            'shoirlar'=>$shoirlar,
+            'sherlar'=>$sherlar
         ]);
     }
     public function kimdir_ijodi($id){
