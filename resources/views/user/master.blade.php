@@ -145,6 +145,7 @@
 <style>
     p{
         font-size: 18px !important;
+        font-style: normal;
     }
 </style>
 
