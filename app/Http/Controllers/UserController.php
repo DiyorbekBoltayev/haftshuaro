@@ -129,11 +129,13 @@ class UserController extends Controller
         ]);
     }
     public function sheriyat(){
+        $sherlar=SherModel::all();
         $shoirlar=ShoirModel::all();
         $lang=Session::get('locale');
         return view('user.sheriyat.sheriyat',[
             'lang'=>$lang,
-            'shoirlar'=>$shoirlar
+            'shoirlar'=>$shoirlar,
+            'sherlar'=>$sherlar
         ]);
     }
     public function kimdir_ijodi($id){
