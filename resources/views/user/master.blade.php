@@ -77,26 +77,29 @@
                                               href="{{route('front.sheriy_sanat')}}" aria-expanded="false">@lang('public.gazallar3')</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link dropdown-toggle text-black display-4" href="#"
                                                      data-toggle="dropdown-submenu" aria-expanded="false">@lang('public.sh_janr')</a>
-                        <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="{{route('front.sheriy_janrlar')}}" aria-expanded="false">@lang('public.sh_janr')</a><a class="dropdown-item text-black text-primary display-4"
+                        <div class="dropdown-menu">
+{{--                            <a class="text-black dropdown-item text-primary display-4"--}}
+{{--                                                      href="{{route('front.sheriy_janrlar')}}" aria-expanded="false">@lang('public.sh_janr')</a>--}}
+                            <a class="dropdown-item text-black text-primary display-4"
                                               href="{{route('front.musammat')}}">@lang('public.sh_janr2')</a><a
                                 class="text-black dropdown-item text-primary display-4" href="{{route('front.boshqa_janrlar')}}"
                                 aria-expanded="false">@lang('public.sh_janr3')</a></div>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
-                                                     data-toggle="dropdown-submenu" aria-expanded="false">@lang('public.sheriyat')</a>
-                        <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="{{route('front.sheriyat')}}"
-                                                      aria-expanded="false">@lang('public.sheriyat')</a>
-                            @foreach($shoirlar as $sh)
-                            <a
-                                class="dropdown-item text-black text-primary display-4" href="{{route('front.kimdir_ijodi',$sh->id)}}">{{$sh->name}}
-                                @lang('public.sheriyat2')</a>
-                            @endforeach
-                        </div>
-                    </li>
+{{--                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"--}}
+{{--                                                     data-toggle="dropdown-submenu" aria-expanded="false">@lang('public.sheriyat')</a>--}}
+{{--                        <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"--}}
+{{--                                                      href="{{route('front.sheriyat')}}"--}}
+{{--                                                      aria-expanded="false">@lang('public.sheriyat')</a>--}}
+{{--                            @foreach($shoirlar as $sh)--}}
+{{--                            <a--}}
+{{--                                class="dropdown-item text-black text-primary display-4" href="{{route('front.kimdir_ijodi',$sh->id)}}">{{$sh->name}}--}}
+{{--                                @lang('public.sheriyat2')</a>--}}
+{{--                            @endforeach--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
                     <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
                                                      data-toggle="dropdown-submenu" aria-expanded="false">@lang('public.kutubxona')</a>
                         <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
