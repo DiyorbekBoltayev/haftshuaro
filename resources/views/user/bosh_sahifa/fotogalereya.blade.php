@@ -34,9 +34,9 @@
                 </h3>
 
                 <p class="mbr-text mbr-fonts-style display-7">
-                    @if($lang=="ru") {{$d->text_ru}} @endif
-                    @if($lang=="uz") {{$d->text_uz}} @endif
-                    @if($lang=="en") {{$d->text_en}} @endif
+                    @if($lang=="ru") {!! $d->text_ru !!} @endif
+                    @if($lang=="uz") {!! $d->text_uz !!} @endif
+                    @if($lang=="en") {!!$d->text_en !!} @endif
 
 
                 </p>
