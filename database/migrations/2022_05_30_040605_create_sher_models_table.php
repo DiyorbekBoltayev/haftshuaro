@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('title_uz');
             $table->string('title_en');
             $table->string('title_ru');
-            $table->text('matn_uz');
-            $table->text('matn_en');
-            $table->text('matn_ru');
+            $table->longText('matn_uz');
+            $table->longText('matn_en');
+            $table->longText('matn_ru');
             $table->integer('shoir_id');
             $table->timestamps();
         });
