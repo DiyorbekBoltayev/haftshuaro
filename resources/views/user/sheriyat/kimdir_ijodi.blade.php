@@ -44,11 +44,11 @@
                         <div class="text-wrapper">
                             <h6 class="card-title mbr-fonts-style display-5">
                                 @if($lang=="uz")
-                                <strong>{{$shoir->title_uz}}</strong></h6>
+                                <strong>{!!$shoir->title_uz  !!}</strong></h6>
                             @endif @if($lang=="ru")
-                                <strong>{{$shoir->title_ru}}</strong></h6>
+                                <strong>{!!$shoir->title_ru  !!}</strong></h6>
                             @endif @if($lang=="en")
-                                <strong>{{$shoir->title_en}}</strong></h6>
+                                <strong>{!!$shoir->title_en  !!}</strong></h6>
                             @endif
 
                         </div>

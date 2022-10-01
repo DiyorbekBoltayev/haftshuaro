@@ -39,7 +39,7 @@ class ShoirController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+
         $data = new ShoirModel();
 
         $data->name = $request->name;

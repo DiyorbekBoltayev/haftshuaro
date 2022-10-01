@@ -44,7 +44,7 @@ class SherController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+
 
         SherModel::create($request->all());
         return redirect()->route('admin.sher.index');
