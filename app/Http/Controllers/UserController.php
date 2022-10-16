@@ -184,7 +184,7 @@ class UserController extends Controller
     public function kutubxonam()
     {
         $shoirlar = ShoirModel::all();
-        $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
+        $data = KutbxonaModel::all()->where("status", 0);
         $lang = Session::get('locale');
         return view('user.kutubxona.kutubxona', [
             'data' => $data,
@@ -196,7 +196,7 @@ class UserController extends Controller
     public function durdona_toplamlar()
     {
         $shoirlar = ShoirModel::all();
-        $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
+        $data = KutbxonaModel::all()->where("status", 1);
         $lang = Session::get('locale');
         return view('user.kutubxona.durdona_toplamlar', [
             'data' => $data,
@@ -209,7 +209,7 @@ class UserController extends Controller
     public function eng_sara()
     {
         $shoirlar = ShoirModel::all();
-        $data = KutbxonaModel::orderBy('created_at', 'desc')->paginate(3);
+        $data = KutbxonaModel::all()->where("status", 2);
         $lang = Session::get('locale');
         return view('user.kutubxona.eng_sara', [
             'data' => $data,

@@ -99,17 +99,17 @@
                     @endif
                 @endforeach
 
-                <div class="container">
-                    <div class="row justify-content-center">
+{{--                <div class="container">--}}
+{{--                    <div class="row justify-content-center">--}}
 
-                        @if ($data->links())
-                            <div class="mt-4 p-4 box has-text-centered">
-                                {{ $data->links() }}
-                            </div>
-                        @endif
+{{--                        @if ($data->links())--}}
+{{--                            <div class="mt-4 p-4 box has-text-centered">--}}
+{{--                                {{ $data->links() }}--}}
+{{--                            </div>--}}
+{{--                        @endif--}}
 
-                    </div>
-                </div>
+{{--                    </div>--}}
+{{--                </div>--}}
 
             </div>
         </div>
