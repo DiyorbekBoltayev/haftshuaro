@@ -35,42 +35,43 @@
                                     <img src="/kutubxona/{{$dat->photo}}" alt="Bu rasm">
                                 </div>
                                 <div class="item-content">
-                                    <h5 class="item-title mbr-fonts-style display-5">
+                                    <h4 class="item-title mbr-fonts-style display-6">
                                         @if( $lang == "uz" )
-                                            {{$dat->name_uz}}
+                                         Kitob:  {{$dat->name_uz}}
                                         @endif
                                         @if( $lang == "en" )
-                                            {{$dat->name_en}}
+                                                Book:  {{$dat->name_en}}
                                         @endif
                                         @if( $lang == "ru" )
-                                            {{$dat->name_ru}}
+                                                Книга:    {{$dat->name_ru}}
                                         @endif
 
-                                    </h5>
-                                    <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
-                                        <strong>
+                                    </h4><hr>
+                                    <p >
+
+
                                             @if( $lang == "uz" )
-                                                {{$dat->autor_uz}}
+                                            Muallif:  {{$dat->outor_uz}}
                                             @endif
                                             @if( $lang == "en" )
-                                                {{$dat->autor_en}}
+                                                    Author :   {{$dat->outor_en}}
                                             @endif
                                             @if( $lang == "ru" )
-                                                {{$dat->autor_ru}}
+                                                    Автор: {{$dat->outor_ru}}
                                             @endif
-                                        </strong>
-                                    </h6>
-                                    <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                                        @if( $lang == "uz" )
-                                            {!! $dat->desc_uz !!}
-                                        @endif
-                                        @if( $lang == "en" )
-                                            {!!$dat->desc_en  !!}
-                                        @endif
-                                        @if( $lang == "ru" )
-                                            {!! $dat->desc_ru !!}
-                                        @endif
-                                    </p>
+
+                                    </p><hr>
+{{--                                    <p class="mbr-text mbr-fonts-style mt-3 display-7">--}}
+{{--                                        @if( $lang == "uz" )--}}
+{{--                                            {!! $dat->desc_uz !!}--}}
+{{--                                        @endif--}}
+{{--                                        @if( $lang == "en" )--}}
+{{--                                            {!!$dat->desc_en  !!}--}}
+{{--                                        @endif--}}
+{{--                                        @if( $lang == "ru" )--}}
+{{--                                            {!! $dat->desc_ru !!}--}}
+{{--                                        @endif--}}
+{{--                                    </p>--}}
                                 </div>
                                 <div class="mbr-section-btn item-footer mt-2"><a href="{{route('front.yukla',$dat->id)}}"
                                                                                  class="btn item-btn btn-primary display-7">
