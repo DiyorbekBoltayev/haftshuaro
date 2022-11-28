@@ -25,7 +25,7 @@ class UserController extends Controller
         $shoirlar = ShoirModel::all();
         $lang = Session::get('locale');
 
-        return view('user.bosh_sahifa.bosh_sahifa', [
+        return view('front2.index', [
             'lang' => $lang,
             'shoirlar' => $shoirlar
         ]);
@@ -181,12 +181,31 @@ class UserController extends Controller
         ]);
     }
 
+    public function tadqiqotlar()
+    {
+
+        $data = KutbxonaModel::all()->where("status", 0);
+        $lang = Session::get('locale');
+        return view('front2.tadqiqotlar', [
+            'data' => $data,
+            'lang' => $lang,
+        ]);
+    }
+    public function maqola($id)
+    {
+//        $data = KutbxonaModel::find($id);
+        $lang = Session::get('locale');
+        return view('front2.maqola', [
+//            'data' => $data,
+            'lang' => $lang,
+        ]);
+    }
     public function kutubxonam()
     {
         $shoirlar = ShoirModel::all();
         $data = KutbxonaModel::all()->where("status", 0);
         $lang = Session::get('locale');
-        return view('user.kutubxona.kutubxona', [
+        return view('front2.kutubxona', [
             'data' => $data,
             'lang' => $lang,
             'shoirlar' => $shoirlar
