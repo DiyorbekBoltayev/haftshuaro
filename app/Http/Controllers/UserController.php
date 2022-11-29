@@ -24,10 +24,12 @@ class UserController extends Controller
     {
         $shoirlar = ShoirModel::all();
         $lang = Session::get('locale');
+        $maqolalar=SherModel::all()->sortByDesc('id');
 
         return view('front2.index', [
             'lang' => $lang,
-            'shoirlar' => $shoirlar
+            'shoirlar' => $shoirlar,
+            'maqolalar'=>$maqolalar
         ]);
     }
 

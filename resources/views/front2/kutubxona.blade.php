@@ -470,27 +470,32 @@
                         alt=""
                         src="{{asset('f/public/language-black-24dp-1-12.svg')}}"
                     />
-                    <div class="adabiy-muhit-div1">Uz</div>
-                    <img
-                        class="expand-more-black-18dp-1-12"
-                        alt=""
-                        src="{{asset('f/public/expand-more-black-18dp-1-12.svg')}}"
-                    />
+
+                    <div class="dropdown-container-div">
+                        <button class="dropdown-button">{{  strtoupper(\Illuminate\Support\Facades\Session::get('locale'))}}</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="{{route('setlocale','uz')}}">UZ</a></li>
+                                <li><a href="{{route('setlocale','ru')}}">RU</a></li>
+                                <li><a href="{{route('setlocale','en')}}">EN</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div><a href="{{route('front.bosh_sahifa')}}">
         <div class="component-40-div2">
             <div class="bosh-sahifa-div2">Bosh sahifa</div>
-        </div>
+        </div></a><a href="{{route('front.kutubxonam')}}">
         <div class="component-43-div2">
             <div class="bosh-sahifa-div2">Kutubxona</div>
-        </div>
+        </div></a><a href="{{route('front.bosh_sahifa')}}">
         <div class="component-44-div2">
             <div class="bosh-sahifa-div2">Biz haqimizda</div>
-        </div>
+        </div></a><a href="{{route('front.tadqiqotlar')}}">
         <div class="component-45-div2">
             <div class="bosh-sahifa-div2">Tadqiqotlar</div>
-        </div>
+        </div></a>
         <div class="component-46-div2">
             <img
                 class="language-black-24dp-1-12"

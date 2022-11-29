@@ -25,6 +25,7 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Gilroy-SemiBold:wght@400&display=swap"
     />
+
 </head>
 <body>
 <div class="tadqiqotlar-div1">
@@ -512,27 +513,32 @@
                         alt=""
                         src="{{asset('f/public/language-black-24dp-1-11.svg')}}"
                     />
-                    <div class="adabiy-muhit-div">Uz</div>
-                    <img
-                        class="expand-more-black-18dp-1-11"
-                        alt=""
-                        src="{{asset('f/public/expand-more-black-18dp-1-11.svg')}}"
-                    />
+                    <div class="dropdown-container-div">
+                        <button class="dropdown-button">{{  strtoupper(\Illuminate\Support\Facades\Session::get('locale'))}}</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="{{route('setlocale','uz')}}">UZ</a></li>
+                                <li><a href="{{route('setlocale','ru')}}">RU</a></li>
+                                <li><a href="{{route('setlocale','en')}}">EN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </div><a href="{{route('front.bosh_sahifa')}}">
         <div class="component-40-div1">
             <div class="bosh-sahifa-div1">Bosh sahifa</div>
-        </div>
+        </div></a><a href="{{route('front.kutubxonam')}}">
         <div class="component-43-div1">
             <div class="bosh-sahifa-div1">Kutubxona</div>
-        </div>
+        </div></a><a href="{{route('front.bosh_sahifa')}}">
         <div class="component-44-div1">
             <div class="bosh-sahifa-div1">Biz haqimizda</div>
-        </div>
+        </div></a><a href="{{route('front.tadqiqotlar')}}">
         <div class="component-45-div1">
             <div class="bosh-sahifa-div1">Tadqiqotlar</div>
-        </div>
+        </div></a>
         <div class="component-46-div1">
             <img
                 class="language-black-24dp-1-11"

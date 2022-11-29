@@ -162,6 +162,7 @@
                     urf-odatlari, ma`naviyati mujassamlanadi.
                 </p>
             </div>
+            <a href="{{route('front.kutubxonam')}}">
             <div class="button-div9">
                 <div class="kutobxonaga-otish-div">Kutobxonaga o’tish</div>
                 <img
@@ -170,6 +171,7 @@
                     src="{{asset('f/public/east-black-24dp-5-1.svg')}}"
                 />
             </div>
+            </a>
             <img
                 class="rectangle-icon24"
                 alt=""
@@ -297,6 +299,7 @@
                         urf-odatlari, ma`naviyati mujassamlanadi...
                     </p>
                 </div>
+                <a href="{{route('front.tadqiqotlar')}}">
                 <div class="button-div10">
                     <div class="kutobxonaga-otish-div">Batafsil</div>
                     <img
@@ -305,6 +308,7 @@
                         src="{{asset('f/public/east-black-24dp-5-11.svg')}}"
                     />
                 </div>
+                </a>
             </div>
             <img
                 class="rectangle-icon25"
@@ -500,14 +504,19 @@
                 </div>
             </div>
         </div>
+
+
         <div class="frame-button-div">
+            <a href="{{route('front.tadqiqotlar')}}">
             <div class="barchasi-div">Barchasi</div>
             <img
                 class="east-black-24dp-5-1"
                 alt=""
                 src="{{asset('f/public/east-black-24dp-6-1.svg')}}"
             />
+        </a>
         </div>
+
     </div>
     <div class="group-div65">
         <img
@@ -536,15 +545,7 @@
             src="{{asset('f/public/rectangle-72@2x.png')}}"
         />
     </div>
-    <div class="photo-galereya-div">Photo galereya</div>
-    <div class="frame-button-div1">
-        <div class="barchasi-div">Barchasi</div>
-        <img
-            class="east-black-24dp-5-1"
-            alt=""
-            src="{{asset('f/public/east-black-24dp-6-11.svg')}}"
-        />
-    </div>
+    <div class="photo-galereya-div">Foto galereya</div>
     <div class="frame-div38">
         <div class="rectangle-div59"></div>
         <div class="pattern-div7">
@@ -705,27 +706,39 @@
                         alt=""
                         src="{{asset('f/public/language-black-24dp-1-13.svg')}}"
                     />
-                    <div class="barchasi-div">Uz</div>
-                    <img
-                        class="expand-more-black-18dp-1-13"
-                        alt=""
-                        src="{{asset('f/public/expand-more-black-18dp-1-13.svg')}}"
-                    />
+
+                    <div class="dropdown-container-div">
+                        <button class="dropdown-button">{{  strtoupper(\Illuminate\Support\Facades\Session::get('locale'))}}</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="{{route('setlocale','uz')}}">UZ</a></li>
+                                <li><a href="{{route('setlocale','ru')}}">RU</a></li>
+                                <li><a href="{{route('setlocale','en')}}">EN</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <a href="{{route('front.bosh_sahifa')}}">
         <div class="component-40-div3">
             <div class="maqolalar-div">Bosh sahifa</div>
-        </div>
+        </div></a>
+        <a href="{{route('front.kutubxonam')}}">
+
         <div class="component-43-div3">
             <div class="maqolalar-div">Kutubxona</div>
-        </div>
+        </div></a>
+        <a href="{{route('front.bosh_sahifa')}}">
+
         <div class="component-44-div3">
             <div class="maqolalar-div">Biz haqimizda</div>
-        </div>
+        </div></a>
+        <a href="{{route('front.tadqiqotlar')}}">
+
         <div class="component-45-div3">
-            <div class="maqolalar-div">Maqolalar</div>
-        </div>
+            <div class="maqolalar-div">Tadqiqotlar</div>
+        </div></a>
         <div class="component-46-div3">
             <img class="east-black-24dp-5-1" alt="" src="{{asset('f/public/frame28.svg')}}" />
             <div class="maqolalar-div">+998 99 501 67 16</div>

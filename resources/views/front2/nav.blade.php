@@ -8,12 +8,17 @@
                     alt=""
                     src="{{asset('f/public/language-black-24dp-1-1.svg')}}"
                 />
-                <div class="uz-div">Uz</div>
-                <img
-                    class="expand-more-black-18dp-1-1"
-                    alt=""
-                    src="{{asset('f/public/expand-more-black-18dp-1-1.svg')}}"
-                />
+
+                <div class="dropdown-container-div">
+                    <button class="dropdown-button">{{  strtoupper(\Illuminate\Support\Facades\Session::get('locale'))}}</button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="{{route('setlocale','uz')}}">UZ</a></li>
+                            <li><a href="{{route('setlocale','ru')}}">RU</a></li>
+                            <li><a href="{{route('setlocale','en')}}">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -27,7 +32,7 @@
     </div>
     <div class="component-44-div">
         <div class="bosh-sahifa-div">
-            <a href="{{route('front.maqola',1)}}"  style="text-decoration: none; color: #646260">Biz haqimizda(maqola)</a>
+            <a href="{{route('front.maqola',1)}}"  style="text-decoration: none; color: #646260">Biz haqimizda</a>
 
         </div>
     </div>
