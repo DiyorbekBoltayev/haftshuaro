@@ -21,7 +21,6 @@
                         <tr>
                             <th class="" scope="col">#</th>
                             <th class="" scope="col"> Nomi</th>
-                            <th class="" scope="col"> Izoh</th>
                             <th class="" scope="col"> Muallif </th>
                             <th class="w-25" scope="col">Amallar</th>
                         </tr>
@@ -31,7 +30,6 @@
                             <tr>
                                 <td class="col-1">{{($data->currentpage()-1)*($data->perpage())+$ind+1}}</td>
                                 <td>{!!$poet->name_uz  !!}</td>
-                                <td>{!! $poet->desc_uz !!}</td>
                                 <td>{!! $poet->outor_uz !!}</td>
 
                                 <td class="col-2">

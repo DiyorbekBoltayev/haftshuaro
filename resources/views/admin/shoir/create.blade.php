@@ -4,7 +4,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-10"><h1 class="card-title"> Shoir qo`shish </h1></div>
+                    <div class="col-10"><h1 class="card-title"> Turkum qo`shish </h1></div>
                 </div>
                 <hr>
                 <div class="card-body">
@@ -26,33 +26,17 @@
 
 
                         <div class="form-group">
-                            <label for="description"> Ismi </label>
-                            <input type="text" name="name" value="{{old('name')}}" class="form-control"
+                            <label for="description"> Nomi UZ </label>
+                            <input type="text" name="name_uz" value="{{old('name')}}" class="form-control"
                                    id="name" placeholder=" Ismi " required>
-                        </div>
-                        <div class="form-group">
-                            <label for="description"> Malumoti Uz </label>
-                            <textarea class="form-control" name="title_uz" required id="title_uz" rows="6" >
-                                {{old('title_uz')}}
-                            </textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="description"> Malumoti En </label>
-                            <textarea class="form-control" name="title_en" required id="title_en" rows="10" >
-                                {{old('title_en')}}
-                            </textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="description"> Malumoti Ru </label>
-                            <textarea class="form-control" required name="title_ru" id="title1_ru" rows="10" >
-                                {{old('title_ru')}}
-                            </textarea>
-                        </div>
-
-
-                        <div class="form-floating mb-3">
-                            <label class="text text-primary" for="floatingInput"> Rasmini yuklang </label>
-                            <input type="file" name="photo" class="form-control " id="floatingInput" required="" >
+                        </div> <div class="form-group">
+                            <label for="description"> Nomi RU </label>
+                            <input type="text" name="name_ru" value="{{old('name')}}" class="form-control"
+                                   id="name" placeholder=" Ismi " required>
+                        </div> <div class="form-group">
+                            <label for="description"> Nomi EN </label>
+                            <input type="text" name="name_en" value="{{old('name')}}" class="form-control"
+                                   id="name" placeholder=" Ismi " required>
                         </div>
 
 

@@ -21,7 +21,7 @@
                     @endif
 
 
-                    <form action="{{route('admin.sher.update',$poem->id)}}" method="POST" accept-charset="UTF-8">
+                    <form action="{{route('admin.sher.update',$poem->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
 
@@ -57,15 +57,16 @@
                             <textarea class="form-control" name="matn_ru" id="matn_ru"
                                       rows="10">{{ $poem->matn_ru }}</textarea>
                         </div>
-
                         <div class="form-group">
-                            <label for="header_ru"> Shoirni tanlang</label>
+                            <input type="file" name="photo" class="form-control" id="image">
+                        </div>
+                        <div class="form-group">
+                            <label for="header_ru"> Turkum tanlang</label>
                             <select class="form-control" name="shoir_id" id="building">
-                                <option value="{{ $poem->shoir_id }}"> Shoirni tanlang</option>
+                                <option value="{{ $poem->shoir_id }}"> --------</option>
                                 @foreach($poets as $poet)
-                                    @if( $poem->shoir_id != $poet->id )
-                                        <option value="{{$poet->id}}">{{$poet->name}}</option>
-                                    @endif
+                                        <option value="{{$poet->id}}">{{$poet->name_uz}}</option>
+
                                 @endforeach
                             </select>
                         </div>

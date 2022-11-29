@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\KutbxonaModel;
+use App\Models\ShoirModel;
 use Illuminate\Http\Request;
 
 class KitobController extends Controller
@@ -28,7 +29,8 @@ class KitobController extends Controller
      */
     public function create()
     {
-        return view('admin.kitob.create');
+        $poets =ShoirModel::all();
+        return view('admin.kitob.create',['poets'=>$poets]);
     }
 
     /**
@@ -44,9 +46,6 @@ class KitobController extends Controller
         $data->name_uz=$request->name_uz;
         $data->name_en=$request->name_en;
         $data->name_ru=$request->name_ru;
-        $data->desc_uz=$request->desc_uz;
-        $data->desc_en=$request->desc_en;
-        $data->desc_ru=$request->desc_ru;
         $data->outor_uz=$request->outor_uz;
         $data->outor_en=$request->outor_en;
         $data->outor_ru=$request->outor_ru;
@@ -61,7 +60,7 @@ class KitobController extends Controller
         $request->file->move('kutubxona',$imagename);
         $data->file=$imagename;
 
-        $data->status=$request->status;
+        $data->shoir_id=$request->shoir_id;
         $data->save();
         return redirect()->route('admin.kitob.index');
     }
@@ -84,10 +83,11 @@ class KitobController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {
+    {   $poets =ShoirModel::all();
         $data = KutbxonaModel::find($id);
         return view('admin.kitob.edit',[
             'data'=>$data
+            ,'poets'=>$poets
         ]);
     }
 
@@ -105,15 +105,12 @@ class KitobController extends Controller
         $data->name_uz=$request->name_uz;
         $data->name_en=$request->name_en;
         $data->name_ru=$request->name_ru;
-        $data->desc_uz=$request->desc_uz;
-        $data->desc_en=$request->desc_en;
-        $data->desc_ru=$request->desc_ru;
         $data->outor_uz=$request->outor_uz;
         $data->outor_en=$request->outor_en;
         $data->outor_ru=$request->outor_ru;
 
 
-        if($request->photo1!=null) {
+        if($request->photo!=null) {
             $image=$request->photo;
             $imagename=time().'.'.$image->getClientOriginalExtension();
             $request->photo->move('kutubxona',$imagename);
@@ -125,7 +122,7 @@ class KitobController extends Controller
             $request->file->move('kutubxona',$imagename);
             $data->file=$imagename;
         }
-        $data->status=$request->status;
+        $data->shoir_id=$request->shoir_id;
         $data->save();
         return redirect()->route('admin.kitob.index');
     }

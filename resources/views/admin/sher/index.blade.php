@@ -4,13 +4,13 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-9"><h1 class="card-title"> She'rlar </h1></div>
+                    <div class="col-9"><h1 class="card-title"> Maqolalar </h1></div>
                     <div class="col-md-1">
                         <a class="btn btn-primary" href="{{route('admin.sher.create')}}">
                             <span class="btn-label">
                                 <i class="fa fa-plus"></i>
                             </span>
-                            She'r qo'shish
+                            Maqola qo'shish
                         </a>
                     </div>
                 </div>
@@ -22,7 +22,6 @@
                             <th class="" scope="col">#</th>
                             <th class="" scope="col"> Mavzu</th>
                             <th class="" scope="col"> Matn</th>
-                            <th class="" scope="col"> Autor</th>
                             <th class="w-25" scope="col">Amallar</th>
                         </tr>
                         </thead>
@@ -34,7 +33,6 @@
                                         <td class="col-1">{{($poems->currentpage()-1)*($poems->perpage())+$ind+1}}</td>
                                         <td>{{$poem->title_uz}}</td>
                                         <td>Ko'rish uchun edit tugmasini bosing</td>
-                                        <td>{{$poet->name}}</td>
 
 
                                         <td class="col-2">

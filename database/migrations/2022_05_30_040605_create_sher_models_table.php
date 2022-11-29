@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title_uz');
             $table->string('title_en');
             $table->string('title_ru');
+            $table->string('photo');
             $table->longText('matn_uz');
             $table->longText('matn_en');
             $table->longText('matn_ru');

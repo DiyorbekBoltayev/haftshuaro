@@ -15,11 +15,9 @@ return new class extends Migration
     {
         Schema::create('shoir_models', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('title_uz');
-            $table->text('title_en');
-            $table->text('title_ru');
-            $table->string('photo');
+            $table->string('name_uz');
+            $table->string('name_ru');
+            $table->string('name_en');
             $table->timestamps();
         });
     }

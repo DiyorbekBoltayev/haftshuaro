@@ -4,7 +4,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-10"><h1 class="card-title"> She'r qo`shish </h1></div>
+                    <div class="col-10"><h1 class="card-title"> Maqola qo`shish </h1></div>
                 </div>
                 <hr>
                 <div class="card-body">
@@ -57,13 +57,16 @@
                             <textarea class="form-control" required name="matn_ru" id="matn_ru"
                                       rows="10">{{old('matn_ru')}}</textarea>
                         </div>
+                        <div class="form-group">
+                            <input type="file" name="photo" class="form-control" required id="image">
+                        </div>
 
                         <div class="form-group">
-                            <label for="header_ru"> Shoirni tanlang</label>
+                            <label for="header_ru">Turkum tanlang</label>
                             <select class="form-control" required name="shoir_id" id="building">
-                                <option value="">Shoirni tanlang</option>
+                                <option value="">--------</option>
                                 @foreach($poets as $poet)
-                                    <option value="{{$poet->id}}">{{$poet->name}}</option>
+                                    <option value="{{$poet->id}}">{{$poet->name_uz}}</option>
                                 @endforeach
                             </select>
                         </div>

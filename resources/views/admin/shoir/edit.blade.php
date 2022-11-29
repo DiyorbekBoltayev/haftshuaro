@@ -26,35 +26,17 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="barbers"> Ismi </label>
-                            <input type="text" name="name" value="{{ $poet->name }}" class="form-control"
-                                   id="name" placeholder="Mavzu uzbekcha" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="barbers"> Ma`lumoti Uz </label>
-                            <input type="text" name="title_uz" value="{{ $poet->title_uz }}" class="form-control"
-                                   id="title_uz" placeholder="Ma`lumoti uzbekcha" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="barbers"> Ma`lumoti En </label>
-                            <input type="text" name="title_en" value="{{ $poet->title_en }}" class="form-control"
-                                   id="title_en" placeholder="Ma`lumoti inglizcha" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="barbers"> Ma`lumoti RU </label>
-                            <input type="text" name="title_ru" value="{{ $poet->title_ru }}" class="form-control"
-                                   id="title_ru" placeholder="Ma`lumoti ruscha" required>
-                        </div>
-
-
-                        <div class="form-floating mb-3">
-                            <label class="text text-primary" for="floatingInput"> Avvalgi rasm </label>
-                            <img style="width: 200px; height: 200px;" src="/photo/{{$poet->photo}}" alt="Bu rasm">
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <label class="text text-primary" for="floatingInput"> Yangi rasmni yuklang</label>
-                            <input type="file" name="photo" class="form-control " id="floatingInput">
+                            <label for="description"> Nomi UZ </label>
+                            <input type="text" name="name_uz" value="{{$poet->name_uz}}" class="form-control"
+                                   id="name" placeholder=" Ismi " required>
+                        </div> <div class="form-group">
+                            <label for="description"> Nomi RU </label>
+                            <input type="text" name="name_ru" value="{{$poet->name_ru}}" class="form-control"
+                                   id="name" placeholder=" Ismi " required>
+                        </div> <div class="form-group">
+                            <label for="description"> Nomi EN </label>
+                            <input type="text" name="name_en" value="{{$poet->name_en}}" class="form-control"
+                                   id="name" placeholder=" Ismi " required>
                         </div>
 
 

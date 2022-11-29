@@ -4,13 +4,13 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-9"><h1 class="card-title"> Shoirlar </h1></div>
+                    <div class="col-9"><h1 class="card-title"> Turkumlar </h1></div>
                     <div class="col-md-1">
                         <a class="btn btn-primary" href="{{route('admin.shoir.create')}}">
                             <span class="btn-label">
                                 <i class="fa fa-plus"></i>
                             </span>
-                            Shoir qo'shish
+                            Turkum qo'shish
                         </a>
                     </div>
                 </div>
@@ -20,9 +20,7 @@
                         <thead>
                         <tr>
                             <th class="" scope="col">#</th>
-                            <th class="" scope="col"> Rasm </th>
-                            <th class="" scope="col"> Ism </th>
-                            <th class="" scope="col"> Malumot </th>
+                            <th class="" scope="col"> Nomi</th>
                             <th class="w-25" scope="col">Amallar</th>
                         </tr>
                         </thead>
@@ -30,11 +28,8 @@
                         @foreach($poets as $ind=>$poet)
                             <tr>
                                 <td class="col-1">{{($poets->currentpage()-1)*($poets->perpage())+$ind+1}}</td>
-                                <td>
-                                    <img style="width: 100px; height: 100px;" src="/photo/{{$poet->photo}}" alt="Bu rasm">
-                                </td>
-                                <td>{{$poet->name}}</td>
-                                <td>{!! $poet->title_uz !!}</td>
+
+                                <td>{{$poet->name_uz}}</td>
 
                                 <td class="col-2">
                                     <form action="{{ route('admin.shoir.destroy',$poet->id) }}" method="POST">

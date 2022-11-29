@@ -44,9 +44,20 @@ class SherController extends Controller
      */
     public function store(Request $request)
     {
+        $a = new SherModel();
+        $a->title_uz = $request->title_uz;
+        $a->title_ru = $request->title_ru;
+        $a->title_en = $request->title_en;
+        $a->matn_uz = $request->matn_uz;
+        $a->matn_ru = $request->matn_ru;
+        $a->matn_en = $request->matn_en;
+        $a->shoir_id = $request->shoir_id;
+        $image = $request->photo;
+        $imagename = time() . '.' . $image->getClientOriginalExtension();
+        $request->photo->move('photo', $imagename);
+        $a->photo = $imagename;
+        $a->save();
 
-
-        SherModel::create($request->all());
         return redirect()->route('admin.sher.index');
     }
 
@@ -70,9 +81,9 @@ class SherController extends Controller
     public function edit($id)
     {
         $poets = ShoirModel::all();
-        $poem= SherModel::find($id);
+        $poem = SherModel::find($id);
         return view('admin.sher.edit', [
-            'poem'=>$poem,
+            'poem' => $poem,
             'poets' => $poets,
         ]);
     }
@@ -85,8 +96,24 @@ class SherController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {  $poem=SherModel::find($id);
-        $poem->update($request->all());
+    {
+        $a = SherModel::find($id);
+        $a->title_uz = $request->title_uz;
+        $a->title_ru = $request->title_ru;
+        $a->title_en = $request->title_en;
+        $a->matn_uz = $request->matn_uz;
+        $a->matn_ru = $request->matn_ru;
+        $a->matn_en = $request->matn_en;
+        $a->shoir_id = $request->shoir_id;
+        if($request->photo !=null)
+        {
+            $image = $request->photo;
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            $request->photo->move('photo', $imagename);
+            $a->photo = $imagename;
+        }
+        $a->save();
+
         return redirect()->route('admin.sher.index');
 
     }

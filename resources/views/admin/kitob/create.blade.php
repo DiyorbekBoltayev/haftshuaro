@@ -40,20 +40,7 @@
                             <input type="text" name="name_ru" value="{{old('name_ru')}}" class="form-control"
                                    required>
                         </div>
-                        <div class="form-group">
-                            <label for="desc_uz">Qisqacha izoh UZ</label>
-                            <textarea class="form-control" name="desc_uz" id="desc_uz" required rows="4" >{{old('desc_uz')}}</textarea>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="desc_en">Qisqacha izoh EN</label>
-                            <textarea class="form-control" name="desc_en" id="desc_en" required rows="4" >{{old('desc_en')}}</textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="desc_ru">Qisqacha izoh RU</label>
-                            <textarea class="form-control" name="desc_ru" id="desc_ru" required rows="4" >{{old('desc_ru')}}</textarea>
-                        </div>
                         <div class="form-group">
                             <label for="outor_uz"> Muallif UZ</label>
                             <input type="text" name="outor_uz" value="{{old('outor_uz')}}" class="form-control"
@@ -80,13 +67,13 @@
                         </div>
                         <div class="form-floating mb-3">
                             <label class="text text-primary" for="floatingInput"> Kitob turini tanlang </label><br>
+                            <select class="form-control" required name="shoir_id" id="building">
+                                <option value="">--------</option>
+                                @foreach($poets as $poet)
+                                    <option value="{{$poet->id}}">{{$poet->name_uz}}</option>
+                                @endforeach
+                            </select>
 
-                            <input type="radio" id="age1" checked name="status" value="0">
-                            <label for="age1">Oddiy</label><br>
-                            <input type="radio" id="age2" name="status" value="1">
-                            <label for="age2">Durdona to'plamlar</label><br>
-                            <input type="radio" id="age3" name="status" value="2">
-                            <label for="age3">Eng sara asarlar</label>
 
                         </div>
 

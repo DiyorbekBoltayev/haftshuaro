@@ -19,14 +19,14 @@
                 <li class="nav-item {{  request()->routeIs('admin.shoir.index') ? 'active' : '' }}">
                     <a href="{{route('admin.shoir.index')}}">
                         <i class="fas fa-pen"></i>
-                        <p>Shoirlar</p>
+                        <p>Turkumlar</p>
                     </a>
                 </li>
 
                 <li class="nav-item {{  request()->routeIs('admin.sher.index') ? 'active' : '' }}">
                     <a href="{{route('admin.sher.index')}}">
                         <i class="fas fa-bars"></i>
-                        <p>Sherlar</p>
+                        <p>Maqolalar</p>
                     </a>
                 </li>
                 <li class="nav-item {{  request()->routeIs('admin.kitob.index') ? 'active' : '' }}">

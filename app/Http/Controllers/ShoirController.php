@@ -39,19 +39,10 @@ class ShoirController extends Controller
      */
     public function store(Request $request)
     {
-
         $data = new ShoirModel();
-
-        $data->name = $request->name;
-
-        $data->title_uz = $request->title_uz;
-        $data->title_en = $request->title_en;
-        $data->title_ru = $request->title_ru;
-        $image = $request->photo;
-        $imagename = time() . '.' . $image->getClientOriginalExtension();
-        $request->photo->move('photo', $imagename);
-        $data->photo = $imagename;
-
+        $data->name_uz = $request->name_uz;
+        $data->name_ru = $request->name_ru;
+        $data->name_en = $request->name_en;
         $data->save();
         return redirect()->route('admin.shoir.index');
 
@@ -93,20 +84,9 @@ class ShoirController extends Controller
     public function update(Request $request, $id)
     {
         $data = ShoirModel::find($id);
-
-        $data->name = $request->name;
-
-        $data->title_uz = $request->title_uz;
-        $data->title_en = $request->title_en;
-        $data->title_ru = $request->title_ru;
-
-        if ($request->photo != null) {
-            $image = $request->photo;
-            $imagename = time() . '.' . $image->getClientOriginalExtension();
-            $request->photo->move('photo', $imagename);
-            $data->photo = $imagename;
-        }
-
+        $data->name_uz = $request->name_uz;
+        $data->name_ru = $request->name_ru;
+        $data->name_en = $request->name_en;
         $data->save();
         return redirect()->route('admin.shoir.index');
     }
