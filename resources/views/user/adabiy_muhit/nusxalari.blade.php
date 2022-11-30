@@ -139,7 +139,7 @@
         </div>
     </section>
 
-    <section class="content5 cid-t79KozULu2" id="content5-15">
+    <section  class="content5 cid-t79KozULu2" id="content5-15">
 
         <div class="container">
             <div class="row justify-content-center">
@@ -633,7 +633,7 @@
         </div>
     </section>
 
-    <section class="image3 cid-t79KU1Lxf8" id="image3-18">
+    <section style='background-image: url("{{asset('fr/rfon.png')}}")' class="image3 cid-t79KU1Lxf8" id="image3-18">
 
 
         <div class="container">
@@ -650,7 +650,7 @@
                         {{--                           --}}
                         {{--                        @endif--}}
 
-                        <img src="{{asset('front/assets/images/jad.png')}}" alt="Mobirise">
+                        <img src="{{asset('front/assets/images/rasmjadval.jpg')}}" alt="jadval haft shuaro">
 
                     </div>
                 </div>
@@ -658,7 +658,7 @@
         </div>
     </section>
 
-    <section class="content5 cid-t79KP4S49r" id="content5-17">
+    <section style='background-image: url("{{asset('fr/rfon.png')}}")' class="content5 cid-t79KP4S49r" id="content5-17">
 
         <div class="container">
             <div class="row justify-content-center">
