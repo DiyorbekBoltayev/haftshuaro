@@ -22,12 +22,12 @@
             </div>
         </div>
     </section>
-    <section style='background-image: url("{{asset('fr/rfon.png')}}")' class="team2 cid-toDx68BVDe" xmlns="http://www.w3.org/1999/html" id="team2-3">
+    <section  class="team2 cid-toDx68BVDe" xmlns="http://www.w3.org/1999/html" id="team2-3">
 
 
         <div class="container">
             @foreach($shoirlar as $shoir)
-            <div class="card">
+            <div style="box-shadow: 0px 0px 10px 10px #d3dade"  class="card">
                 <div class="card-wrapper">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-4">
@@ -43,7 +43,7 @@
 
                                 <p class="mbr-text mbr-fonts-style display-7">
                                     {!! substr($shoir['title_'.$lang],0,200)!!}...<br>
-                                    <a href="{{route('front.kimdir_ijodi',$shoir->id)}}" class="btn btn-outline-primary">Ijod namunalari bilan tanishish➜ </a>
+                                    <a href="{{route('front.kimdir_ijodi',$shoir->id)}}" class="btn btn-outline-primary">@lang('public.ijod_n_t')➜ </a>
 
                                 </p>
                                 <p class="mbr-text mbr-fonts-style display-7">

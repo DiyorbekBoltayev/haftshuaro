@@ -255,7 +255,7 @@
                 <div class="item features-image сol-12 col-md-6 col-lg-4">
                     <div class="item-wrapper">
                         <div class="item-img">
-                            <img src="{{asset('front/assets/images/z3.jpg')}}" alt="" title="">
+                            <img src="{{asset('front/i1.png')}}" alt="" title="">
                         </div>
 
                         @if($lang=="uz")
@@ -330,7 +330,7 @@
                 <div class="item features-image сol-12 col-md-6 col-lg-4">
                     <div class="item-wrapper">
                         <div class="item-img">
-                            <img src="{{asset('front/assets/images/z3.jpg')}}" alt="" title="">
+                            <img src="{{asset('front/i2.png')}}" alt="" title="">
                         </div>
 
                         @if($lang=="uz")
@@ -405,7 +405,7 @@
                 <div class="item features-image сol-12 col-md-6 col-lg-4">
                     <div class="item-wrapper">
                         <div class="item-img">
-                            <img src="{{asset('front/assets/images/z3.jpg')}}" alt="" title="">
+                            <img src="{{asset('front/i3.png')}}" alt="" title="">
                         </div>
 
                         @if($lang=="uz")

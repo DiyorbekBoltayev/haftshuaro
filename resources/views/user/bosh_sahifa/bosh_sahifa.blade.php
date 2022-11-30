@@ -70,7 +70,7 @@
         </div>
     </section>
 
-    <section style='background-image: url("{{asset('fr/rfon.png')}}")' class="features6 cid-t77Jr7nBOD" id="features7-5">
+    <section  class="features6 cid-t77Jr7nBOD" id="features7-5">
         <!---->
 
 
@@ -188,12 +188,12 @@
             </div>
         </div>
     </section>
-    <section style='background-image: url("{{asset('fr/rfon.png')}}")'  class="content2 cid-t79CXtsQCS" id="content2-p">
+    <section   class="content2 cid-t79CXtsQCS" id="content2-p">
 
 
         <div class="container">
             <div class="mbr-section-head">
-                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Tadqiqotlar</strong></h4>
+                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>@lang('public.menu_tad')</strong></h4>
 
                             </div>
             <div class="row mt-4 ">
@@ -428,18 +428,18 @@
             <div class="row w-100 mt--5">
                                     <div class="d-flex justify-content-end w-100">
 
-                                    <a href="{{route('front.tadqiqot')}}" class="btn btn-outline-success display-3 ">Barchasini ko'rish ➔</a>
+                                    <a href="{{route('front.tadqiqot')}}" class="btn btn-outline-success display-3 ">@lang('public.see_all') ➔</a>
                                     </div>
                                 </div>
         </div>
 
     </section>
-    <section  style='background-image: url("{{asset('fr/rfon.png')}}")' class="content2 cid-t79CXtsQCS" id="content2-p">
+    <section  class="content2 cid-t79CXtsQCS" id="content2-p">
 
 
         <div class="container">
             <div class="mbr-section-head">
-                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Ijodkorlar</strong></h4>
+                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>@lang('public.t_2_6')</strong></h4>
 
                             </div>
             <div class="row mt-4 ">
@@ -486,7 +486,7 @@
             <div class="row w-100 mt--5">
                                     <div class="d-flex justify-content-end w-100">
 
-                                    <a href="{{route('front.ijodkorlar')}}" class="btn btn-outline-success display-3 ">Barchasini ko'rish ➔</a>
+                                    <a href="{{route('front.ijodkorlar')}}" class="btn btn-outline-success display-3 ">@lang('public.see_all') ➔</a>
                                     </div>
                                 </div>
         </div>
@@ -500,7 +500,7 @@
 
         <div class="text-center container">
             <h3 class="mb-4 mbr-fonts-style display-2">
-                <strong>Jamoamiz a'zolari</strong>
+                <strong>@lang('public.j_azo')</strong>
             </h3>
 
             <div class="carousel slide" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="8000">

@@ -29,7 +29,7 @@
                 @foreach( $data as $dat )
                     @if($dat->status == 0 )
                         {{--                        <?php  $d++;  ?>--}}
-                        <div class="item features-image сol-12 col-md-6 col-lg-4">
+                        <div style="box-shadow: 0px 0px 10px 10px #d3dade" class="item features-image сol-12 col-md-6 col-lg-4">
                             <div class="item-wrapper">
                                 <div class="item-img">
                                     <img src="/kutubxona/{{$dat->photo}}" alt="Bu rasm">

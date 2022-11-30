@@ -37,6 +37,11 @@ return [
     "t_2_4"=>"“Haft shuaro”ning nusxalari va tuzilishi",
     't_2_5'=>"Tadqiqotlar va maqolalar",
     't_2_6'=>"Ijodkorlar",
+    'menu_tad'=>"Tadqiqotlar",
+    'footer_text'=>"Mualliflik huquqi 2022 Haft Shuaro. Barcha huquqlar himoyalangan.",
+    'see_all'=>"Barchasini ko'rish",
+    "j_azo"=>"Jamoamiz a'zolari",
+    "ijod_n_t"=>"Ijod namunalari bilan tanishish"
 
 
 

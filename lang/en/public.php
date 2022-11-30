@@ -34,5 +34,12 @@ return [
     't_2_3'=>"Literary value of biographical information in sources",
     't_2_4'=>'Copies and structure of "Haft Shuaro"',
 
+    't_2_5'=>"Researches and articles",
+    't_2_6'=>"Creators",
+    'menu_tad'=>"Researches",
+    'see_all'=>"View all",
+    'footer_text'=>"Copyright 2022 Haft Shuaro. All Rights Reserved. ",
+    "j_azo"=>"Members of our team",
+    "ijod_n_t"=>"Acquaintance with examples of creativity"
 ]
 ?>

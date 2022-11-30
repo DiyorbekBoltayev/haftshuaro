@@ -89,12 +89,12 @@
                     <li class="nav-item">
                         <a class="text-black dropdown-item text-primary display-4"
                            href="{{route('front.tadqiqot')}}"
-                           aria-expanded="false">Tadqiqotlar
+                           aria-expanded="false">@lang('public.menu_tad')</a>
                         </a>
                     </li>   <li class="nav-item">
                         <a class="text-black dropdown-item text-primary display-4"
                            href="{{route('front.ijodkorlar')}}"
-                           aria-expanded="false">Ijodkorlar
+                           aria-expanded="false">@lang('public.t_2_6')</a>
                         </a>
                     </li>
 {{--                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"--}}
@@ -219,7 +219,7 @@
 
             <div class="row row-copirayt">
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                    © Copyright {{date_format(now(),'Y')}} Haft Shuaro. All Rights Reserved.
+                    © @lang('public.footer_text')
                 </p>
             </div>
             <br>
