@@ -27,7 +27,7 @@
 
         <div class="container">
             @foreach($shoirlar as $shoir)
-            <div style="box-shadow: 0px 0px 10px 10px #d3dade"  class="card">
+            <div style="box-shadow: 0px 0px 5px 5px #d4dff4"  class="card">
                 <div class="card-wrapper">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-4">

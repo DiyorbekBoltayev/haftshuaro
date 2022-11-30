@@ -19,15 +19,15 @@
         </div>
     </section>
 
-    <section style='background-image: url("{{asset('fr/rfon.png')}}")' class="features9 cid-t77Hy2O0rR" id="features10-3">
+    <section  class="features9 cid-t77Hy2O0rR" id="features10-3">
         <!---->
 
 
-        <div class="container">
+        <div  class="container">
 
             <div class="row mt-4">
                 <div class="card col-12">
-                    <div class="card-wrapper">
+                    <div style="box-shadow: 0px 0px 5px 5px #d4dff4"  class="card-wrapper">
 
                         <div class="bottom-line">
 

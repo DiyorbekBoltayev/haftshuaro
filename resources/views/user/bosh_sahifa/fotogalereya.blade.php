@@ -50,25 +50,26 @@
     <div class="container">
         <div class="row">
 
+
             <div class="col-12 col-lg-6">
-                <div class="image-wrapper">
-                    <img src="photo2/{{$d->photo2}}"   alt="haftshuaro">
+
+                    <img style="box-shadow: 0px 0px 5px 5px #c6c6f4; height: 300px;" class=" w-100 img-fluid img-thumbnail " src="photo2/{{$d->photo2}}" alt="haftshuaro">
 {{--                    <p class="mbr-text mbr-fonts-style mt-2 align-center display-4">--}}
 {{--                        @if($lang=="ru") {{$d->outor2_ru}}@endif--}}
 {{--                        @if($lang=="uz") {{$d->outor2_uz}}@endif--}}
 {{--                        @if($lang=="en") {{$d->outor2_en}}@endif--}}
 {{--                        </p>--}}
-                </div>
+
             </div>
             <div class="col-12 col-lg-6">
-                <div class="image-wrapper">
-                    <img src="photo1/{{$d->photo1}}" alt="haftshuaro">
+
+                    <img style="box-shadow: 0px 0px 5px 5px #c6c6f4; height: 300px;" class=" w-100 img-fluid img-thumbnail" src="photo1/{{$d->photo1}}" alt="haftshuaro">
 {{--                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">--}}
 {{--                        @if($lang=="ru") {{$d->outor1_ru}}@endif--}}
 {{--                        @if($lang=="uz") {{$d->outor1_uz}}@endif--}}
 {{--                        @if($lang=="en") {{$d->outor1_en}}@endif</p>--}}
-                </div>
-            </div>
+{{--                </div>--}}
+
         </div>
     </div>
 </section>
