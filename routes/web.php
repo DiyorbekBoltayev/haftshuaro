@@ -27,6 +27,8 @@ Route::name('front.')->group(function () {
     //v2
     Route::get('/tadqiqiot', [UserController::class, 'tadqiqot'])->name('tadqiqot');
     Route::get('/ijodkorlar', [UserController::class, 'ijodkorlar'])->name('ijodkorlar');
+    Route::get('/contact', [UserController::class, 'contact'])->name('contact');
+
 
     //
     Route::get('/',[UserController::class,'bosh_sahifa'])->name('bosh_sahifa');
@@ -60,6 +62,6 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::resource('sher',\App\Http\Controllers\SherController::class);
     Route::resource('shoir',\App\Http\Controllers\ShoirController::class);
     Route::resource('kitob',\App\Http\Controllers\KitobController::class);
-
+    Route::resource('massage',\App\Http\Controllers\MassageController::class);
 
 });

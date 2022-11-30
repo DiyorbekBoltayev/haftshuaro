@@ -40,6 +40,7 @@ return [
     'see_all'=>"View all",
     'footer_text'=>"Copyright 2022 Haft Shuaro. All Rights Reserved. ",
     "j_azo"=>"Members of our team",
-    "ijod_n_t"=>"Acquaintance with examples of creativity"
+    "ijod_n_t"=>"Acquaintance with examples of creativity",
+    'contact'=>"Contact us",
 ]
 ?>

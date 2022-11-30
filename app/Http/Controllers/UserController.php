@@ -38,6 +38,13 @@ class UserController extends Controller
             'lang' => $lang,
             'shoirlar' => $shoirlar
         ]);
+    }public function contact()
+    {
+        $lang = Session::get('locale');
+
+        return view('user.v2.contact', [
+            'lang' => $lang,
+        ]);
     }
 
     public function bosh_sahifa()

@@ -41,7 +41,8 @@ return [
     'footer_text'=>"Mualliflik huquqi 2022 Haft Shuaro. Barcha huquqlar himoyalangan.",
     'see_all'=>"Barchasini ko'rish",
     "j_azo"=>"Jamoamiz a'zolari",
-    "ijod_n_t"=>"Ijod namunalari bilan tanishish"
+    "ijod_n_t"=>"Ijod namunalari bilan tanishish",
+    'contact'=>"Bog'lanish",
 
 
 

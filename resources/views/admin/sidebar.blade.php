@@ -34,6 +34,11 @@
                         <i class="fas fa-book-open"></i>
                         <p>Kitoblar</p>
                     </a>
+                </li><li class="nav-item {{  request()->routeIs('admin.massage.index') ? 'active' : '' }}">
+                    <a href="{{route('admin.massage.index')}}">
+                        <i class="fas fa-book-open"></i>
+                        <p>Xabarlar</p>
+                    </a>
                 </li>
 
             </ul>

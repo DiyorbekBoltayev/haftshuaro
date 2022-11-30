@@ -148,6 +148,12 @@
                                 href="{{route('front.eng_sara')}}" aria-expanded="false">@lang('public.kutubxona3')</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="text-black dropdown-item text-primary display-4"
+                           href="{{route('front.contact')}}"
+                           aria-expanded="false">@lang('public.contact')</a>
+                        </a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link link text-black dropdown-toggle display-4" href="#"
                            aria-expanded="false" data-toggle="dropdown-submenu">
