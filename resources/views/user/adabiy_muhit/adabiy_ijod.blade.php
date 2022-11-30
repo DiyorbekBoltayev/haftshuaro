@@ -175,6 +175,7 @@
 
 
                     @if($lang=="uz")
+                        <p>
                         <br>Feruz nomi bilan bogʻliq XX asr boshidagi (birinchi choragidagi) adabiy muhit qator oʻziga
                         xosliklarga ega. Unda, bir tomondan, koʻp asrlik adabiy an`analar davom ettirilib, ustuvorlik
                         qilayotgan boʻlsa, ikkinchi tomondan, zamonaviy yangicha qarashlar, ma`rifatparvarlik gʻoyalari
@@ -539,8 +540,10 @@
                         – Т.: Изд.АН.РУз, 1957- С.237-238.<br>
                         <br>
                         <br>
+                </p>
                     @endif
                     @if($lang=="ru")
+                        <p>
                         <br> Литературная среда начала ХХ века (первая четверть), связанная с именем Феруз, уникальна.
                         характеристики. С одной стороны, он продолжает и ставит во главу угла многовековые литературные
                         традиции.
@@ -963,10 +966,10 @@
                         народов Ближнего и Среднего Востока // Материалы Всесоюзной конференции востоковедов в Ташкенте.
                         - Т.: Изд.АН.РУз, 1957- С.237-238.<br>
                         <br>
-                        <br>
+                        <br></p>
                     @endif
                     @if($lang=="en")
-                        <br> The literary environment of the early twentieth century (first quarter) associated with the
+                        <p><br> The literary environment of the early twentieth century (first quarter) associated with the
                         name Feruz is unique
                         properties. On the one hand, it continues and prioritizes centuries-old literary traditions
                         On the other hand, modern innovations, ideas of enlightenment
@@ -1420,10 +1423,11 @@
                         - T .: Izd.AN.RUz, 1957- S.237-238. <br>
                         <br>
                         <br>
+                        </p>
                     @endif
 
 
-                    {{--                       </p>--}}
+
                 </div>
             </div>
         </div>

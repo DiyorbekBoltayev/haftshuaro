@@ -35,6 +35,8 @@ return [
     "t_2_2"=>"Adabiy muhit va badiiy ijod qirralari",
     "t_2_3"=>"Manbalardagi biografik ma`lumotlarning adabiy qimmati",
     "t_2_4"=>"“Haft shuaro”ning nusxalari va tuzilishi",
+    't_2_5'=>"Tadqiqotlar va maqolalar",
+    't_2_6'=>"Ijodkorlar",
 
 
 

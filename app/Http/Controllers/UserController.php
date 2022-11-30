@@ -20,6 +20,26 @@ class UserController extends Controller
         return response()->download($path);
     }
 
+    public function tadqiqot()
+    {
+        $shoirlar = ShoirModel::all();
+        $lang = Session::get('locale');
+
+        return view('user.v2.tadqiqot', [
+            'lang' => $lang,
+            'shoirlar' => $shoirlar
+        ]);
+    } public function ijodkorlar()
+    {
+        $shoirlar = ShoirModel::all();
+        $lang = Session::get('locale');
+
+        return view('user.v2.ijodkorlar', [
+            'lang' => $lang,
+            'shoirlar' => $shoirlar
+        ]);
+    }
+
     public function bosh_sahifa()
     {
         $shoirlar = ShoirModel::all();

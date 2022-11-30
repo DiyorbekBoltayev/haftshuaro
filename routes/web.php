@@ -23,6 +23,12 @@ Route::get('locale/{lang}',[\App\Http\Controllers\LocalizationController::class,
 
 //front routes
 Route::name('front.')->group(function () {
+
+    //v2
+    Route::get('/tadqiqiot', [UserController::class, 'tadqiqot'])->name('tadqiqot');
+    Route::get('/ijodkorlar', [UserController::class, 'ijodkorlar'])->name('ijodkorlar');
+
+    //
     Route::get('/',[UserController::class,'bosh_sahifa'])->name('bosh_sahifa');
     Route::get('/muallif_haqida',[UserController::class,'muallif_haqida'])->name('muallif_haqida');
     Route::get('/fotogalereya',[UserController::class,'fotogalereya'])->name('fotogalereya');
