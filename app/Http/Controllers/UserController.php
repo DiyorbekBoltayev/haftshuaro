@@ -54,15 +54,16 @@ class UserController extends Controller
     public function bosh_sahifa()
     {
         $azo_uz = [
-            [
-                'ism' => "Xajiyeva Iroda Adambayevna",
-                'lavozim' => 'Loyiha rahbari',
-                'rasm' => 'iroda.jpg'
-            ],
+
             [
                 'ism' => "Taxirova Gulhayo Sardorbekovna",
                 'lavozim' => 'Stajyor-tadqiqotchi, talaba',
                 'rasm' => 'gulhayo.jpg'
+            ],
+            [
+                'ism' => "Xajiyeva Iroda Adambayevna",
+                'lavozim' => 'Loyiha rahbari',
+                'rasm' => 'iroda.jpg'
             ],
             [
                 'ism' => "Xujaniyozova Go'zal Yuldashevna",
@@ -94,15 +95,16 @@ class UserController extends Controller
 
         ];
         $azo_en = [
-            [
-                'ism' => "Xajiyeva Iroda Adambayevna",
-                'lavozim' => 'Project leader',
-                'rasm' => 'iroda.jpg'
-            ],
+
             [
                 'ism' => "Taxirova Gulhayo Sardorbekovna",
                 'lavozim' => 'Trainee-researcher, student',
                 'rasm' => 'gulhayo.jpg'
+            ],
+            [
+                'ism' => "Xajiyeva Iroda Adambayevna",
+                'lavozim' => 'Project leader',
+                'rasm' => 'iroda.jpg'
             ],
             [
                 'ism' => "Xujaniyozova Go'zal Yuldashevna",
@@ -135,15 +137,16 @@ class UserController extends Controller
         ];
         $azo_ru = [
             [
-                'ism' => "Хажиева Ирода Адамбаевна",
-                'lavozim' => 'Лидер проектов',
-                'rasm' => 'iroda.jpg'
-            ],
-            [
                 'ism' => "Тахирова Гулхае Сардорбековна",
                 'lavozim' => 'Стажер-исследователь, студент',
                 'rasm' => 'gulhayo.jpg'
             ],
+            [
+                'ism' => "Хажиева Ирода Адамбаевна",
+                'lavozim' => 'Лидер проектов',
+                'rasm' => 'iroda.jpg'
+            ],
+
             [
                 'ism' => "Хужаниязова Гузал Юлдашевна",
                 'lavozim' => 'Младший научный сотрудник',
