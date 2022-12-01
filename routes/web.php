@@ -62,6 +62,10 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::resource('sher',\App\Http\Controllers\SherController::class);
     Route::resource('shoir',\App\Http\Controllers\ShoirController::class);
     Route::resource('kitob',\App\Http\Controllers\KitobController::class);
+
+});
+Route::prefix('admin')->name('admin.')->group(function () {
+
     Route::resource('massage',\App\Http\Controllers\MassageController::class);
 
 });

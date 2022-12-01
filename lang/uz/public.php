@@ -43,6 +43,8 @@ return [
     "j_azo"=>"Jamoamiz a'zolari",
     "ijod_n_t"=>"Ijod namunalari bilan tanishish",
     'contact'=>"Bog'lanish",
+    'zzz'=>"Yuborish",
+    "sended"=>"Yuborildi"
 
 
 

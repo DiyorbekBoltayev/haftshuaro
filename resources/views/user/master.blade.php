@@ -56,19 +56,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"
-                                                     data-toggle="dropdown-submenu" aria-expanded="false">
-                            @lang('public.bosh_sahifa')</a>
-                        <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"
-                                                      href="{{route('front.bosh_sahifa')}}" aria-expanded="false">
-                                @lang('public.bosh_sahifa')</a>
+{{--                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"--}}
+{{--                                                     data-toggle="dropdown-submenu" aria-expanded="false">--}}
+{{--                            @lang('public.bosh_sahifa')</a>--}}
+{{--                        <div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4"--}}
+{{--                                                      href="{{route('front.bosh_sahifa')}}" aria-expanded="false">--}}
+{{--                                @lang('public.bosh_sahifa')</a>--}}
 {{--                            <a class="dropdown-item text-black text-primary display-4"--}}
 {{--                               href="{{route('front.muallif_haqida')}}">@lang('public.bosh_sahifa2')</a>--}}
-                            <a
-                                class="dropdown-item text-black text-primary display-4"
-                                href="{{route('front.fotogalereya')}}"
-                                aria-expanded="false">@lang('public.bosh_sahifa3')</a></div>
-                    </li>
+{{--                            <a--}}
+{{--                                class="dropdown-item text-black text-primary display-4"--}}
+{{--                                href="{{route('front.fotogalereya')}}"--}}
+{{--                                aria-expanded="false">@lang('public.bosh_sahifa3')</a></div>--}}
+{{--                    </li>--}}
 
 {{--                    <li class="nav-item dropdown">--}}
 {{--                        <a class="nav-link link dropdown-toggle text-black display-4" href="#"--}}
@@ -88,14 +88,20 @@
 {{--                    </li>--}}
                     <li class="nav-item">
                         <a class="text-black dropdown-item text-primary display-4"
+                           href="{{route('front.bosh_sahifa')}}"
+                           aria-expanded="false">@lang('public.bosh_sahifa')</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-black dropdown-item text-primary display-4"
                            href="{{route('front.tadqiqot')}}"
                            aria-expanded="false">@lang('public.menu_tad')</a>
-                        </a>
+
                     </li>   <li class="nav-item">
                         <a class="text-black dropdown-item text-primary display-4"
                            href="{{route('front.ijodkorlar')}}"
                            aria-expanded="false">@lang('public.t_2_6')</a>
-                        </a>
+
                     </li>
 {{--                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#"--}}
 {{--                                                     data-toggle="dropdown-submenu"--}}

@@ -29,7 +29,9 @@ class UserController extends Controller
             'lang' => $lang,
             'shoirlar' => $shoirlar
         ]);
-    } public function ijodkorlar()
+    }
+
+    public function ijodkorlar()
     {
         $shoirlar = ShoirModel::all();
         $lang = Session::get('locale');
@@ -38,7 +40,9 @@ class UserController extends Controller
             'lang' => $lang,
             'shoirlar' => $shoirlar
         ]);
-    }public function contact()
+    }
+
+    public function contact()
     {
         $lang = Session::get('locale');
 
@@ -49,12 +53,143 @@ class UserController extends Controller
 
     public function bosh_sahifa()
     {
+        $azo_uz = [
+            [
+                'ism' => "Xajiyeva Iroda Adambayevna",
+                'lavozim' => 'Loyiha rahbari',
+                'rasm' => 'iroda.jpg'
+            ],
+            [
+                'ism' => "Taxirova Gulhayo Sardorbekovna",
+                'lavozim' => 'Stajyor-tadqiqotchi, talaba',
+                'rasm' => 'gulhayo.jpg'
+            ],
+            [
+                'ism' => "Xujaniyozova Go'zal Yuldashevna",
+                'lavozim' => 'Kichik ilmiy xodim',
+                'rasm' => 'guzal.jpg'
+            ],
+            [
+                'ism' => "Sapayeva Feruza Norboyevna",
+                'lavozim' => 'Kichik ilmiy xodim',
+                'rasm' => 'feruza.jpg'
+            ], [
+                'ism' => "Abdullayeva Shoxidaxon Davronbekovna",
+                'lavozim' => 'Katta ilmiy xodim',
+                'rasm' => 'shoxida.jpg'
+            ], [
+                'ism' => "Matyozova Nilufar Sabirovna",
+                'lavozim' => 'Katta ilmiy xodim',
+                'rasm' => 'nilufar.jpg'
+            ], [
+                'ism' => "Adambayeva Feruza Rustambekovna",
+                'lavozim' => 'Kichik ilmiy xodim',
+                'rasm' => 'feruzar.jpg'
+            ], [
+                'ism' => "Yusupova Shoxida Botirboyevna",
+                'lavozim' => 'Katta ilmiy xodim',
+                'rasm' => 'shoxidab.jpg'
+            ],
+
+
+        ];
+        $azo_en = [
+            [
+                'ism' => "Xajiyeva Iroda Adambayevna",
+                'lavozim' => 'Project leader',
+                'rasm' => 'iroda.jpg'
+            ],
+            [
+                'ism' => "Taxirova Gulhayo Sardorbekovna",
+                'lavozim' => 'Trainee-researcher, student',
+                'rasm' => 'gulhayo.jpg'
+            ],
+            [
+                'ism' => "Xujaniyozova Go'zal Yuldashevna",
+                'lavozim' => 'Junior researcher',
+                'rasm' => 'guzal.jpg'
+            ],
+            [
+                'ism' => "Sapayeva Feruza Norboyevna",
+                'lavozim' => 'Junior researcher',
+                'rasm' => 'feruza.jpg'
+            ], [
+                'ism' => "Abdullayeva Shoxidaxon Davronbekovna",
+                'lavozim' => 'Senior researcher',
+                'rasm' => 'shoxida.jpg'
+            ], [
+                'ism' => "Matyozova Nilufar Sabirovna",
+                'lavozim' => 'Senior researcher',
+                'rasm' => 'nilufar.jpg'
+            ], [
+                'ism' => "Adambayeva Feruza Rustambekovna",
+                'lavozim' => 'Junior researcher',
+                'rasm' => 'feruzar.jpg'
+            ], [
+                'ism' => "Yusupova Shoxida Botirboyevna",
+                'lavozim' => 'Senior researcher',
+                'rasm' => 'shoxidab.jpg'
+            ],
+
+
+        ];
+        $azo_ru = [
+            [
+                'ism' => "Хажиева Ирода Адамбаевна",
+                'lavozim' => 'Лидер проектов',
+                'rasm' => 'iroda.jpg'
+            ],
+            [
+                'ism' => "Тахирова Гулхае Сардорбековна",
+                'lavozim' => 'Стажер-исследователь, студент',
+                'rasm' => 'gulhayo.jpg'
+            ],
+            [
+                'ism' => "Хужаниязова Гузал Юлдашевна",
+                'lavozim' => 'Младший научный сотрудник',
+                'rasm' => 'guzal.jpg'
+            ],
+            [
+                'ism' => "Сапаева Феруза Норбоевна",
+                'lavozim' => 'Младший научный сотрудник',
+                'rasm' => 'feruza.jpg'
+            ], [
+                'ism' => "Абдуллаева Шохидахон Давронбековна",
+                'lavozim' => 'Старший научный сотрудник',
+                'rasm' => 'shoxida.jpg'
+            ], [
+                'ism' => "Матязова Нилуфар Сабировна",
+                'lavozim' => 'Старший научный сотрудник',
+                'rasm' => 'nilufar.jpg'
+            ], [
+                'ism' => "Адамбаева Феруза Рустамбековна",
+                'lavozim' => 'Младший научный сотрудник',
+                'rasm' => 'feruzar.jpg'
+            ], [
+                'ism' => "Юсупова Шохида Ботирбоевна",
+                'lavozim' => 'Старший научный сотрудник',
+                'rasm' => 'shoxidab.jpg'
+            ],
+
+
+        ];
+        $azz = [];
         $shoirlar = ShoirModel::all();
         $lang = Session::get('locale');
+        if ($lang == 'uz')
+            $azz = $azo_uz;
+        elseif ($lang == 'ru')
+            $azz = $azo_ru;
+        else
+            $azz = $azo_en;
+
+        $photos = FotogaleriyaModel::all();
 
         return view('user.bosh_sahifa.bosh_sahifa', [
             'lang' => $lang,
-            'shoirlar' => $shoirlar
+            'shoirlar' => $shoirlar,
+            'photos' => $photos,
+            'azolar' =>$azz
         ]);
     }
 

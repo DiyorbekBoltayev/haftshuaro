@@ -42,5 +42,7 @@ return [
     "j_azo"=>"Members of our team",
     "ijod_n_t"=>"Acquaintance with examples of creativity",
     'contact'=>"Contact us",
+    'zzz'=>"Send",
+    "sended"=>"Sent"
 ]
 ?>
