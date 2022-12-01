@@ -10,7 +10,7 @@
     <meta name="description" content="">
 
 
-    <title>@yield('title')</title>
+    <title>Haft Shuaro</title>
     @yield('cs-css')
 
     <link rel="stylesheet" href="{{asset('front/assets/web/assets/mobirise-icons2/mobirise2.css')}}">
