@@ -11,6 +11,8 @@
 
 
     <title>@yield('title')</title>
+    @yield('cs-css')
+
     <link rel="stylesheet" href="{{asset('front/assets/web/assets/mobirise-icons2/mobirise2.css')}}">
     <link rel="stylesheet" href="{{asset('front/assets/tether/tether.min.css')}}">
     <link rel="stylesheet" href="{{asset('front/assets/bootstrap/css/bootstrap.min.css')}}">
@@ -32,7 +34,6 @@
     <link rel="stylesheet" href="{{asset('fr/assets/theme/css/style.css')}}">
     <link rel="preload" as="style" href="{{asset('fr/assets/mobirise/css/mbr-additional.css')}}">
     <link rel="stylesheet" href="{{asset('fr/assets/mobirise/css/mbr-additional.css')}}" type="text/css">
-
 </head>
 <body>
 <section class="menu menu1 cid-t77D41zExz" once="menu" id="menu1-2">
@@ -242,6 +243,7 @@
         </div>
     </div>
 </section>
+@yield('cs-js')
 
 <script src="{{asset('front/assets/web/assets/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('front/assets/popper/popper.min.js')}}"></script>
@@ -263,7 +265,6 @@
 <script src="{{asset('fr/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js')}}"></script>
 <script src="{{asset('fr/assets/mbr-testimonials-slider/mbr-testimonials-slider.js')}}"></script>
 <script src="{{asset('fr/assets/theme/js/script.js')}}"></script>
-
 <style>
     p {
         font-size: 18px !important;

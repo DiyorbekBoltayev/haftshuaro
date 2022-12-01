@@ -36,7 +36,7 @@ return [
     "t_2_3"=>"Manbalardagi biografik ma`lumotlarning adabiy qimmati",
     "t_2_4"=>"“Haft shuaro”ning nusxalari va tuzilishi",
     't_2_5'=>"Tadqiqotlar va maqolalar",
-    't_2_6'=>"Ijodkorlar",
+    't_2_6'=>"She'riyat",
     'menu_tad'=>"Tadqiqotlar",
     'footer_text'=>"Mualliflik huquqi 2022 Haft Shuaro. Barcha huquqlar himoyalangan.",
     'see_all'=>"Barchasini ko'rish",
@@ -44,7 +44,10 @@ return [
     "ijod_n_t"=>"Ijod namunalari bilan tanishish",
     'contact'=>"Bog'lanish",
     'zzz'=>"Yuborish",
-    "sended"=>"Yuborildi"
+    "sended"=>"Yuborildi",
+    'contact_11'=>"Biz bilan aloqa",
+    'contact_12'=>"Hoziroq bog'laning",
+    'addres_1'=>"O'zbekiston Respublikasi, Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasi, 110-uy ",
 
 
 

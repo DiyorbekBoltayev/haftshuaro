@@ -35,7 +35,7 @@ return [
     't_2_4'=>'Copies and structure of "Haft Shuaro"',
 
     't_2_5'=>"Researches and articles",
-    't_2_6'=>"Creators",
+    't_2_6'=>"Poetry",
     'menu_tad'=>"Researches",
     'see_all'=>"View all",
     'footer_text'=>"Copyright 2022 Haft Shuaro. All Rights Reserved. ",
@@ -43,6 +43,10 @@ return [
     "ijod_n_t"=>"Acquaintance with examples of creativity",
     'contact'=>"Contact us",
     'zzz'=>"Send",
-    "sended"=>"Sent"
+    "sended"=>"Sent",
+    'contact_11'=>"Contact Us",
+    'contact_12'=>"Contact Now",
+    'addres_1'=>"110, Al-Khorazmi street, Urganch city, Khorezm region, Republic of Uzbekistan"
+
 ]
 ?>
