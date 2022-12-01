@@ -55,11 +55,7 @@ class UserController extends Controller
     {
         $azo_uz = [
 
-            [
-                'ism' => "Taxirova Gulhayo Sardorbekovna",
-                'lavozim' => 'Stajyor-tadqiqotchi, talaba',
-                'rasm' => 'gulhayo.jpg'
-            ],
+
             [
                 'ism' => "Xajiyeva Iroda Adambayevna",
                 'lavozim' => 'Loyiha rahbari',
@@ -90,17 +86,17 @@ class UserController extends Controller
                 'ism' => "Yusupova Shoxida Botirboyevna",
                 'lavozim' => 'Katta ilmiy xodim',
                 'rasm' => 'shoxidab.jpg'
+            ],[
+                'ism' => "Taxirova Gulhayo Sardorbekovna",
+                'lavozim' => 'Stajyor-tadqiqotchi, talaba',
+                'rasm' => 'gulhayo.jpg'
             ],
 
 
         ];
         $azo_en = [
 
-            [
-                'ism' => "Taxirova Gulhayo Sardorbekovna",
-                'lavozim' => 'Trainee-researcher, student',
-                'rasm' => 'gulhayo.jpg'
-            ],
+
             [
                 'ism' => "Xajiyeva Iroda Adambayevna",
                 'lavozim' => 'Project leader',
@@ -131,16 +127,16 @@ class UserController extends Controller
                 'ism' => "Yusupova Shoxida Botirboyevna",
                 'lavozim' => 'Senior researcher',
                 'rasm' => 'shoxidab.jpg'
+            ],[
+                'ism' => "Taxirova Gulhayo Sardorbekovna",
+                'lavozim' => 'Trainee-researcher, student',
+                'rasm' => 'gulhayo.jpg'
             ],
 
 
         ];
         $azo_ru = [
-            [
-                'ism' => "Тахирова Гулхае Сардорбековна",
-                'lavozim' => 'Стажер-исследователь, студент',
-                'rasm' => 'gulhayo.jpg'
-            ],
+
             [
                 'ism' => "Хажиева Ирода Адамбаевна",
                 'lavozim' => 'Лидер проектов',
@@ -172,6 +168,10 @@ class UserController extends Controller
                 'ism' => "Юсупова Шохида Ботирбоевна",
                 'lavozim' => 'Старший научный сотрудник',
                 'rasm' => 'shoxidab.jpg'
+            ],[
+                'ism' => "Тахирова Гулхае Сардорбековна",
+                'lavozim' => 'Стажер-исследователь, студент',
+                'rasm' => 'gulhayo.jpg'
             ],
 
 
