@@ -19,7 +19,7 @@ Auth::routes([
 ]);
 
 //set language
-Route::get('locale/{lang}',[\App\Http\Controllers\LocalizationController::class,'setLang']);
+Route::get('locale/{lang}',[\App\Http\Controllers\LocalizationController::class,'setLang'])->name('setLang');
 
 //front routes
 Route::name('front.')->group(function () {

@@ -165,32 +165,32 @@
                         <a class="nav-link link text-black dropdown-toggle display-4" href="#"
                            aria-expanded="false" data-toggle="dropdown-submenu">
                             @if($lang=="uz")
-                                <img src="uzb.png"
+                                <img src="{{asset('uzb.png')}}"
                                      style="width: 25px; height: 15px; display: inline-block ; margin-right: 2px;"
                                      alt="">
                             @endif
                             @if($lang=="ru")
-                                <img src="rus.jpg"
+                                <img src="{{asset('rus.jpg')}}"
                                      style="width: 25px; height: 15px; display: inline-block ; margin-right: 2px;"
                                      alt="">
                             @endif
                             @if($lang=="en")
-                                <img src="eng.jpg"
+                                <img src="{{asset('eng.jpg')}}"
                                      style="width: 25px; height: 15px; display: inline-block ; margin-right: 2px;"
                                      alt="">
                             @endif
                             @lang('public.local')</a>
                         <div class="dropdown-menu">
-                            <a class="text-black dropdown-item display-4" href="locale/uz"
+                            <a class="text-black dropdown-item display-4" href="{{route('setLang','uz')}}"
                                aria-expanded="false">
 
                                 <img src="uzb.png" style="width: 35px; height: 21px; display: inline-block" alt="">
                                 UZ</a>
-                            <a class="text-black dropdown-item display-4" href="locale/ru"
+                            <a class="text-black dropdown-item display-4" href="{{route('setLang','ru')}}"
                                aria-expanded="false">
                                 <img src="rus.jpg" style="width: 35px; height: 21px; display: inline-block" alt="">
                                 RU</a>
-                            <a class="text-black dropdown-item display-4" href="locale/en" aria-expanded="false">
+                            <a class="text-black dropdown-item display-4" href="{{route('setLang','en')}}" aria-expanded="false">
                                 <img src="eng.jpg" style="width: 35px; height: 21px; display: inline-block" alt="">
                                 EN</a>
                         </div>
