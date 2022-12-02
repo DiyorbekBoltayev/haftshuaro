@@ -184,14 +184,14 @@
                             <a class="text-black dropdown-item display-4" href="{{route('setLang','uz')}}"
                                aria-expanded="false">
 
-                                <img src="uzb.png" style="width: 35px; height: 21px; display: inline-block" alt="">
+                                <img src="{{asset('uzb.png')}}" style="width: 35px; height: 21px; display: inline-block" alt="">
                                 UZ</a>
                             <a class="text-black dropdown-item display-4" href="{{route('setLang','ru')}}"
                                aria-expanded="false">
-                                <img src="rus.jpg" style="width: 35px; height: 21px; display: inline-block" alt="">
+                                <img src="{{asset('rus.jpg')}}" style="width: 35px; height: 21px; display: inline-block" alt="">
                                 RU</a>
                             <a class="text-black dropdown-item display-4" href="{{route('setLang','en')}}" aria-expanded="false">
-                                <img src="eng.jpg" style="width: 35px; height: 21px; display: inline-block" alt="">
+                                <img src="{{asset('eng.jpg')}}" style="width: 35px; height: 21px; display: inline-block" alt="">
                                 EN</a>
                         </div>
                     </li>
