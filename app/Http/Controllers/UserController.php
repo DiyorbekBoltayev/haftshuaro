@@ -345,6 +345,19 @@ class UserController extends Controller
             'sherlar' => $sherlar
         ]);
     }
+    public function kimdir_ijodkor($id)
+    {
+        $shoir = ShoirModel::find($id);
+        $shoirlar = ShoirModel::all();
+        $sherlar = SherModel::all()->where("shoir_id", $shoir->id);
+        $lang = Session::get('locale');
+        return view('user.sheriyat.ijodkor_all', [
+            'lang' => $lang,
+            'shoirlar' => $shoirlar,
+            'shoir' => $shoir,
+            'sherlar' => $sherlar
+        ]);
+    }
 
     public function kutubxonam()
     {

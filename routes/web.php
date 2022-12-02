@@ -46,6 +46,7 @@ Route::name('front.')->group(function () {
     Route::get('/boshqa_janrlar',[UserController::class,'boshqa_janrlar'])->name('boshqa_janrlar');
     Route::get('/sheriyat',[UserController::class,'sheriyat'])->name('sheriyat');
     Route::get('/{kimdir}_ijodi',[UserController::class,'kimdir_ijodi'])->name('kimdir_ijodi');
+
     Route::get('/kutubxonam',[UserController::class,'kutubxonam'])->name('kutubxonam');
     Route::get('/durdona_toplamlar',[UserController::class,'durdona_toplamlar'])->name('durdona_toplamlar');
     Route::get('/eng_sara',[UserController::class,'eng_sara'])->name('eng_sara');
@@ -53,6 +54,7 @@ Route::name('front.')->group(function () {
 
 });
 
+Route::get('/ijodkor/{id}',[UserController::class,'kimdir_ijodkor'])->name('kimdir_ijodkor');
 
 //admin routes
 Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {

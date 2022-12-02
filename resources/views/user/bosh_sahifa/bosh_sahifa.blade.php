@@ -444,7 +444,6 @@
                             </div>
             <div class="row mt-4 ">
                 @foreach($shoirlar as $k=>$shoir)
-                    @if($k==3) @break @endif
                 <div  class="item features-image сol-12 col-md-6 col-lg-4">
                     <div style="box-shadow: 0px 0px 10px 10px #d3dade" class="item-wrapper">
 
@@ -464,7 +463,7 @@
 
 
                         <div class="mbr-section-btn item-footer mt-2">
-                            <a href="{{route('front.badiiy_ijod')}}" class="btn item-btn btn-outline-primary display-7">
+                            <a href="{{route('kimdir_ijodkor',$shoir->id)}}" class="btn item-btn btn-outline-primary display-7">
 
                                 @if( $lang == "uz" )
                                     Batafsil
@@ -483,12 +482,6 @@
                 @endforeach
 
             </div>
-            <div class="row w-100 mt--5">
-                                    <div class="d-flex justify-content-end w-100">
-
-                                    <a href="{{route('front.ijodkorlar')}}" class="btn btn-outline-primary display-3 ">@lang('public.see_all') ➔</a>
-                                    </div>
-                                </div>
         </div>
 
     </section>
