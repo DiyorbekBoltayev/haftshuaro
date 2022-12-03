@@ -169,7 +169,7 @@
                                         <i class="fa fa-phone"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>+998-(97)-791-38-83</p>
+                                        <p>+998-(90)-648-18-35</p>
                                     </div>
                                 </div> <!-- singel address -->
                             </li>
@@ -179,7 +179,7 @@
                                         <i class="fa fa-envelope-o"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>irodaxajiyeva@gmail.com</p>
+                                        <p>irush1978@mail.ru</p>
 
                                     </div>
                                 </div> <!-- singel address -->
