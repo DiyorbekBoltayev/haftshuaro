@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Admin Panel</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport'/>
-     <link class="alert-success" rel="icon" href="{{asset('/asset/img/icon.svg')}}" type="image/x-icon"/>
+    <link class="alert-success" rel="icon" href="{{asset('/asset/img/icon.svg')}}" type="image/x-icon"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
@@ -59,15 +59,14 @@
         <!-- End Logo Header -->
 
         <!-- Navbar Header -->
-    @include('admin.nav')
-    <!-- End Navbar -->
+        @include('GeoOlam.resources.views.admin.nav')
+        <!-- End Navbar -->
     </div>
 
 
-
     <!-- Sidebar -->
-@include('admin.sidebar')
-<!-- End Sidebar -->
+    @include('admin.sidebar')
+    <!-- End Sidebar -->
     <div class="main-panel">
         <div class="content">
 
