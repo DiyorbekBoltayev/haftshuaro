@@ -85,7 +85,7 @@ class SherController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {$poem=SherModel::find($id);
+    {  $poem=SherModel::find($id);
         $poem->update($request->all());
         return redirect()->route('admin.sher.index');
 

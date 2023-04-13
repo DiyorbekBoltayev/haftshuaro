@@ -3,7 +3,6 @@
     @lang('public.t_2_2')
 @endsection
 @section('content')
-
     <section class="header1 cid-t79FXPTzxw mbr-parallax-background" id="header1-r">
 
 
@@ -1433,5 +1432,4 @@
             </div>
         </div>
     </section>
-
 @endsection
