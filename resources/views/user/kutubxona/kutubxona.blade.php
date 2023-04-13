@@ -61,7 +61,8 @@
                                             @endif
 
                                     </p>
-                                    <p class="float-end " style="font-size: 10px">@lang('public.yuklangan') {{$dat->view}} @lang('public.marta')</p>
+                                    <input type="hidden" id="getcountdownload" value="{{$dat->view}}">
+                                    <p class="float-end " style="font-size: 10px">@lang('public.yuklangan')  <span id="countdownload">{{$dat->view}}</span> @lang('public.marta')</p>
                                     <hr>
 {{--                                    <p class="mbr-text mbr-fonts-style mt-3 display-7">--}}
 {{--                                        @if( $lang == "uz" )--}}
@@ -75,7 +76,7 @@
 {{--                                        @endif--}}
 {{--                                    </p>--}}
                                 </div>
-                                <div class="mbr-section-btn item-footer mt-2"><a href="{{route('front.yukla',$dat->id)}}"
+                                <div class="mbr-section-btn item-footer mt-2" > <span onclick="countPlusOne()"><a  href="{{route('front.yukla',$dat->id)}}"
                                                                                  class="btn item-btn btn-primary display-7">
                                         <span class="mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn"></span>
                                         @if( $lang == "uz" )
@@ -88,6 +89,7 @@
                                             Скачать
                                         @endif
                                     </a>
+                                        </span>
                                 </div>
                             </div>
                         </div>

@@ -273,6 +273,16 @@
         text-align: justify;
     }
 </style>
+<script>
+    function countPlusOne(){
+
+        let count = parseInt(document.getElementById('getcountdownload').value);
+
+        count++;
+        document.getElementById('countdownload').innerHTML = count;
+
+    }
+</script>
 
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
             class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
