@@ -13,9 +13,11 @@ class UserController extends Controller
 {
     public function getDownload($id)
     {
-        //PDF file is stored under project/public/download/info.pdf
 
         $file = KutbxonaModel::find($id);
+        $file->view = $file->view + 1;
+        $file->save();
+
         $path = public_path("kutubxona/$file->file");
         return response()->download($path);
     }

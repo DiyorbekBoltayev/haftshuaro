@@ -1,5 +1,7 @@
 <?php
 return [
+    "yuklangan"=>"Yuklab olingan:",
+    "marta"=>" marta",
     //navbar uchun
     "local"=>"UZ",
     "bosh_sahifa"=>"Bosh sahifa",

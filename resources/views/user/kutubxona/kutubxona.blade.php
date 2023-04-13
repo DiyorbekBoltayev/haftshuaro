@@ -60,7 +60,9 @@
                                                     Автор: {{$dat->outor_ru}}
                                             @endif
 
-                                    </p><hr>
+                                    </p>
+                                    <p class="float-end " style="font-size: 10px">@lang('public.yuklangan') {{$dat->view}} @lang('public.marta')</p>
+                                    <hr>
 {{--                                    <p class="mbr-text mbr-fonts-style mt-3 display-7">--}}
 {{--                                        @if( $lang == "uz" )--}}
 {{--                                            {!! $dat->desc_uz !!}--}}

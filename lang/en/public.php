@@ -1,5 +1,7 @@
 <?php
 return [
+    "yuklangan"=>"Downloaded:",
+    "marta"=>" times",
     "local"=>"EN",
     "bosh_sahifa"=>"Home",
     "bosh_sahifa2"=>"About site authors",
