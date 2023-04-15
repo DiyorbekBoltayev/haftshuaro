@@ -274,12 +274,12 @@
     }
 </style>
 <script>
-    function countPlusOne(){
-
-        let count = parseInt(document.getElementById('getcountdownload').value);
+    function countPlusOne(id){
+        let count = parseInt(document.getElementById('getcountdownload'+id).value);
 
         count++;
-        document.getElementById('countdownload').innerHTML = count;
+        document.getElementById('countdownload'+id).innerHTML = count;
+        document.getElementById('getcountdownload'+id).value = count;
 
     }
 </script>
